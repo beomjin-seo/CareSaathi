@@ -45,6 +45,13 @@ cd app && python build.py             # writes app/index.html
 
 Open `app/index.html` in a browser, or `cd app && python app.py`. For Databricks Apps, deploy the `app/` folder (`app.yaml`, `app.py`, `requirements.txt`, `index.html`).
 
+## Run on Databricks Free Edition
+
+1. Get the Marketplace listing "Virtue Foundation Dataset (DAIS 2026)" so the catalog `databricks_virtue_foundation_dataset_dais_2026` exists.
+2. Workspace > Create > Git folder, with this repository's URL.
+3. Open `databricks/run_pipeline`, attach serverless compute, Run all. It reads the three source tables, runs the pipeline, writes `workspace.default.sahi_trust`, `sahi_claims`, `sahi_location`, and rebuilds `app/index.html`.
+4. Compute > Apps > Create app > Custom, then deploy with the repository's `app` folder as the source.
+
 ## Limits
 
 - The table is about 5% public facilities, while most rural care in India is public.
