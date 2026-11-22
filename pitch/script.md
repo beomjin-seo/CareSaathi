@@ -13,8 +13,8 @@ Before you start: open the app in a second tab, English, on the first screen. Cl
 
 ## 0:10 to 0:30. Slide 2, how we decide
 
-> We had 9,989 hospital records and no ground truth. So we don't predict. We grade evidence.
-> One, read every sentence about the service. Two, grade it: a named procedure counts almost five times a loose mention, equipment nine times, and finding what the service needs, like an operating theatre for a C-section, up to twenty-six times.
+> We had 9,989 health-facility records and no ground truth. So we don't predict. We grade evidence.
+> One, read every sentence about the service. Two, grade it: a named procedure counts almost five times a loose mention, equipment about nine times, and finding everything the service needs, like theatre, anaesthesia and blood for a C-section, up to twenty-six times.
 > Three, check the record is one real place. Four, safety rules: a dental clinic claiming dialysis is out. Five, rank: in an emergency the nearest, otherwise the most trusted near you.
 > The weights were fitted on 605 labelled claims, not chosen by us. Let me show you.
 
@@ -30,7 +30,7 @@ Switch to the app tab.
 | Tap **Yes, right now** | "It's an emergency." |
 | Tap **Village or town**, type `Araria`, pick it from the list | "She lives in Araria, one of the hardest-to-reach districts in India." |
 | Point at the red bar | "First, free help: 108 ambulance, 102 free transport for pregnancy." |
-| Point at the amber bar | "The nearest place with real evidence is 81 kilometres away. We say so, and tell her to call 108 and go to the government hospital first. We never invent a closer answer." |
+| Point at the amber bar | "The nearest place with enough evidence is about 81 kilometres away in a straight line. We say so, and tell her to call 108 and go to the government hospital first. We never invent a closer answer." |
 | Scroll to **About this area** | "Public hospitals here do C-sections for only 4.9% of births, private ones for 45%. So she should ask before she travels." |
 | Tap **Open the health worker list** | "No phone? Her village health worker prints this list or has it read aloud." |
 
@@ -60,8 +60,8 @@ Backup for scene 2 if Chennai looks different on the day: **Heart → Angiograph
 
 - Map does not load: keep going, the list and cards do not need the map.
 - Databricks app is asleep: use the backup link above; it is the same page.
-- Araria not in the list: type the PIN `854311`.
-- A judge asks "how do you know it is real": "We don't, for any single hospital. On 605 claims we could label from facility names and an independent reader, 98% of 'strong' were likely real, held out from fitting, AUC 0.88. The card always ends with what to confirm by phone."
+- Araria not in the list: pick Bihar, then Araria, in the dropdown (typing PIN `854311` starts from a different point, about 67 km).
+- A judge asks "how do you know it is real": "We don't, for any single hospital. On 605 claims we could label from facility names and an AI reader, 98% of 'strong' were likely real, held out from fitting, AUC 0.88. The card always ends with what to confirm by phone."
 - A judge asks about the doctors: "Read from each hospital's own website on 22 November, matched by specialty, not verified and not used in the score. We did not copy directory sites like Practo: their terms forbid it."
 
 ## Numbers used, and where they come from
@@ -71,7 +71,7 @@ Backup for scene 2 if Chennai looks different on the day: **Heart → Angiograph
 | 2007 hand coins (₹1 thumb, ₹2 two fingers) | RBI Currency Museum, "Nritya Mudra" series |
 | About half of rural Bihar women literate (54.5%) | NFHS-5 state factsheet, Bihar, rural |
 | 9,989 records, 19 services | `pipeline/common.py`, `pipeline/ontology.py` |
-| ×4.8, ×9.2, up to ×26, ×0.13, base 0.74 | `pipeline/trust.py` output, `pipeline/out/weights.json` |
+| ×4.8, ×9.1, up to ×26, ×0.13, base 0.74 | `pipeline/trust.py` output, `pipeline/out/weights.json` |
 | 605 labelled claims, AUC 0.88, 98% of strong | `analysis/FINDINGS.md` sections 11 and 13 |
 | 2-point tie, 3.6 km tie | `analysis/FINDINGS.md` section 13 |
 | Araria: nearest 81 km, public C-section 4.9%, private 45.2% | `app/data.json`, NFHS-5 district table (checked 22 Nov 11:20) |
