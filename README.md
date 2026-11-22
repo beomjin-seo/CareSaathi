@@ -1,4 +1,6 @@
-# Sahi Ilaj: find the right care
+# CareSaathi: find the right care
+
+*Saathi* means companion. CareSaathi only sends you where a facility's own record gives evidence that the care exists, explains why, and tells you what to confirm by phone before you travel.
 
 Entry for the CMU Data Science Club x Databricks Datathon, Fall 2026.
 

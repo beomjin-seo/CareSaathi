@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC # Sahi Ilaj: run the pipeline on Databricks Free Edition
+# MAGIC # CareSaathi: run the pipeline on Databricks Free Edition
 # MAGIC
 # MAGIC This notebook reads the three tables of the Marketplace listing **Virtue Foundation Dataset (DAIS 2026)**, runs the scoring pipeline in this repository, saves the results as Delta tables, and rebuilds the app page.
 # MAGIC
