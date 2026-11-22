@@ -148,3 +148,19 @@ Each result card shows four steps with the record's own words: department (speci
 - Record length: likely-false labelled claims come from longer records (median 2,822 characters against 1,764). With log record length added as a control, co-requirement share rises from x25.5 to x37.7 (not a length artefact), "built from 2+ other organisations' websites" weakens from x0.46 to x0.79 (partly a length proxy), "names 2+ far towns" from x0.19 to x0.29. Length itself is not used as a feature: "longer record, less trust" has no causal reading outside this label set.
 - Card wording changed: the score is called a ranking index, not odds that the claim is real. Label sources and "nobody visited or phoned" are stated on every card's math panel and in "How we decide".
 - An independent six-part audit workflow was started and did not finish (session ended); the checks above were run directly.
+
+## 12. Stress test of the ranking (2026-11-22)
+
+6,080 searches: 161 places x 19 services x emergency and planned (script logic mirrors `search()` in the app).
+
+| What happened | Share of searches | What we did |
+|---|---|---|
+| Emergency list put a "some evidence" place above a "strong" one less than 3 km farther | 7.5% | Places within 3.6 km of each other now count as equally near; among those, stronger evidence first, then public. 3.6 km is measured: the 75th percentile of the gap between a record's map point and its postcode centre on the 8,322 rows whose location signals agree (median 1.5 km). |
+| Nearest emergency result more than 100 km away | 4.9% | Banner: call 108, go to the nearest government hospital; the table lists few public hospitals. |
+| Same hospital twice in the top five | 1.0% | Same name start and within 2 km: shown once. |
+| A result is a clinic, not a hospital, for an acute service | 13.7% | Card now says "clinic, not a hospital". Facility type as a model feature was tested: AUC 0.877 to 0.883, multiplier x2.6, but the labels are confounded with type (likely-false claims are mostly clinics by construction), so it is shown, not scored. |
+| Planned list has tied scores in the top five | 37% | Expected: seven yes/no inputs give few distinct scores. Ties are broken by uncapped score, then distance. |
+| Fewer than five results / none | 8.4% / 3.0% | Shown as is, with the "no evidence is not absence" message. |
+| A result has no phone number | 9.2% | Stated on the card. |
+| Emergency first result has uncertain location | 0.7% | Stated on the card. |
+| Coordinates outside India | 0 | |

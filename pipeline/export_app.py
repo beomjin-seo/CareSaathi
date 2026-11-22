@@ -60,6 +60,10 @@ def doctor(r):
             seen.add(m.group(0)); out.append(t(s, 160))
         if len(out) == 4: break
     return out
+# distance noise: for rows whose three location signals agree, how far the map point sits from the postcode centre.
+# Two places whose distances differ by less than the 75th percentile of this cannot be ordered by distance with confidence.
+_d = L[L.loc_class.astype(str).str.contains("agree")].d_coord_pin_km.dropna(); TIE = round(float(_d.quantile(.75)), 1)
+print("location noise (map point vs postcode centre, agreeing rows): median", round(float(_d.median()), 2), "| 75th percentile", TIE, "km -> tie window for emergency ranking")
 places, pidx = [], {}
 def place(st, di):
     k = (str(st).title() if isinstance(st, str) else "", str(di).title() if isinstance(di, str) else "")
@@ -149,7 +153,7 @@ pm = pd.read_csv(os.path.join(ROOT, "pipeline/external/pmndp_centres.csv")); pmn
 for r in pm.itertuples(): pmndp.setdefault(nz(r.state) + "|" + nz(r.district), []).append(t(r.facility, 60))
 w = dict(zip(T.FEATS, np.exp(m.coef_[0]).round(2).tolist()))
 out = {"fac": fac, "places": places, "claims": claims, "pins": pins, "cities": cities, "nfhs": nfhs, "pmndp": pmndp,
-       "meta": {"val": VAL, "cap": CAP, "weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
+       "meta": {"tie_km": TIE, "val": VAL, "cap": CAP, "weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
 js = json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 open(os.path.join(ROOT, "app", "data.json"), "w").write(js)
 print("facilities:", len(fac), "| pins:", len(pins), "| cities:", len(cities), "| nfhs keys:", len(nfhs), "| pmndp districts:", len(pmndp), "| bytes:", len(js.encode()))
