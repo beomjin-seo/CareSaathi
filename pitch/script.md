@@ -34,16 +34,18 @@ Switch to the app tab.
 | Scroll to **About this area** | "Public hospitals here do C-sections for only 4.9% of births, private ones for 45%. So she should ask before she travels." |
 | Tap **Open the health worker list** | "No phone? Her village health worker prints this list or has it read aloud." |
 
-## 1:10 to 2:15. Scene 2: a father in Patna who needs bone surgery
+## 1:10 to 2:15. Scene 2: a father in Chennai who needs bone surgery
 
 | Do | Say |
 |---|---|
-| Tap **Start again**, **Accident / injury**, **Bone and joint surgery**, **No, I can plan**, then the **Patna** picture | "Now a planned case: bone surgery in Patna." |
-| Point at card 1's first line | "Why number one: highest trust within 25 kilometres. Scores within 2 points count as a tie, because that is how much the score moves when we refit it, so the nearer one wins." |
-| Point at **Who will treat you** | "Not just the hospital: the doctor. We read 2,000+ hospital websites and match doctors to the need, here an orthopaedic surgeon." *(If the card shows no match:)* "When the website names no bone doctor, we say so and add the question: which doctor will treat me?" |
+| Tap **Start again**, **Accident / injury**, **Bone and joint surgery**, **No, I can plan**, then the **Chennai** picture | "Now a planned case: bone surgery in Chennai." |
+| Point at card 1 (SPOT Hospital) and its first line | "Why number one: highest trust within 25 kilometres. Scores within 2 points count as a tie, because that is how much the score moves when we refit it, so the nearer one wins." |
+| Point at **Who will treat you** | "Not just the hospital: the doctor. We read about 4,000 hospital websites and match doctors to the need. Here, an orthopaedic surgeon with 30 years of experience, from the hospital's own site." |
 | Point at the four green and red steps | "Why we believe it, in the record's own words: department, procedure, equipment, this place. Green, the record says it. Red, the record is silent, which is not a no." |
-| Point at **How this place compares** | "Like Medicare's Care Compare: this hospital against Bihar and India." |
+| Point at **How this place compares** | "Like Medicare's Care Compare: this hospital against its state and India." |
 | Tap a 🔊 button | "And every line can be read aloud." |
+
+Backup for scene 2 if Chennai looks different on the day: **Heart → Angiography / stent → No, I can plan → Lucknow**. Card 1 (Mirus Critical Care Centre) names Dr. Mukul Misra, MBBS, MD (Medicine), DM (Cardiology).
 
 ## 2:15 to 2:30. Close
 
@@ -60,7 +62,7 @@ Switch to the app tab.
 - Databricks app is asleep: use the backup link above; it is the same page.
 - Araria not in the list: type the PIN `854311`.
 - A judge asks "how do you know it is real": "We don't, for any single hospital. On 605 claims we could label from facility names and an independent reader, 98% of 'strong' were likely real, held out from fitting, AUC 0.88. The card always ends with what to confirm by phone."
-- A judge asks about the doctors: "Read from each hospital's own website on 22 November, matched by specialty, not verified and not used in the score."
+- A judge asks about the doctors: "Read from each hospital's own website on 22 November, matched by specialty, not verified and not used in the score. We did not copy directory sites like Practo: their terms forbid it."
 
 ## Numbers used, and where they come from
 
@@ -72,4 +74,6 @@ Switch to the app tab.
 | ×4.8, ×9.2, up to ×26, ×0.13, base 0.74 | `pipeline/trust.py` output, `pipeline/out/weights.json` |
 | 605 labelled claims, AUC 0.88, 98% of strong | `analysis/FINDINGS.md` sections 11 and 13 |
 | 2-point tie, 3.6 km tie | `analysis/FINDINGS.md` section 13 |
-| Araria: nearest 81 km, public C-section 4.9%, private 45.2% | `app/data.json`, NFHS-5 district table |
+| Araria: nearest 81 km, public C-section 4.9%, private 45.2% | `app/data.json`, NFHS-5 district table (checked 22 Nov 11:20) |
+| About 4,000 websites read; 1,685 hospitals with named doctors, 10,182 doctors | `pipeline/scrape_doctors.py`, `pipeline/external/doctors_web.json` |
+| Chennai bone surgery card 1 SPOT Hospital, orthopaedic doctor, 30 years | `app/data.json` (checked 22 Nov 11:20) |
