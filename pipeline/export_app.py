@@ -142,7 +142,12 @@ for i, r in enumerate(F.itertuples()):
     w = DW.get(r.unique_id)
     # drop names cut by the reader (a short last word glued to a degree, e.g. "Dr. Shamsul Ho" + "DA" from "HODA"); fix ALL-CAPS
     cap = lambda x_: re.sub(r"\b([A-Z])([A-Z]{2,})\b", lambda m_: m_.group(1) + m_.group(2).lower(), x_)
-    ds = [[cap(d_[0]), d_[1][:50], d_[2][:40], d_[3] if len(d_) > 3 else None, (d_[4][:50] if len(d_) > 4 else "")] for d_ in (w or {}).get("doctors", []) if len(d_[0].split()[-1].strip(".")) >= 3]
+    # clean-ups found on the demo check: "ent" matched inside words (department, patient); street or hospital words read as names
+    spec_ = lambda x_: " / ".join(t_ for t_ in x_.split(" / ") if t_ and t_.lower() != "ent")
+    NOTNAME = re.compile(r"\b(the|icu|ward|unit|road|nagar|street|marg|colony|hospital|clinic|cent(re|er)|chowk|lane|sector|block|phase)\b", re.I)
+    ds = [[cap(d_[0]), d_[1][:50], spec_(d_[2])[:40], d_[3] if len(d_) > 3 else None, (d_[4][:50] if len(d_) > 4 else "")] for d_ in (w or {}).get("doctors", [])
+          if len(d_[0].split()[-1].strip(".")) >= 3 and not NOTNAME.search(d_[0])]
+    ds = [d_ for d_ in ds if d_[1] or d_[2]]
     fac[i].append([w["url"], ds[:10], w["fetched"]] if ds else None)
 print("doctors from websites: facilities", sum(1 for f in fac if f[12]), "| doctors", sum(len(f[12][1]) for f in fac if f[12]))
 claims = {}
