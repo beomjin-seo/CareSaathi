@@ -11,10 +11,11 @@ Output: pipeline/external/doctors_web.json
   {facility unique_id: {"url": page, "doctors": [[name, degrees, specialty, years, college], ...], "fetched": date}}
 Shown in the app as "read from the hospital's own website, not verified". Never used in a score.
 """
-import sys, os, re, json, html, threading, concurrent.futures as cf, urllib.request, urllib.parse, urllib.robotparser
+import sys, os, re, json, html, time, socket, threading, concurrent.futures as cf, urllib.request, urllib.parse, urllib.robotparser
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import ROOT
 
+socket.setdefaulttimeout(6)   # robots.txt reads have no timeout of their own; without this one slow site stalls the run
 UA = "Mozilla/5.0 (compatible; health-facility-research/0.2)"
 OUTF = os.path.join(ROOT, "pipeline", "external", "doctors_web.json")
 SKIP = re.compile(r"practo|justdial|lybrate|sulekha|facebook|instagram|google|wikipedia|indiamart|credihealth|medifee|quikr", re.I)
@@ -108,14 +109,17 @@ if __name__ == "__main__":
     out = json.load(open(OUTF)) if os.path.exists(OUTF) else {}
     todo = [kv for kv in jobs.items() if kv[0] not in out or (out[kv[0]].get("doctors") and len(out[kv[0]]["doctors"][0]) < 5)]
     print("sites to read:", len(todo), "of", len(jobs), flush=True)
-    lock = threading.Lock(); n = 0
-    with cf.ThreadPoolExecutor(64) as ex:
-        for uid, res in ex.map(lambda kv: site(*kv), todo):
-            with lock:
-                n += 1
-                out[uid] = {**(res or {"url": "", "doctors": []}), "fetched": "2026-11-22"}
-                if n % 250 == 0:
-                    json.dump(out, open(OUTF, "w"), ensure_ascii=False)
-                    print(n, "read |", sum(1 for v in out.values() if v["doctors"]), "sites with doctors", flush=True)
+    stop = time.time() + float(os.environ.get("MINUTES", "1e6")) * 60; n = 0
+    ex = cf.ThreadPoolExecutor(64); futs = [ex.submit(site, *kv) for kv in todo]
+    try:
+        for fu in cf.as_completed(futs, timeout=max(1, stop - time.time())):
+            uid, res = fu.result(); n += 1
+            out[uid] = {**(res or {"url": "", "doctors": []}), "fetched": "2026-11-22"}
+            if n % 250 == 0:
+                json.dump(out, open(OUTF, "w"), ensure_ascii=False)
+                print(n, "read |", sum(1 for v in out.values() if v["doctors"]), "sites with doctors", flush=True)
+    except cf.TimeoutError:
+        print("time limit reached after", n, "sites; the rest are left for a later run", flush=True)
     json.dump(out, open(OUTF, "w"), ensure_ascii=False)
     print("finished | sites", len(out), "| with doctors", sum(1 for v in out.values() if v["doctors"]), "| doctors", sum(len(v["doctors"]) for v in out.values()), flush=True)
+    os._exit(0)   # do not wait for threads still reading slow sites
