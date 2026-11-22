@@ -28,6 +28,13 @@ _svc = {s_: round(float(_auc(_y[(_S.service == s_).values], _o[(_S.service == s_
 VAL = {"auc": round(float(_auc(_y, _o)), 2), "real": [round(100 * float(_y[_b == k].mean())) for k in (0, 1, 2)], "n": [int((_b == k).sum()) for k in (0, 1, 2)],
        "n_read": int((_S.was_read == 1).sum()) if "was_read" in _S else 0, "n_name": int((_S.was_read != 1).sum()) if "was_read" in _S else len(_S),
        "svc_min": min(_svc, key=_svc.get), "svc_min_auc": min(_svc.values()), "svc_max_auc": max(_svc.values())}
+_rng = np.random.default_rng(3); _ug = np.unique(_g); _ix = {u: np.where(_g == u)[0] for u in _ug}; _E = C[C.trust >= LOW][T.FEATS].drop_duplicates().values; _P = []
+for _ in range(200):
+    _i = np.concatenate([_ix[u] for u in _rng.choice(_ug, len(_ug))])
+    if len(set(_y[_i])) == 2: _P.append(100 * _LR(max_iter=2000).fit(_X[_i], _y[_i]).predict_proba(_E)[:, 1])
+_sd = np.repeat(np.array(_P).std(0), C[C.trust >= LOW].groupby(T.FEATS, sort=False).size().reindex(pd.MultiIndex.from_arrays(_E.T, names=T.FEATS)).values)
+TIE_PTS = round(float(np.median(_sd)), 1)
+print("score noise (bootstrap SD of trust over refits, shown claims): median", TIE_PTS, "points -> tie window for planned ranking")
 print("out-of-fold validation for the app:", VAL, _svc)
 lab = C[C.y.notna()]; print("labelled claims by band (share real):", lab.groupby("band").y.agg(["size", "mean"]).round(2).to_dict("index"))
 gp = os.path.join(ROOT, "analysis/labels/labels_general.csv")
@@ -35,6 +42,21 @@ if os.path.exists(gp):
     G = pd.read_csv(gp).merge(C[["claim_id", "band"]], on="claim_id"); print("independent reader, general hospitals:"); print(pd.crosstab(G.band, G.verdict).to_string())
 C["excluded"] = ((C.neg != "") & C.service.isin(OUT_OF_SCOPE) & ~((C.neg == "skin_hair") & (C.service == "burn_care"))).astype(int)
 C.loc[(C.service == "cataract_surgery") & ~C.neg.isin(["", "eye"]), "excluded"] = 1
+# wider wrong-specialty rule (found by the stress test): the fitted labels use a narrow name rule; for display we also
+# leave out dental, eye, skin, physio and ayurveda/homeopathy facilities for every service outside their own field.
+_nm = C.name.str.lower().str.split(r" - |,", regex=True).str[0]
+_PAT = {"dental": r"dental|dentist|orthodont|\bteeth|\btooth", "alt_med": r"ayurved|homoeo|homeo|unani|\bsiddha\b|naturopath|panchakarma", "eye": r"\beye\b|netralaya|nethralaya|ophthal|retina|lasik", "physio": r"physio", "skin_hair": r"\bskin\b|derma|\bhair\b|cosmet"}
+_GEN = r"multi ?special(?!ity dental)|general|super ?special|nursing home|maternity|women|trauma|heart|cardiac|kidney|children|child|institute of medical|poly ?clinic|research cent|medical college"
+_COLL = r"(homoeo\w*|homeo\w*|ayurved\w*|unani|dental) (medical )?college"
+_ALLOW = {"eye": {"cataract_surgery"}, "skin_hair": {"burn_care"}, "dental": set(), "alt_med": set(), "physio": set()}
+_kinds = pd.DataFrame({k: _nm.str.contains(rx, regex=True) for k, rx in _PAT.items()})
+_single = _kinds.any(axis=1) & (~_nm.str.contains(_GEN, regex=True) | _nm.str.contains(_COLL, regex=True))
+def _out(i):
+    ks = [k for k in _PAT if _kinds.at[i, k]]; s_ = C.at[i, "service"]
+    return not (any(s_ in _ALLOW[k] for k in ks) or (s_ == "ortho_surgery" and "ortho" in _nm.at[i]))
+_new = pd.Series([bool(_single.at[i]) and _out(i) for i in C.index], index=C.index) & (C.excluded == 0)
+C.loc[_new, "neg"] = [next(k for k in _PAT if _kinds.at[i, k]) for i in C.index[_new]]; C.loc[_new, "excluded"] = 1
+print("wider wrong-specialty rule: extra claims left out", int(_new.sum()), "| of them previously shown (band >= 1)", int((_new & (C.band >= 1)).sum()), "| labelled real among them", int((C.y[_new] == 1).sum()))
 C = C[C.service.isin(SERVICES)]
 # must-have rule: a claim whose record lacks an indispensable item cannot be "strong"
 def missing(r):
@@ -149,11 +171,21 @@ for _, r in N.iterrows():
          g_(r, "hh_member_covered_health_insurance_pct"), g_(r, "women_age_15_49_who_are_literate_pct"), g_(r, "all_w15_49_who_are_anaemic_pct"), r.district_name.strip(), int(r.access_group),
          g_(r, "w15_19_who_were_already_mothers_or_pregnant_at_the_time_of_pct"), g_(r, "average_out_of_pocket_expenditure_per_delivery_in_a_public_fac"), g_(r, "w20_24_married_before_age_18_years_pct")]
     for k in {r.st + "|" + (r.fdi if isinstance(r.fdi, str) else r.di), r.st + "|" + r.di}: nfhs[k] = v
+# renamed districts: facility-side name -> name used by the 2019-21 survey (found by the data check: 11.6% of facilities had no district context)
+ALIAS = {"KARNATAKA|BENGALURUURBAN": "KARNATAKA|BANGALORE", "HARYANA|GURUGRAM": "HARYANA|GURGAON", "UTTARPRADESH|PRAYAGRAJ": "UTTARPRADESH|ALLAHABAD", "KARNATAKA|BELAGAVI": "KARNATAKA|BELGAUM",
+         "KARNATAKA|MYSURU": "KARNATAKA|MYSORE", "KARNATAKA|KALABURAGI": "KARNATAKA|GULBARGA", "KARNATAKA|BALLARI": "KARNATAKA|BELLARY", "ASSAM|KAMRUPMETRO": "ASSAM|KAMRUPMETROPOLITAN",
+         "WESTBENGAL|PARAGANASNORTH": "WESTBENGAL|NORTHTWENTYFOURPARGANA", "WESTBENGAL|PARAGANASSOUTH": "WESTBENGAL|SOUTHTWENTYFOURPARGANA", "MAHARASHTRA|RAIGAD": "MAHARASHTRA|RAIGARH",
+         "UTTARPRADESH|AYODHYA": "UTTARPRADESH|FAIZABAD", "HARYANA|NUH": "HARYANA|MEWAT", "KARNATAKA|SHIVAMOGGA": "KARNATAKA|SHIMOGA", "KARNATAKA|TUMAKURU": "KARNATAKA|TUMKUR"}
+_n0 = len(nfhs)
+for k, v in ALIAS.items():
+    if v in nfhs and k not in nfhs: nfhs[k] = nfhs[v]
+_fk = pd.Series([nz(places[f[2]][0]) + "|" + nz(places[f[2]][1]) for f in fac])
+print("district context: aliases added", len(nfhs) - _n0, "| facilities with survey context", int(_fk.isin(set(nfhs)).sum()), "of", len(fac))
 pm = pd.read_csv(os.path.join(ROOT, "pipeline/external/pmndp_centres.csv")); pmndp = {}
 for r in pm.itertuples(): pmndp.setdefault(nz(r.state) + "|" + nz(r.district), []).append(t(r.facility, 60))
 w = dict(zip(T.FEATS, np.exp(m.coef_[0]).round(2).tolist()))
 out = {"fac": fac, "places": places, "claims": claims, "pins": pins, "cities": cities, "nfhs": nfhs, "pmndp": pmndp,
-       "meta": {"tie_km": TIE, "val": VAL, "cap": CAP, "weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
+       "meta": {"tie_pts": TIE_PTS, "tie_km": TIE, "val": VAL, "cap": CAP, "weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
 js = json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 open(os.path.join(ROOT, "app", "data.json"), "w").write(js)
 print("facilities:", len(fac), "| pins:", len(pins), "| cities:", len(cities), "| nfhs keys:", len(nfhs), "| pmndp districts:", len(pmndp), "| bytes:", len(js.encode()))

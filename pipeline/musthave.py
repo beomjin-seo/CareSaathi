@@ -14,6 +14,9 @@ An item is on this list only if it passed two tests:
       mentions an item (oxygen for an ICU, the water plant for dialysis), silence is the norm and tells us nothing.
 
 Items that passed (a) but not (b) are listed in DROPPED so the decision can be audited.
+The shares were re-measured after the co-requirement regexes were tightened (2026-11-22): bedside monitors for an ICU
+fell to 26% once Holter, fetal and glucose monitors stopped counting, and heart surgeon to 30% once the bare "M.Ch"
+match was removed, so both left the list.
 Not reviewed by a clinician.
 """
 
@@ -25,13 +28,10 @@ MUST = {
     ],
     "cardiac_surgery": [
         {"keys": ["cardiac_OT", "heart_lung_machine"],
-         "why": "Heart surgery needs a theatre equipped for it, with a heart-lung machine ready even when the surgeon plans not to use one.",
+         "why": "Heart surgery needs an operating theatre, with a heart-lung machine ready even when the surgeon plans not to use one.",
          "src": "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/08/20240828153687657.pdf"},
         {"keys": ["cardiac_ICU", "ventilator"],
          "why": "After heart surgery every patient needs intensive care with a breathing machine ready.",
-         "src": "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/08/20240828153687657.pdf"},
-        {"keys": ["cardiac_surgeon"],
-         "why": "Only a heart surgeon can do the operation and re-open the chest if bleeding starts; a visiting surgeon counts.",
          "src": "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/08/20240828153687657.pdf"},
     ],
     "burn_care": [
@@ -52,21 +52,17 @@ MUST = {
          "why": "Angiography and angioplasty are done by a heart doctor in person; a visiting cardiologist counts.",
          "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11307489"},
     ],
-    "icu": [
-        {"keys": ["monitors"],
-         "why": "Continuous bedside monitoring is what makes a ward an intensive care unit.",
-         "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7085818"},
-    ],
 }
 
 # passed the medical test, failed the data test (share of strong-evidence records that mention it)
 DROPPED = {
-    "icu": {"oxygen": 0.14},
+    "icu": {"oxygen": 0.14, "monitors": 0.26},
     "nicu": {"warmer_or_incubator": 0.17},
+    "cardiac_surgery": {"cardiac_surgeon": 0.30},
 }
 
 # share of strong-evidence records that mention each must-have in use (the data test, threshold 0.33)
-SHARE = {"emergency_obstetric": [0.66], "cardiac_surgery": [0.76, 0.59, 0.36], "burn_care": [0.58], "trauma_emergency": [0.48, 0.86], "cath_lab": [0.89], "icu": [0.42]}
+SHARE = {"emergency_obstetric": [0.66], "cardiac_surgery": [0.87, 0.56], "burn_care": [0.81], "trauma_emergency": [0.66, 0.86], "cath_lab": [0.89]}
 
 # proposed, then refuted by the second pass
 REFUTED = {

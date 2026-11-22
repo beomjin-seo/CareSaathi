@@ -51,7 +51,7 @@ SERVICE_ONTOLOGY = {
   "exclude": [r"retinopathy of prematurity|\bROP\b", r"(CO2|carbon dioxide|lab(oratory)?|bacteriolog\w+|embryo|IVF|tri[- ]?gas|bench[- ]?top|culture|BOD|microbiolog\w+|shaker|platelet) incubators?|incubators? (for|in) (embryo|IVF|culture|lab)", r"phototherapy (for|in) (psoriasis|vitiligo|skin)|\b(NB[- ]?UVB|PUVA|narrow ?band|excimer|whole body|targeted|UVB?|UVA) phototherapy|phototherapy (chamber|cabin)"],
   "spec_direct": r"neonat",
   "spec_related": r"^pa?ediatrics$|pediatriccriticalcare|maternalfetal",
-  "coreq": {"ventilator": r"ventilat", "warmer_or_incubator": r"warmer|incubator", "neonatologist": r"neonatolog", "phototherapy": r"phototherap",
+  "coreq": {"ventilator": r"ventilat(?!ed\b)(?!ion system)", "warmer_or_incubator": r"warmer|incubator", "neonatologist": r"neonatolog", "phototherapy": r"phototherap",
             "CPAP": r"\bCPAP\b", "paediatrician": r"pa?ediatric", "round_the_clock": r"24\s?[x/*×]\s?7|24[- ]?h(ou)?rs?|round[- ]the[- ]clock"},
  },
  "cardiac_surgery": {
@@ -66,9 +66,9 @@ SERVICE_ONTOLOGY = {
               r"without (surgery|bypass)|bypass without|avoid(ing)? bypass|non[- ]surgical|no surgery|alternative to (bypass|surgery)|\bEECP\b|\bESMR\b|chelation"],
   "spec_direct": r"cardiacsurg|cardiothoracic(surg|andvasc)|cardiovascularsurg|\bctvs\b|heartsurg",
   "spec_related": r"^cardiology$|thoracicsurg|vascularsurg",
-  "coreq": {"cardiac_OT": r"cardiac (OT|operation theat)|operation theat(re|er)|\bOT\b", "cath_lab": r"cath[- ]?lab|catheteri[sz]ation lab",
-            "cardiac_ICU": r"\bCTICU\b|\bICCU\b|\bCCU\b|cardiac (ICU|intensive)", "heart_lung_machine": r"heart[- ]lung|\bECMO\b|\bIABP\b|perfusion",
-            "cardiac_surgeon": r"cardiac surgeon|cardio[- ]?thoracic surgeon|\bCTVS\b|M\.?Ch", "blood_bank": r"blood (bank|storage|cent(re|er))", "ventilator": r"ventilat"},
+  "coreq": {"cardiac_OT": r"operation theat(re|er)|\bOT\b|operating (room|theat)", "cath_lab": r"cath[- ]?lab|catheteri[sz]ation lab",
+            "cardiac_ICU": r"\bCTICU\b|\bICCU\b|\bCCU\b|cardiac (ICU|intensive)", "heart_lung_machine": r"heart[- ]lung (machine|bypass)|cardio[- ]?pulmonary bypass|\bCPB\b|perfusionist|perfusion (machine|pump|system)|\bECMO\b",
+            "cardiac_surgeon": r"cardiac surgeon|heart surgeon|cardio[- ]?(thoracic|vascular)( (and|&) vascular)? surgeon|\bCT ?VS\b|\bM\.?\s?Ch\b\.?[\s,(\-]{0,4}(CT ?VS|CVTS|cardio|thoracic)", "blood_bank": r"blood (bank|storage|cent(re|er))", "ventilator": r"ventilat(?!ed\b)(?!ion system)"},
  },
  "mri": {
   "label": "MRI",
@@ -93,7 +93,7 @@ SERVICE_ONTOLOGY = {
               r"(?-i:Burn(s|ham|ett|side|ley|pur|hall)\b)", r"burn (scar|mark)s? (removal|laser|revision)|razor burn|side ?burn"],
   "spec_direct": r"burn",
   "spec_related": r"^plasticsurgery$|reconstructiveplastic",
-  "coreq": {"plastic_surgeon": r"plastic (surg|and recon)", "ICU": r"\bICU\b|intensive care", "skin_graft_or_bank": r"skin (graft|bank)", "operation_theatre": r"operation theat(re|er)|\bOT\b",
+  "coreq": {"plastic_surgeon": r"plastic (surg|and recon)", "ICU": r"\bICU\b|intensive care", "skin_graft_or_bank": r"skin (graft|bank)", "operation_theatre": r"operation theat(re|er)|\bOT\b|operating (room|theat)",
             "blood_bank": r"blood (bank|storage|cent(re|er))", "round_the_clock_emergency": r"24\s?[x/*×]\s?7.{0,30}emergen|emergen.{0,30}24\s?[x/*×]\s?7|casualty"},
  },
  "trauma_emergency": {
@@ -110,8 +110,8 @@ SERVICE_ONTOLOGY = {
               r"emergency (dental|eye|dentist)|dental emergency|(?-i:EMRI)"],
   "spec_direct": r"^emergencymedic|accidentandemerg|polytrauma|orthopedictrauma|neurotrauma|^emergencymedicalserv|^pediatricemergency",
   "spec_related": r"criticalcare|^generalsurgery$|orthop(a)?edic(surgery|s)$",
-  "coreq": {"round_the_clock": r"24\s?[x/*×]\s?7|24[- ]?h(ou)?rs?|round[- ]the[- ]clock", "ICU": r"\bICU\b|intensive care", "operation_theatre": r"operation theat(re|er)|\bOT\b",
-            "ambulance": r"ambulance", "blood_bank": r"blood (bank|storage|cent(re|er))", "CT": r"\bCT\b|computed tomograph", "ventilator": r"ventilat",
+  "coreq": {"round_the_clock": r"24\s?[x/*×]\s?7|24[- ]?h(ou)?rs?|round[- ]the[- ]clock", "ICU": r"\bICU\b|intensive care", "operation_theatre": r"operation theat(re|er)|\bOT\b|operating (room|theat)",
+            "ambulance": r"ambulance", "blood_bank": r"blood (bank|storage|cent(re|er))", "CT": r"\bCT\b|computed tomograph", "ventilator": r"ventilat(?!ed\b)(?!ion system)",
             "surgeon_ortho_or_neuro": r"orthop|neurosurg|general surg"},
  },
  "ct_scan": {
@@ -136,7 +136,7 @@ SERVICE_ONTOLOGY = {
   "exclude": [r"\bICU ambulance|ambulance.{0,15}\bICU\b|mobile ICU", r"basic life support|advanced (cardiac )?life support"],
   "spec_direct": r"criticalcare|intensivecare|^icu",
   "spec_related": r"^an(a)?esthesi|^emergencymedic|^pulmonology$",
-  "coreq": {"ventilator": r"ventilat", "monitors": r"monitor", "intensivist_or_anaesthetist": r"intensivist|ana?esthe|critical care (specialist|physician)", "oxygen": r"oxygen|\bO2\b",
+  "coreq": {"ventilator": r"ventilat(?!ed\b)(?!ion system)", "monitors": r"(multi[- ]?para\w*|patient|bed[- ]?side|cardiac|vital\w*( signs?)?|ICU|central|ECG|invasive|h(a)?emodynamic)[- ]monitor|monitors? (in|for|at) (the |each |every )?(ICU|bed)|\bmonitors\b(?! for (blood|glucose))", "intensivist_or_anaesthetist": r"intensivist|ana?esthe|critical care (specialist|physician)", "oxygen": r"oxygen|\bO2\b",
             "round_the_clock": r"24\s?[x/*×]\s?7|24[- ]?h(ou)?rs?|round[- ]the[- ]clock", "defibrillator": r"defibrillat", "bed_count": r"\d+[- ]?(bed(ded)?s?)? ?\bICU\b|\bICU\b beds?:? ?\d+"},
  },
  "blood_bank": {
@@ -159,7 +159,7 @@ SERVICE_ONTOLOGY = {
   "exclude": [r"cataract (screening|detection|awareness) camp"],
   "spec_direct": r"cataract",
   "spec_related": r"^ophthalmology$|anteriorsegment",
-  "coreq": {"ophthalmologist": r"ophthalm|eye (surgeon|specialist)", "operation_theatre": r"operation theat(re|er)|\bOT\b", "biometry": r"biometr|A[- ]scan|IOL ?Master|keratomet", "operating_microscope": r"(operating|surgical|ophthalmic) microscope", "YAG_laser": r"\bYAG\b",
+  "coreq": {"ophthalmologist": r"ophthalm|eye (surgeon|specialist)", "operation_theatre": r"operation theat(re|er)|\bOT\b|operating (room|theat)", "biometry": r"biometr|A[- ]scan|IOL ?Master|keratomet", "operating_microscope": r"(operating|surgical|ophthalmic) microscope", "YAG_laser": r"\bYAG\b",
             "phaco_machine": r"phaco", "volume": r"\d[\d,]*\+?\s*(cataract )?(surger|operation)"},
  },
  "chemotherapy": {
@@ -226,7 +226,7 @@ SERVICE_ONTOLOGY = {
   "exclude": [r"food poisoning (test|prevention)", r"insect bite allerg|bite (correction|plane|block|guard|registration|problems?|alignment)|(deep|open|cross|over|under)[- ]?bite|\bbite[- ]?wing", r"blood poisoning"],
   "spec_direct": r"toxicolog",
   "spec_related": r"^emergencymedic|^internalmedicine$|criticalcare",
-  "coreq": {"ICU": r"\bICU\b|intensive care", "ventilator": r"ventilat", "round_the_clock_emergency": r"24\s?[x/*×]\s?7|casualty|emergency (department|room|ward)", "dialysis_backup": r"dialysis", "physician": r"general medicine|internal medicine|physician"},
+  "coreq": {"ICU": r"\bICU\b|intensive care", "ventilator": r"ventilat(?!ed\b)(?!ion system)", "round_the_clock_emergency": r"24\s?[x/*×]\s?7|casualty|emergency (department|room|ward)", "dialysis_backup": r"dialysis", "physician": r"general medicine|internal medicine|physician"},
  },
  "tb": {
   "label": "Tuberculosis diagnosis / treatment",
@@ -249,7 +249,7 @@ SERVICE_ONTOLOGY = {
   "exclude": [r"orthodont\w*|dentofacial orthop\w*|orthognath\w*|ortho[- ]?k\b|orthoptic\w*|orthotic\w*|(jaw|TMJ|temporomandibular)[- ]?joint (replacement|surgery)?", r"(tooth|teeth|dental|root|crown|jaw|nasal|facial|orbital|mandib\w+|maxill\w+) fractures?|fractured (tooth|teeth)"],
   "spec_direct": r"jointrecon|jointreplac|arthroscop|orthop(a)?edic(spine|trauma|sports|surgery)|shoulderandelbow|footandankle|spinesurg|^orthop(a)?edics?$|orthop(a)?edicsand",
   "spec_related": r"^orthop|sportsmedicine|spineneurosurg",
-  "coreq": {"operation_theatre": r"operation theat(re|er)|\bOT\b", "C_arm": r"\bC[- ]?arm\b|image intensifier", "anaesthesia": r"ana?esthe", "physiotherapy": r"physio", "xray": r"x[- ]?ray", "orthopaedic_surgeon": r"orthop(a)?edic surgeon|\bMS\b.{0,8}orth|\bD\.? ?Ortho", "implants_volume": r"\d[\d,]*\+?\s*(joint|knee|hip) replacement|\d[\d,]*\+?\s*(orthop\w+ )?surger"},
+  "coreq": {"operation_theatre": r"operation theat(re|er)|\bOT\b|operating (room|theat)", "C_arm": r"\bC[- ]?arm\b|image intensifier", "anaesthesia": r"ana?esthe", "physiotherapy": r"physio", "xray": r"x[- ]?ray", "orthopaedic_surgeon": r"orthop(a)?edic surgeon|\bMS\b.{0,8}orth|\bD\.? ?Ortho", "implants_volume": r"\d[\d,]*\+?\s*(joint|knee|hip) replacement|\d[\d,]*\+?\s*(orthop\w+ )?surger"},
  },
 }
 

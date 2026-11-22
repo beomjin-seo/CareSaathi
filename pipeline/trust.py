@@ -21,7 +21,7 @@ from common import ROOT, OUT, load_facilities
 
 BROAD = r"multi|general|maternity|nursing home|medical college|trauma|heart|cardiac|kidney|ortho|surgical|children|institute of medical|super ?special|poly ?clinic|hospitals? and|& ?hospital|research cent"
 NEG = {"eye": r"\beye\b|netralaya|nethralaya|ophthal|\bvision\b|retina|lasik|drishti|\bnetra\b", "dental": r"dental|dentist|\btooth|teeth|smile|orthodont",
-       "skin_hair": r"\bskin\b|derma|\bhair\b|cosmet|aesthetic", "physio": r"physio", "alt_med": r"ayurved|homoeo|homeo|unani|siddha|naturopath|panchakarma"}
+       "skin_hair": r"\bskin\b|derma|\bhair\b|cosmet|aesthetic", "physio": r"physio", "alt_med": r"ayurved|homoeo|homeo|unani|\bsiddha\b|naturopath|panchakarma"}
 POS = {"dialysis": r"dialysis|kidney|nephro|\brenal", "emergency_obstetric": r"maternity|matern|women|obstet|gyna?ec|prasuti|zenana", "nicu": r"children|child ?care|pa?ediatric|neonat|newborn|nicu",
        "cardiac_surgery": r"heart|cardiac|cardio", "cath_lab": r"heart|cardiac|cardio", "burn_care": r"\bburn", "blood_bank": r"blood ?bank|blood cent"}
 FIT_SERVICES = list(POS)
