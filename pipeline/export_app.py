@@ -136,6 +136,14 @@ def dept(uid, s):
         for x in SPEC.get(uid, []):
             if re.search(rx, nsp(x)): return [pretty(x), lvl]
     return ["", 0]
+# doctors read ahead of time from facilities' own websites (pipeline/scrape_doctors.py); demo cities only
+_dw = os.path.join(ROOT, "pipeline", "external", "doctors_web.json"); DW = json.load(open(_dw)) if os.path.exists(_dw) else {}
+for i, r in enumerate(F.itertuples()):
+    w = DW.get(r.unique_id)
+    # drop names cut by the reader (a short last word glued to a degree, e.g. "Dr. Shamsul Ho" + "DA" from "HODA"); fix ALL-CAPS
+    ds = [[re.sub(r"\b([A-Z])([A-Z]+)\b", lambda m_: m_.group(1) + m_.group(2).lower(), n_), q_] for n_, q_ in (w or {}).get("doctors", []) if len(n_.split()[-1].strip(".")) >= 3]
+    fac[i].append([w["url"], ds[:8], w["fetched"]] if ds else None)
+print("doctors from websites: facilities", sum(1 for f in fac if f[12]), "| doctors", sum(len(f[12][1]) for f in fac if f[12]))
 claims = {}
 for s in SERVICES:
     keys = list(ONT[s]["coreq"].keys()); d = {}
