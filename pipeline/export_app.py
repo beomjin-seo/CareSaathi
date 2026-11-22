@@ -17,6 +17,18 @@ t = lambda x, n: (re.sub(r"\s+", " ", x).strip()[:n] if isinstance(x, str) else 
 C = T.features(); S = C[C.y.notna()]; m = T.fit(S)
 C["trust"] = 100 * m.predict_proba(C[T.FEATS].values)[:, 1]
 C["band"] = np.where(C.trust >= HIGH, 2, np.where(C.trust >= LOW, 1, 0))
+# honest validation numbers for the app: everything out-of-fold (each claim scored by a model that never saw its facility)
+from sklearn.linear_model import LogisticRegression as _LR
+from sklearn.model_selection import GroupKFold as _GK
+from sklearn.metrics import roc_auc_score as _auc
+_S = S.reset_index(drop=True); _X, _y, _g = _S[T.FEATS].values, _S.y.values, _S.uid.values; _o = np.zeros(len(_S))
+for _tr, _te in _GK(5).split(_X, _y, _g): _o[_te] = _LR(max_iter=2000).fit(_X[_tr], _y[_tr]).predict_proba(_X[_te])[:, 1]
+_b = np.where(_o >= HIGH / 100, 2, np.where(_o >= LOW / 100, 1, 0))
+_svc = {s_: round(float(_auc(_y[(_S.service == s_).values], _o[(_S.service == s_).values])), 2) for s_ in _S.service.unique() if (_S.service == s_).sum() >= 50}
+VAL = {"auc": round(float(_auc(_y, _o)), 2), "real": [round(100 * float(_y[_b == k].mean())) for k in (0, 1, 2)], "n": [int((_b == k).sum()) for k in (0, 1, 2)],
+       "n_read": int((_S.was_read == 1).sum()) if "was_read" in _S else 0, "n_name": int((_S.was_read != 1).sum()) if "was_read" in _S else len(_S),
+       "svc_min": min(_svc, key=_svc.get), "svc_min_auc": min(_svc.values()), "svc_max_auc": max(_svc.values())}
+print("out-of-fold validation for the app:", VAL, _svc)
 lab = C[C.y.notna()]; print("labelled claims by band (share real):", lab.groupby("band").y.agg(["size", "mean"]).round(2).to_dict("index"))
 gp = os.path.join(ROOT, "analysis/labels/labels_general.csv")
 if os.path.exists(gp):
@@ -137,7 +149,7 @@ pm = pd.read_csv(os.path.join(ROOT, "pipeline/external/pmndp_centres.csv")); pmn
 for r in pm.itertuples(): pmndp.setdefault(nz(r.state) + "|" + nz(r.district), []).append(t(r.facility, 60))
 w = dict(zip(T.FEATS, np.exp(m.coef_[0]).round(2).tolist()))
 out = {"fac": fac, "places": places, "claims": claims, "pins": pins, "cities": cities, "nfhs": nfhs, "pmndp": pmndp,
-       "meta": {"cap": CAP, "weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
+       "meta": {"val": VAL, "cap": CAP, "weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
 js = json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 open(os.path.join(ROOT, "app", "data.json"), "w").write(js)
 print("facilities:", len(fac), "| pins:", len(pins), "| cities:", len(cities), "| nfhs keys:", len(nfhs), "| pmndp districts:", len(pmndp), "| bytes:", len(js.encode()))

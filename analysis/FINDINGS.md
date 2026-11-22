@@ -138,3 +138,13 @@ Each result card shows four steps with the record's own words: department (speci
 - Effect: 2,020 of 8,592 strong claims move to "some" (accident care 920, ICU 632, C-section 221, heart surgery 164 of 186, angiography 53, burn 30).
 - The rule does not make the strong band more accurate on the labels we have: labelled strong claims with all must-haves found are real 97.8% of the time (n = 183), those missing one 98.6% (n = 69). It is a medical precaution that tells the user what to confirm by phone. It is not a fitted weight and is reported separately from the score.
 - Not reviewed by a clinician.
+
+## 11. Honesty pass (2026-11-22, 10:30)
+
+- What AUC 0.88 means here: there is no ground truth on service delivery. The 605 labels are proxies: 387 from the facility name alone, 218 set by an AI reader of the record. AUC says how well the score orders "likely real" above "likely false" claims on facilities held out from fitting. It does not say the service exists.
+- Out-of-fold band shares (thresholds 90 / 70): strong 98% likely real (n = 228), some 84% (n = 159), weak 44% (n = 218). The app now prints these, computed at export time, in place of hard-coded in-sample values.
+- Per service, out-of-fold AUC: angiography 0.94, dialysis 0.94, C-section 0.88, newborn 0.88, heart surgery 0.76 (weakest). Leave-one-service-out gives the same picture (0.76 to 0.95).
+- Baselines: tier alone 0.72, co-requirement share alone 0.73, evidence features 0.79, warning signs alone 0.60, all seven 0.88.
+- Record length: likely-false labelled claims come from longer records (median 2,822 characters against 1,764). With log record length added as a control, co-requirement share rises from x25.5 to x37.7 (not a length artefact), "built from 2+ other organisations' websites" weakens from x0.46 to x0.79 (partly a length proxy), "names 2+ far towns" from x0.19 to x0.29. Length itself is not used as a feature: "longer record, less trust" has no causal reading outside this label set.
+- Card wording changed: the score is called a ranking index, not odds that the claim is real. Label sources and "nobody visited or phoned" are stated on every card's math panel and in "How we decide".
+- An independent six-part audit workflow was started and did not finish (session ended); the checks above were run directly.
