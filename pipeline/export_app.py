@@ -145,7 +145,12 @@ for i, r in enumerate(F.itertuples()):
     # clean-ups found on the demo check: "ent" matched inside words (department, patient); street or hospital words read as names
     spec_ = lambda x_: " / ".join(t_ for t_ in x_.split(" / ") if t_ and t_.lower() != "ent")
     NOTNAME = re.compile(r"\b(the|icu|ward|unit|road|nagar|street|marg|colony|hospital|clinic|cent(re|er)|chowk|lane|sector|block|phase)\b", re.I)
-    ds = [[cap(d_[0]), d_[1][:50], spec_(d_[2])[:40], d_[3] if len(d_) > 3 else None, (d_[4][:50] if len(d_) > 4 else "")] for d_ in (w or {}).get("doctors", [])
+    def deg_(x_):
+        """Keep whole degrees only: never end inside an open bracket such as 'FNB ( Vitreo retina'."""
+        x_ = re.sub(r"\(\s+", "(", x_).strip(" ,")
+        while x_.count("(") > x_.count(")"): x_ = x_[:x_.rfind(",")].strip(" ,") if "," in x_ else re.sub(r"\s*\([^)]*$", "", x_)
+        return x_
+    ds = [[cap(d_[0]), deg_(d_[1]), spec_(d_[2])[:40], d_[3] if len(d_) > 3 else None, (d_[4][:50] if len(d_) > 4 else "")] for d_ in (w or {}).get("doctors", [])
           if len(d_[0].split()[-1].strip(".")) >= 3 and not NOTNAME.search(d_[0])]
     ds = [d_ for d_ in ds if d_[1] or d_[2]]
     fac[i].append([w["url"], ds[:10], w["fetched"]] if ds else None)
