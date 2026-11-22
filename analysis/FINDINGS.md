@@ -112,3 +112,26 @@ This section supersedes the numbers in section 7.
 - Location per facility comes from three signals (coordinates, postcode via the cleaned PIN lookup, stated city). 9,989 rows: all agree 7,932; coordinates differ 811 (placed by postcode); postcode differs 196 and city differs 140 (placed by coordinates); all three differ 199 (placed by postcode in 189); two usable signals that differ 211 (placed by postcode in 198); two agree and third missing 496; cannot tell 4. Overall the map point is used for 8,745 rows, the postcode centre for 1,233, the city for 11.
 - Raw coordinates sit more than 10 km from the postcode centre in 2,336 rows and more than 100 km in 1,096; comparing to the nearest post office of the same PIN and to the district removes most of the first group as false alarms.
 - App: Leaflet map with OpenStreetMap tiles (a post-office dot backdrop if tiles cannot load), numbered pins, "use my location", per-card WHY in the brief's three questions, per-card score equation, doctor sentences from the record plus a link to the facility's own site. `app/build.py` assembles `app/index.html`.
+
+## 10. Ladder card, LLM reading check, must-have rule (2026-11-22 morning)
+
+### Would an LLM grade the sentences differently? (`analysis/labels/llm_vs_regex.csv`)
+
+300 claims (100 per regex tier, 9 services) were graded again by an LLM reader that saw only the sentences, with the same 0 to 3 scale.
+
+- Pass or fail (grade 2+ against grade 0 to 1): the two agree on 88% of claims. Within one grade: 97%.
+- The regex "strong" tier has two routes. Route A, a number next to an equipment or unit sentence (1,146 of 5,343 strong claims): the LLM also says strong for 29 of 31. Route B, the service is stated in two or more fields with no number: the LLM says "some" for 56 of 69.
+- On the 605 labelled claims the two routes are equally real: route A 90% (n = 30), route B 93% (n = 121), plain "some" 86% (n = 248). Adding a separate flag for the number changes cross-validated AUC from 0.8765 to 0.8751 and its multiplier is x1.14.
+- Reading: "strong" means "more likely real", not "more detailed". A number does not add information beyond repetition across fields. The regex tiers stay, because they run on all 24,815 claims in seconds on Free Edition and give the same answer every run. The LLM is used as an audit of the rule, not as the rule.
+- Limit: the LLM reader saw at most 8 sentences per claim, cut to 240 characters.
+
+### Ladder on each card (`pipeline/export_app.py`, `app/template.html`)
+
+Each result card shows four steps with the record's own words: department (specialty list), procedure (best sentence that names it), equipment and unit (best sentence that describes the unit, or the sentence for one needed item), this place (location agreement and warning signs). The steps are an explanation of the same evidence the score uses. They are not a second score.
+
+### Must-have rule (`pipeline/musthave.py`)
+
+- A must-have is an item the service cannot run without. If the record does not mention it, trust stops at 89.9 (just under "strong") and the card says to confirm it by phone first. The facility stays on the list.
+- An item is used only if (a) a research pass proposed it from standards (MoHFW guidelines, ISCCM, SCAI and others) and a second pass failed to refute it, and (b) at least one in three strong-evidence records for that service mention it. Items that almost no record mentions (oxygen for an ICU 14%, RO water plant for dialysis 4%) are not used: their absence tells us nothing.
+- The labelled claims cannot validate this rule: too few labelled strong claims lack a must-have. On the independent reader's general-hospital sample for accident care, claims with and without an operating theatre on record were judged real at the same rate (16 of 20 against 17 of 23). The rule is a medical precaution, not a fitted weight.
+- Not reviewed by a clinician.

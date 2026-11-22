@@ -1,0 +1,76 @@
+claim_id,service,llm_tier,has_quantity,fact
+69201515:emergency_obstetric,emergency_obstetric,1,0,epidural analgesia for labour and delivery
+af39dce3:icu,icu,3,1,8-bed Intensive Care Unit (ICU)
+773f1349:icu,icu,1,0,Pediatric Intensive Care Unit (PICU)
+7c385d20:emergency_obstetric,emergency_obstetric,1,0,Offers Obstetrics & Gynecology services
+86a2edcf:nicu,nicu,1,0,AI-enabled incubators
+858701bf:trauma_emergency,trauma_emergency,2,0,Emergency service
+d1d80196:emergency_obstetric,emergency_obstetric,2,0,Normal Delivery / Cesarean Section
+ca5a8b9f:icu,icu,2,0,On-site intensive care unit facility
+55b83426:icu,icu,2,0,ICU beds for critical care
+a45cac41:cath_lab,cath_lab,2,0,Cath Lab enabling interventional cardiology
+d3855d2d:cath_lab,cath_lab,2,0,Modern catheterisation laboratory
+83f1bfc7:emergency_obstetric,emergency_obstetric,0,0,
+8aed4cd1:icu,icu,2,0,Fully equipped intensive care unit for post-operative and critical care
+fbc98879:mri,mri,3,1,1.5 Tesla MRI system
+78deec32:trauma_emergency,trauma_emergency,2,0,Offers 24/7 emergency care
+e61063fc:emergency_obstetric,emergency_obstetric,1,0,Offers Obstetrics & Gynecology
+b9b3816e:dialysis,dialysis,1,0,Has Nephrology department
+9b47971c:emergency_obstetric,emergency_obstetric,0,0,
+f8844e4a:dialysis,dialysis,2,0,Provides renal dialysis
+7f08e12e:trauma_emergency,trauma_emergency,2,0,Provides round-the-clock outpatient and emergency services
+befd5aa1:trauma_emergency,trauma_emergency,0,0,
+a385f373:trauma_emergency,trauma_emergency,2,0,Offers 24/7 emergency care and trauma services
+86df2052:dialysis,dialysis,1,0,Nephrology
+3390a15e:dialysis,dialysis,2,0,Provides dialysis (renal replacement therapy) services
+7350454c:emergency_obstetric,emergency_obstetric,1,0,Obstetrics and Gynecology
+d65cf930:emergency_obstetric,emergency_obstetric,2,0,"Labour, Delivery and Recovery (LDR) rooms"
+da424446:dialysis,dialysis,2,0,Provides Dialysis services
+5e68221a:dialysis,dialysis,1,0,Nephrology
+1774eb01:dialysis,dialysis,2,0,A dialysis center is available at Harsh Hospital
+37a70fe3:trauma_emergency,trauma_emergency,2,0,Emergency & Trauma Unit
+3408ec7c:dialysis,dialysis,3,1,Has performed 205 arteriovenous fistula creations for dialysis access
+8f569490:emergency_obstetric,emergency_obstetric,0,0,
+6313b82b:emergency_obstetric,emergency_obstetric,1,0,Obstetrics & Gynecology
+33d2eac4:emergency_obstetric,emergency_obstetric,3,1,Labor room with 1 bed
+db2b2a59:emergency_obstetric,emergency_obstetric,2,0,Is a gynecology and maternity hospital
+befcb04b:cath_lab,cath_lab,0,0,
+0eb00c24:nicu,nicu,1,0,New Borns Care
+6b2599d2:mri,mri,2,0,Offers Magnetic Resonance Imaging (MRI) services on-site
+171a891d:emergency_obstetric,emergency_obstetric,1,0,Obstetrics and Gynecology and other branches of medicine
+9ee57e97:nicu,nicu,1,0,Pediatrics & Neonatology
+a2210c3b:dialysis,dialysis,2,0,Dialysis
+48541eda:trauma_emergency,trauma_emergency,0,0,
+5a84bba7:mri,mri,2,0,MRI scanner
+f995d517:icu,icu,2,0,Emergency medicine with a fully functional ICU
+333d6b82:emergency_obstetric,emergency_obstetric,2,0,Obstetric care including labour and delivery
+e93a7ae0:burn_care,burn_care,3,0,Burn Care Unit in collaboration with Burn Care Foundation
+e330d865:cath_lab,cath_lab,2,0,Angiography is offered at Sparsh- The Heart Care Clinic
+de46c638:emergency_obstetric,emergency_obstetric,1,0,Gynaecology & Obstetrics
+2d635623:cardiac_surgery,cardiac_surgery,2,0,Mars Hospital provides cardiothoracic surgical procedures
+18efb45c:emergency_obstetric,emergency_obstetric,1,0,Specializes in Obstetrics & Gynecology
+8cb65630:trauma_emergency,trauma_emergency,2,0,24x7 Emergency
+bb95dc25:emergency_obstetric,emergency_obstetric,2,0,Offers cesarean delivery
+3678db60:emergency_obstetric,emergency_obstetric,2,0,Well-equipped operating theatres with Labour Room facilities
+57cb719f:cardiac_surgery,cardiac_surgery,1,0,Cardiac Sciences
+c7ab288b:emergency_obstetric,emergency_obstetric,1,0,obstetric and gynecologic outpatient services including antenatal care
+4d4204d9:trauma_emergency,trauma_emergency,2,0,24/7 emergency and inpatient services
+e671fc00:dialysis,dialysis,2,0,Dialysis
+601a4f38:emergency_obstetric,emergency_obstetric,2,0,Caesarean Section
+4a2b329e:emergency_obstetric,emergency_obstetric,0,0,
+673aee98:trauma_emergency,trauma_emergency,2,0,Provides 24x7 emergency care
+a35243f6:nicu,nicu,1,0,Pediatrics & Neonatology Centre
+2b987332:icu,icu,1,0,PICU with Multipara Monitor
+52e78d9c:nicu,nicu,2,0,Operates SNCU and NICU units
+dfa073a8:trauma_emergency,trauma_emergency,3,0,NABH accreditation for Emergency Department
+948a0b3c:icu,icu,1,0,Has Pediatric Intensive Care Unit (PICU)
+7f0a880d:dialysis,dialysis,3,1,10-bed Dialysis Unit
+b7161769:trauma_emergency,trauma_emergency,2,0,Emergency care available 24x7x365
+bd77bf7d:emergency_obstetric,emergency_obstetric,1,0,"Provides obstetrics and gynecology services at Apollo Hospitals, Guwahati"
+84e80cb2:trauma_emergency,trauma_emergency,1,0,Bone Trauma management is provided
+6b2599d2:emergency_obstetric,emergency_obstetric,2,0,Provides maternity care as part of its services
+7dce3695:emergency_obstetric,emergency_obstetric,1,0,Gynaecology/Obstetrics
+4917979b:icu,icu,3,1,Has a 6-bed respiratory critical care unit
+f6e2e5a1:trauma_emergency,trauma_emergency,2,0,Modern accident and emergency department with trauma protocols
+a17000d9:cath_lab,cath_lab,2,0,Interventional cardiology procedures in cath lab
+3ac5ae50:icu,icu,2,0,Has a state-of-the-art intensive care unit

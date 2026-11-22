@@ -5,6 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import ROOT, OUT, load_facilities
 from ontology import SERVICE_ONTOLOGY as ONT
 import trust as T
+from musthave import MUST, CAP
 
 SERVICES = list(ONT)   # all 19 services
 # acute services a single-specialty facility (eye, dental, skin, physio, ayurveda/homeopathy) should not offer
@@ -23,6 +24,15 @@ if os.path.exists(gp):
 C["excluded"] = ((C.neg != "") & C.service.isin(OUT_OF_SCOPE) & ~((C.neg == "skin_hair") & (C.service == "burn_care"))).astype(int)
 C.loc[(C.service == "cataract_surgery") & ~C.neg.isin(["", "eye"]), "excluded"] = 1
 C = C[C.service.isin(SERVICES)]
+# must-have rule: a claim whose record lacks an indispensable item cannot be "strong"
+def missing(r):
+    found = set(r.coreq_list.split("|")) if isinstance(r.coreq_list, str) and r.coreq_list else set()
+    return [j for j, g in enumerate(MUST.get(r.service, [])) if not (set(g["keys"]) & found)]
+C["miss"] = [missing(r) for r in C.itertuples()]; C["raw"] = C.trust
+cap = C.miss.map(len).gt(0) & (C.trust > CAP)
+print("must-have rule: strong claims before", int((C.band == 2).sum()), "| capped", int(cap.sum()), "| by service:", C[cap].service.value_counts().to_dict())
+lab2 = C[C.y.notna() & (C.raw >= HIGH)]; print("  labelled strong claims, share real: must-haves all found", lab2[lab2.miss.map(len) == 0].y.agg(["size", "mean"]).round(3).tolist(), "| a must-have missing", lab2[lab2.miss.map(len) > 0].y.agg(["size", "mean"]).round(3).tolist())
+C.loc[cap, "trust"] = CAP; C.loc[cap, "band"] = 1
 print("claims exported:", len(C), "| bands:", C.band.value_counts().to_dict(), "| excluded by specialty rule:", int(C.excluded.sum()))
 
 F = load_facilities(); L = pd.read_csv(os.path.join(OUT, "location.csv"))
@@ -50,6 +60,44 @@ for i, r in enumerate(F.itertuples()):
                 r.facilityTypeId or "", "public" if r.operatorTypeId in ("public", "government") else (r.operatorTypeId or ""), t(r.officialPhone, 20), t(r.officialWebsite, 60), doctor(r),
                 [int(r.capacity_n) if pd.notna(r.capacity_n) and 1 <= r.capacity_n <= 5000 else None, int(r.numberDoctors_n) if pd.notna(r.numberDoctors_n) and 1 <= r.numberDoctors_n <= 5000 else None,
                  int(r.yearEstablished_n) if pd.notna(r.yearEstablished_n) and 1800 <= r.yearEstablished_n <= 2026 else None]])
+# ladder: department -> procedure -> equipment, each with the record's own words
+H = pd.read_pickle(os.path.join(OUT, "hits.pkl")); H = H[H["flags"].eq("")]
+def win(seg, match, n=120):
+    """Cut a sentence to n characters around the matched words."""
+    seg = re.sub(r"\s+", " ", seg).strip()
+    if len(seg) <= n: return seg
+    i = seg.lower().find(match.lower()); a = max(0, min(i - 40, len(seg) - n)) if i >= 0 else 0
+    if a > 0: a = seg.find(" ", a) + 1
+    cut = seg[a:a + n]; cut = cut[:cut.rfind(" ")] if a + n < len(seg) and " " in cut else cut
+    return ("… " if a > 0 else "") + cut + (" …" if a + n < len(seg) else "")
+def best(cls):
+    d = H[H.cls == cls].assign(q=lambda x: ~x.qty, sh=lambda x: x.seglen < 14, l=lambda x: x.seglen.clip(upper=400)).sort_values(["q", "sh", "l"]).drop_duplicates(["uid", "service"])
+    return {(r.uid, r.service): [win(r.seg, r.match), r.field] for r in d.itertuples()}
+BP, BI = best("proc"), best("infra")
+CQ = {s: {k: re.compile(rx, re.I) for k, rx in ONT[s]["coreq"].items()} for s in ONT}
+SEGS = {r.unique_id: [(f, x) for f, l in (("equipment", r.equipment_l), ("capability", r.capability_l), ("procedure", r.procedure_l)) for x in l] + [("description", x) for x in re.split(r"(?<=[.!?])\s+", r.description or "")] for r in F.itertuples()}
+NOT_EQUIP = re.compile(r"ologist|surgeon|ian$|obstetric|anaesth|intensivist|round_the_clock|volume|count|backup|ambulance", re.I)
+OTHER_ICU = re.compile(r"neonat|\bNICU\b|p(a)?ediatric|\bPICU\b|\bSNCU\b", re.I)
+def needquote(uid, s, found):
+    """When no sentence describes the unit itself: the record's sentence for one needed item (must-haves first)."""
+    order = [k for g in MUST.get(s, []) for k in g["keys"]] + list(CQ[s])
+    for k in dict.fromkeys(order):
+        if k not in found or NOT_EQUIP.search(k): continue      # this step is about rooms and machines, not staff or opening hours
+        for f, x in SEGS.get(uid, []):
+            m = CQ[s][k].search(x)
+            if m and len(x) >= 14 and not (k == "ICU" and OTHER_ICU.search(x)): return [win(x, m.group(0)), f, list(CQ[s]).index(k)]
+    return ["", "", -1]
+nsp = lambda x: re.sub(r"[^a-z]", "", str(x).lower())
+pretty = lambda x: re.sub(r"(?<=[a-z])(?=[A-Z])", " ", str(x)).lower()[:40]
+SPEC = dict(zip(F.unique_id, F.specialties_l))
+def dept(uid, s):
+    """Matching department on the specialties list: 2 = the service's own department, 1 = its parent department."""
+    for lvl, key in ((2, "spec_direct"), (1, "spec_related")):
+        rx = ONT[s].get(key)
+        if not rx: continue
+        for x in SPEC.get(uid, []):
+            if re.search(rx, nsp(x)): return [pretty(x), lvl]
+    return ["", 0]
 claims = {}
 for s in SERVICES:
     keys = list(ONT[s]["coreq"].keys()); d = {}
@@ -57,8 +105,12 @@ for s in SERVICES:
         if r.uid not in fid: continue
         found = set(r.coreq_list.split("|")) if isinstance(r.coreq_list, str) and r.coreq_list else set()
         signs = int(r.all_differ) | (int(r.far2) << 1) | (int(r.other_sites_2plus) << 2)
-        d[fid[r.uid]] = [round(r.trust, 1), int(r.band), int(r.tier), [keys.index(k) for k in keys if k in found], t(r.quote, 190), r.quote_field, signs, int(r.ownurl), int(r.excluded), r.neg or ""]
-    claims[s] = {"coreq": [k.replace("_", " ") for k in keys], "c": d}
+        row = [round(r.trust, 1), int(r.band), int(r.tier), [keys.index(k) for k in keys if k in found], t(r.quote, 190), r.quote_field, signs, int(r.ownurl), int(r.excluded), r.neg or ""]
+        if r.band >= 1 and not r.excluded:   # shown on a card: add the ladder, the missing must-haves and the uncapped score
+            row += [dept(r.uid, s) + BP.get((r.uid, s), ["", ""]) + (BI[(r.uid, s)] + [-1] if (r.uid, s) in BI else needquote(r.uid, s, found)), r.miss, round(r.raw, 1)]
+        d[fid[r.uid]] = row
+    claims[s] = {"coreq": [k.replace("_", " ") for k in keys], "c": d,
+                 "must": [{"k": [keys.index(k) for k in g["keys"]], "why": g["why"], "src": g["src"]} for g in MUST.get(s, [])]}
 P = pd.read_csv(os.path.join(OUT, "pin_lookup.csv"), dtype={"pincode": str}); P = P[P.lat.notna()]
 pins = {r.pincode: [round(r.lat, 3), round(r.lon, 3), place(r.state, r.district)] for r in P.itertuples()}
 cities = {}
@@ -85,7 +137,7 @@ pm = pd.read_csv(os.path.join(ROOT, "pipeline/external/pmndp_centres.csv")); pmn
 for r in pm.itertuples(): pmndp.setdefault(nz(r.state) + "|" + nz(r.district), []).append(t(r.facility, 60))
 w = dict(zip(T.FEATS, np.exp(m.coef_[0]).round(2).tolist()))
 out = {"fac": fac, "places": places, "claims": claims, "pins": pins, "cities": cities, "nfhs": nfhs, "pmndp": pmndp,
-       "meta": {"weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
+       "meta": {"cap": CAP, "weights": w, "base": round(float(np.exp(m.intercept_[0])), 2), "high": HIGH, "low": LOW, "n_fac_table": 9989, "public_share_table": 5.0, "n_labelled": int(len(S))}}
 js = json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 open(os.path.join(ROOT, "app", "data.json"), "w").write(js)
 print("facilities:", len(fac), "| pins:", len(pins), "| cities:", len(cities), "| nfhs keys:", len(nfhs), "| pmndp districts:", len(pmndp), "| bytes:", len(js.encode()))

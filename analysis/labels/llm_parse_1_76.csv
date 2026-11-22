@@ -1,0 +1,76 @@
+claim_id,service,llm_tier,has_quantity,fact
+1b093c98:nicu,nicu,2,0,neonatal advanced nursery with pediatric ICU
+00fd1dbd:icu,icu,3,1,4-bedded ICU isolation facility
+b8f4b94d:emergency_obstetric,emergency_obstetric,2,0,Provides obstetric delivery facilities
+b471650e:nicu,nicu,2,0,Special Neonatal Care Unit (SNCU)
+2c8d4f82:icu,icu,3,1,4 ICU beds
+b515244c:trauma_emergency,trauma_emergency,2,0,Emergency services available
+b3e29778:trauma_emergency,trauma_emergency,2,0,Provides emergency services
+3ee8b95a:icu,icu,2,0,Critical Care ICU is available
+7c385d20:trauma_emergency,trauma_emergency,2,0,24/7 emergency care
+3ef5c9f7:trauma_emergency,trauma_emergency,2,0,Emergency & Trauma Centre is available
+22cf4a60:icu,icu,2,0,Has a fully equipped intensive care unit
+23fb83c0:emergency_obstetric,emergency_obstetric,2,0,Offers maternity services
+b471650e:icu,icu,3,1,94 CCU beds
+aebb8d07:nicu,nicu,2,0,Has a neonatal intensive care unit (NICU) at Mariampur Hospital
+6138c044:icu,icu,2,0,ICU and NICU units
+ae53301d:nicu,nicu,2,0,ICU and NICU services
+64f5a66d:icu,icu,2,0,Has medical intensive care unit (MICU)
+bc3bb6d6:trauma_emergency,trauma_emergency,2,0,Has 24/7 emergency department
+c9768697:cath_lab,cath_lab,2,0,Cardiac Catheterisation is performed at MPCT Hospital.
+6529e2b9:trauma_emergency,trauma_emergency,2,0,24/7 emergency care
+675aec61:cardiac_surgery,cardiac_surgery,2,0,Offers coronary bypass surgery
+c7f931e9:mri,mri,3,1,Intelligent 1.5T MRI System
+af230685:cath_lab,cath_lab,1,0,interventional cardiology services
+6871f1d1:mri,mri,3,1,MRI 3 Tesla
+14e13612:cath_lab,cath_lab,2,0,The hospital has a catheterization lab for interventional procedures.
+342803bb:icu,icu,3,0,Exclusive Class 100 Modular Liver OT and Liver ICU
+3bc1f94a:nicu,nicu,1,0,Pediatrician & Neonatologist
+198ec9ea:trauma_emergency,trauma_emergency,2,0,Offers emergency and trauma care
+3846e58f:trauma_emergency,trauma_emergency,1,0,Trauma surgery services offered
+4ed5ad79:mri,mri,3,1,1.5 Tesla MRI scanner
+64b04955:trauma_emergency,trauma_emergency,2,0,Offers Emergency & Critical Care services
+5736ea04:trauma_emergency,trauma_emergency,0,0,
+ad32efef:emergency_obstetric,emergency_obstetric,1,0,Gynaecology/obstetrics care
+122e5b2a:trauma_emergency,trauma_emergency,2,0,Emergency Ward
+e2147a8b:trauma_emergency,trauma_emergency,2,0,Emergency Medicine department
+3451b5f4:icu,icu,3,1,Has 5 ICU beds
+85be707f:trauma_emergency,trauma_emergency,2,0,24x7 Emergency Care
+6843bf09:trauma_emergency,trauma_emergency,2,0,Emergency service available 24/7
+f867fd90:mri,mri,2,0,MRI scanner
+d9af9cc7:trauma_emergency,trauma_emergency,2,0,Provides emergency medical service with 24/7 ambulance
+cf2b62d4:emergency_obstetric,emergency_obstetric,1,0,Specializes in gynecology and obstetrics.
+3c59dd35:nicu,nicu,3,1,40-bed NICU and PICU
+3de583b1:trauma_emergency,trauma_emergency,2,0,Emergency care available 24/7
+c95d849a:mri,mri,3,1,Siemens MAGNETOM Spectra 3 Tesla MRI scanner
+5150641e:trauma_emergency,trauma_emergency,1,0,Treats fractures/trauma
+88829fae:trauma_emergency,trauma_emergency,2,0,Provides 24/7 emergency care
+bde1aebd:nicu,nicu,2,0,Has a neonatal intensive care unit (NICU)
+99d164fd:emergency_obstetric,emergency_obstetric,1,0,Provides obstetrics and gynecology services
+43abf3eb:emergency_obstetric,emergency_obstetric,1,0,Obstetrics and Gynaecology
+17615adf:mri,mri,2,0,MRI scanner used for spine imaging with contrast
+7330d09f:emergency_obstetric,emergency_obstetric,2,0,Performs cesarean sections in Obstetrics and Gynecology
+88af78f6:emergency_obstetric,emergency_obstetric,1,0,gynecology/obstetrician
+d16cc7cb:dialysis,dialysis,1,0,Nephrology
+ad27a748:trauma_emergency,trauma_emergency,2,0,Provides 24/7 accident and emergency care
+15fecc46:emergency_obstetric,emergency_obstetric,1,0,Has Obstetrics and Gynaecology department
+fef4d9b8:cardiac_surgery,cardiac_surgery,2,0,Coronary Angioplasty / Bypass Surgery
+7cc53b71:emergency_obstetric,emergency_obstetric,1,0,Provides obstetrics and gynecology specialist services
+aa4621f2:mri,mri,3,1,3 Tesla MRI system for knee imaging
+c74e7fd1:cardiac_surgery,cardiac_surgery,3,1,Cardiac bypass surgeries: more than 80 performed in a year
+2fc4a403:nicu,nicu,2,0,Critical Care Neonatal
+c26679b3:icu,icu,3,1,4 ICU beds
+8ff226be:cath_lab,cath_lab,0,0,
+4b8e2383:cath_lab,cath_lab,2,0,Cath lab
+7d7cc3df:emergency_obstetric,emergency_obstetric,1,0,Provides Obstetrics & Gynaecology and High Risk Pregnancy care
+e7f45d40:cardiac_surgery,cardiac_surgery,2,0,Cardio-thoracic and Vascular Surgery
+d56f67f6:mri,mri,2,0,MRI
+54b9c6ef:trauma_emergency,trauma_emergency,1,0,Offers orthopedic trauma care
+7c09b920:emergency_obstetric,emergency_obstetric,1,0,Obstetrics and gynaecology
+1f56d05d:trauma_emergency,trauma_emergency,1,0,Emergency Gynaecology
+f867fd90:trauma_emergency,trauma_emergency,1,0,Trauma and fracture care treatment
+1aa91f31:cath_lab,cath_lab,2,0,Cath Lab for interventional cardiology
+333c14e4:emergency_obstetric,emergency_obstetric,2,0,a labour room
+2e7f8340:nicu,nicu,2,0,Neonatal Intensive Care Unit
+e08d21d0:dialysis,dialysis,0,0,
+930faaa7:icu,icu,2,0,Adult ICU

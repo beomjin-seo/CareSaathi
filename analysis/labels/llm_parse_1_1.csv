@@ -1,0 +1,76 @@
+claim_id,service,llm_tier,has_quantity,fact
+df56f1a0:nicu,nicu,1,0,Neonatology
+00197d6a:icu,icu,2,0,Emergency & Critical Care services
+749d791f:icu,icu,2,0,Intensive Care Unit (ICU) and Neonatal Intensive Care Unit (NICU) available
+8d5ed75d:trauma_emergency,trauma_emergency,2,0,Offers 24/7 emergency care
+e02ab876:nicu,nicu,0,0,
+dcd3d729:icu,icu,2,0,Level III facilities with state-of-the-art operation theatres and ICU
+a122e838:cardiac_surgery,cardiac_surgery,2,0,Cardiac surgeries (CTVS) including bypass grafting
+039bcc45:dialysis,dialysis,2,0,State-of-the-art dialysis center with hemodialysis and peritoneal dialysis equipment
+6be29561:emergency_obstetric,emergency_obstetric,1,0,Obstetrics & Gynecology surgery
+f995d517:cath_lab,cath_lab,2,0,Cardiology department with CathLab
+4e84023e:nicu,nicu,3,1,6-bedded Level III NICU with Ventilator care
+a83112ff:trauma_emergency,trauma_emergency,2,0,24/7 emergency care
+7ae333aa:emergency_obstetric,emergency_obstetric,2,0,Performs Caesarean Section
+0bc12d8e:mri,mri,2,0,MRI scanner on Caritas Hospital premises via Jeevan MRI Centre
+1653a41f:trauma_emergency,trauma_emergency,2,0,24/7 emergency care
+f6bfa78f:icu,icu,2,0,Provides critical care services
+648100ea:icu,icu,3,1,Nidaan Hospital has an advanced 40-bed ICU.
+ae53301d:emergency_obstetric,emergency_obstetric,2,0,Obstetric care including pregnancy and childbirth is provided
+ae86aa65:emergency_obstetric,emergency_obstetric,1,0,Provides obstetrics and gynecology services
+6fbda6ad:trauma_emergency,trauma_emergency,2,0,New Emergency Block opened in 2017
+96782505:mri,mri,3,1,AI-based SIGNA Prime 1.5 T MRI machine
+7d15da44:trauma_emergency,trauma_emergency,2,0,Provides 24/7 emergency care
+0d9c1629:icu,icu,3,1,Over 100 beds across intensive care units
+7f28cc1a:dialysis,dialysis,1,0,Nephrology
+2fbed0cf:dialysis,dialysis,1,0,nephrology
+0c199bdf:dialysis,dialysis,1,0,Nephrology
+9685c062:trauma_emergency,trauma_emergency,3,0,Has Level 1 trauma centre
+dfc174e8:nicu,nicu,1,0,Neonatology
+800c8b0f:emergency_obstetric,emergency_obstetric,2,0,"Offers maternity services including pregnancy, childbirth, and postnatal recovery"
+bb889e84:cardiac_surgery,cardiac_surgery,0,0,
+093844ce:trauma_emergency,trauma_emergency,1,0,Tie-up with nearest allopathic hospital to provide emergency services
+4b8e2383:emergency_obstetric,emergency_obstetric,1,0,Obstetrics and gynecology procedures
+675aec61:trauma_emergency,trauma_emergency,2,0,Provides 24/7 emergency care at Sugan Hospital
+aa5ec690:burn_care,burn_care,1,0,Treats burn pain
+82e91e8c:mri,mri,1,0,MRI scanner (if applicable)
+0ed06201:nicu,nicu,2,0,Neonatal Intensive Care Unit (NICU) at Velappanchavadi campus
+7d2ab5d0:icu,icu,2,0,ICU available for critically ill patients
+d593b09a:cath_lab,cath_lab,2,0,"Angioplasty (percutaneous coronary intervention, PCI) for treatment of coronary artery disease"
+87b40d0e:mri,mri,3,1,3-Tesla MRI
+619c94ea:cardiac_surgery,cardiac_surgery,2,0,Open Heart Surgery
+806c465b:mri,mri,2,0,MRI scanner
+301d71d3:cath_lab,cath_lab,3,0,Allengers Proxima Cath Lab machine
+65ca10b1:emergency_obstetric,emergency_obstetric,2,0,Has Labour Ward
+8146f2e6:mri,mri,2,0,On-site MRI scanner
+f520fe76:emergency_obstetric,emergency_obstetric,1,0,Gynecology/Obstetrics services available
+eed8db66:icu,icu,2,0,Fully equipped intensive care unit (ICU)
+b4cbb8dd:dialysis,dialysis,2,0,Dialysis unit
+de36a67d:icu,icu,2,0,ICU beds
+a6674d64:trauma_emergency,trauma_emergency,1,0,Facial trauma management
+4a954175:emergency_obstetric,emergency_obstetric,1,0,Pregnancy care and obstetric services
+efb7feef:trauma_emergency,trauma_emergency,2,0,24x7 trauma and emergency care
+6c08e1f3:emergency_obstetric,emergency_obstetric,3,0,Water birth delivery equipment with underwater fetal monitoring
+51c1ed79:icu,icu,1,0,"Advanced Women, Neonatal & Pediatric ICU care"
+5c39dc80:icu,icu,3,1,Has 6 ICU beds
+360bfb66:cath_lab,cath_lab,0,0,
+6d003e18:icu,icu,2,0,Has an Intensive Care Unit (ICU)
+15d22102:icu,icu,2,0,"Critical Care Unit comprising ICU, ICCU and Semi-ICU"
+0dba832f:nicu,nicu,0,0,
+05506c2e:nicu,nicu,2,0,Has NICU
+23e40dca:emergency_obstetric,emergency_obstetric,1,0,Gynaecology consultation and post-delivery care
+ddd7d43e:dialysis,dialysis,2,0,24/7 dialysis support
+dda3e7e4:dialysis,dialysis,1,0,Has 2 seats for DM Nephrology
+6be29561:nicu,nicu,2,0,Neonatology Level III
+6f43d06d:cath_lab,cath_lab,2,0,Interventional cardiology procedures
+71c2354c:trauma_emergency,trauma_emergency,2,0,24-hours running emergency services
+929f1630:trauma_emergency,trauma_emergency,3,1,Emergency department with 5 beds
+05d3b3cb:emergency_obstetric,emergency_obstetric,1,0,obstetrician & gynecologist
+49c23dda:emergency_obstetric,emergency_obstetric,1,0,Offers obstetrics and gynecology services
+45c3f249:trauma_emergency,trauma_emergency,2,0,24-hour accident and emergency care
+83703c0d:emergency_obstetric,emergency_obstetric,2,0,"Obstetrics and Gynecology Center providing prenatal care, childbirth, and menopause management"
+d50bea62:dialysis,dialysis,1,0,"superspeciality services in Cardiology, Nephrology, Urology and Neurosurgery"
+cbcad1b1:icu,icu,1,0,ICU care
+4d1bc806:mri,mri,3,1,Siemens Magnetom Sempra 1.5 Tesla MRI machine
+37fd5d46:emergency_obstetric,emergency_obstetric,2,0,Performs obstetric deliveries in a Clean Labour Room
+1ce9a272:mri,mri,1,0,Uses CT or MRI imaging for meningitis diagnosis and brain imaging

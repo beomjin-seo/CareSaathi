@@ -1,0 +1,76 @@
+claim_id,service,llm_tier,has_quantity,fact
+5b361bd0:emergency_obstetric,emergency_obstetric,1,0,Has Obstetrics & Gynaecology department
+c3a0f934:icu,icu,1,0,a Critical Care Specialist
+f592e0c7:dialysis,dialysis,2,0,Dialysis services
+93413683:emergency_obstetric,emergency_obstetric,1,0,Obstetrician / Gynaecologist Consultation
+b69b4a7a:emergency_obstetric,emergency_obstetric,1,0,Obstetrics & Gynaecology
+082c1e59:icu,icu,1,0,Has an emergency and critical care team
+f3b09829:trauma_emergency,trauma_emergency,2,0,Accident & Emergency services
+fa1e1e71:emergency_obstetric,emergency_obstetric,1,0,Specializes in Obstetrics & Gynaecology
+afb09018:dialysis,dialysis,2,0,On-site dialysis center
+58001cd5:emergency_obstetric,emergency_obstetric,2,0,Painless normal delivery
+e5da23e5:trauma_emergency,trauma_emergency,1,0,Complex Trauma
+49306604:icu,icu,0,0,
+a348253a:trauma_emergency,trauma_emergency,2,0,Provides emergency medicine services
+ada81ec3:icu,icu,2,0,Intensive Care Unit
+c63d560f:nicu,nicu,1,0,Offers nursery (neonatal) services
+86239f9a:emergency_obstetric,emergency_obstetric,1,0,obstetric and infertility clinics added in 1991
+373ab7bd:dialysis,dialysis,2,0,Advanced Kidney Dialysis
+e9354ac2:trauma_emergency,trauma_emergency,2,0,24/7 emergency care
+444b40bd:emergency_obstetric,emergency_obstetric,1,0,Offers gynecology/obstetrics
+1ff6caf8:trauma_emergency,trauma_emergency,2,0,24/7 emergency care
+239a16a2:emergency_obstetric,emergency_obstetric,1,0,Obstetrics & Gynaecology
+b49717c4:trauma_emergency,trauma_emergency,0,0,
+d97ff0ee:emergency_obstetric,emergency_obstetric,1,0,Listed as a top obstetrics hospital in Pune on Practo
+8b91a6bc:icu,icu,2,0,Intensive Care Unit (ICU) and Critical Care Medicine
+1f988683:trauma_emergency,trauma_emergency,2,0,Provides 24/7 emergency care
+7f6eba2a:cath_lab,cath_lab,0,0,
+dfb26678:emergency_obstetric,emergency_obstetric,2,0,Obstetric emergency services
+30ed41d1:dialysis,dialysis,2,0,Provides hemodialysis
+b0895453:emergency_obstetric,emergency_obstetric,1,0,LaQshya certification achieved in 2022
+1c3f0043:emergency_obstetric,emergency_obstetric,1,0,Prenatal check-up
+5c1c445c:cath_lab,cath_lab,2,0,Cardiac catheterization to diagnose heart conditions
+b3b4b4dc:cath_lab,cath_lab,3,0,Equipped with Philips cathlab
+e671fc00:icu,icu,2,0,Has 24/7 Critical Care Unit
+d0906cdd:icu,icu,1,0,High Dependency Unit
+33b9ce29:trauma_emergency,trauma_emergency,2,0,Emergency 24 Hours
+a5fed193:trauma_emergency,trauma_emergency,2,0,24x7 emergency services
+7f1d01c2:icu,icu,3,1,Has 14 ICU beds.
+41fbfebc:emergency_obstetric,emergency_obstetric,0,0,
+a8b20d00:dialysis,dialysis,2,0,Dialysis machines
+9f415a94:trauma_emergency,trauma_emergency,3,1,20 bed emergency department
+96ecf497:emergency_obstetric,emergency_obstetric,1,0,Provides pregnancy care
+ef6a5fa9:icu,icu,1,0,Anesthesiology and Critical Care
+a9077716:dialysis,dialysis,2,0,Provides haemodialysis treatment
+017a80f7:nicu,nicu,3,0,High frequency ventilation equipment in NICU
+ae709273:emergency_obstetric,emergency_obstetric,1,0,provides obstetric and gynecological care through its staff
+dbccaebe:icu,icu,2,0,"Provides Emergency and ICU, Critical Care"
+a1175a29:trauma_emergency,trauma_emergency,2,0,Emergency department available
+6c85c764:burn_care,burn_care,1,0,Provides burn surgery
+14b9d15e:cardiac_surgery,cardiac_surgery,1,0,Narayana Hrudayalaya Heart Hospital
+aa827a75:dialysis,dialysis,1,0,Offers Nephrology services
+87bd1460:trauma_emergency,trauma_emergency,2,0,24x7 emergency care
+24a7890d:icu,icu,3,0,Open ICU allowing admission of critical patients from outside hospitals
+2ca2244c:trauma_emergency,trauma_emergency,2,0,Provides 24/7 Trauma & Emergency Centre
+38ed9af6:emergency_obstetric,emergency_obstetric,2,0,Normal and cesarean deliveries
+dbccaebe:trauma_emergency,trauma_emergency,2,0,Accident/Trauma Centre
+d114306d:trauma_emergency,trauma_emergency,1,0,Offers emergency ambulance service
+054a33e2:emergency_obstetric,emergency_obstetric,0,0,
+c90e20b1:emergency_obstetric,emergency_obstetric,1,0,Provides maternity care
+4105a305:nicu,nicu,3,0,NICU equipped with mechanical ventilators
+2ab91522:emergency_obstetric,emergency_obstetric,1,0,maternity hospital building nearing completion
+a43bf3f6:nicu,nicu,1,0,Pediatrics and Neonatology
+89848163:icu,icu,3,1,Has 20-bed ICU
+d8365c70:trauma_emergency,trauma_emergency,2,0,Emergency department provides emergency services
+2f7486d4:emergency_obstetric,emergency_obstetric,0,0,
+6ff9941f:emergency_obstetric,emergency_obstetric,2,0,Caesarean Delivery
+46252daf:trauma_emergency,trauma_emergency,2,0,Provides 24/7 emergency care
+18a41f66:mri,mri,2,0,MRI scanner
+a0249e4d:trauma_emergency,trauma_emergency,2,0,Accident and trauma care
+fd229668:icu,icu,3,1,Has a 10-bed ICU
+ca599b17:icu,icu,1,0,Provides critical care services
+db225bdf:nicu,nicu,2,0,Neonatal Intensive Care Unit (NICU) available
+5c8a6651:trauma_emergency,trauma_emergency,2,0,Emergency services available 24/7
+78cfb5f5:dialysis,dialysis,2,0,24 Hour Dialysis Facility
+02331520:nicu,nicu,1,0,"NICU, SCBU and pediatrics"
+e74340d2:emergency_obstetric,emergency_obstetric,1,0,Obstetrics & Gynecology
