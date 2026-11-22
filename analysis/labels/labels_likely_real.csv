@@ -1,0 +1,121 @@
+claim_id,text_supports,about_this_facility,verdict,reason
+751cb6e2:emergency_obstetric,weak,yes,unclear,"One marketing line about managing labour and delivery; IVF-focused centre, no C-section or labour room named"
+222d2acc:cath_lab,yes,yes,real,Cath lab named as equipment plus coronary angiography and electrophysiology
+39aaf176:emergency_obstetric,yes,yes,real,Delivery services and high-risk pregnancy management stated for a maternity hospital
+5d8e52e0:cardiac_surgery,no,yes,unclear,Sentences only repeat the name and ownership; no surgery or procedure mentioned
+5ea704f6:emergency_obstetric,yes,yes,real,Caesarean section and delivery care listed at a maternity hospital
+7a932ea0:cath_lab,yes,doubtful,unclear,Angioplasty list reads as the cardiologist's own skills; a clinic rarely houses a cath lab
+43805537:nicu,weak,yes,real,Neonatal centre of excellence at a children and neonatal hospital; no explicit NICU wording
+1247b299:dialysis,yes,yes,real,Dedicated dialysis centre providing outpatient dialysis
+8354ebb1:emergency_obstetric,yes,doubtful,unclear,"Cesarean and delivery sentences name Payal Nursing Home, not this facility"
+c7ab77d0:nicu,weak,yes,unclear,"Phototherapy and a neonatologist only; no intensive care unit, ventilator or warmer named"
+d4c519ca:cath_lab,yes,yes,real,Cardiac catheterization lab named repeatedly as equipment
+0bc38214:cath_lab,yes,yes,real,Coronary angiography procedures stated at a heart hospital; single sentence
+79b262cd:cath_lab,no,yes,false,EECP presented as an alternative to angioplasty; non-invasive centre
+73bf12c1:cardiac_surgery,yes,yes,real,Open heart surgery (CABG) stated as performed at the hospital
+9078c06c:cardiac_surgery,no,yes,false,Only a stethoscope photo and a gynecologist; nothing about heart surgery
+93858c5f:emergency_obstetric,yes,yes,real,Handles normal and high-risk obstetric deliveries
+96127a43:dialysis,yes,yes,real,"Hemodialysis, CAPD, CRRT and named dialysis machines"
+9acf1f4f:emergency_obstetric,weak,yes,unclear,Only the phrase maternity care and the name; no delivery details
+fdde79e9:dialysis,yes,yes,real,Dialysis programs with more than 15 dialysis units
+e21173ff:emergency_obstetric,weak,doubtful,unclear,Only obstetric ultrasound; several sentences describe other maternity homes in Lucknow
+aafd0280:emergency_obstetric,weak,yes,real,Delivery of babies and inpatient obstetric care stated; no C-section named
+2b5be093:cardiac_surgery,yes,yes,real,"Bypass, valve replacement and pediatric heart surgery listed"
+99f9bfec:dialysis,yes,yes,real,"Hemodialysis, peritoneal dialysis and AV fistula surgery listed"
+ce75ab0f:dialysis,yes,yes,real,On-site dialysis treatment stated at a kidney hospital; brief
+8bcdb0bc:cath_lab,yes,doubtful,unclear,Emergency angioplasty claimed by a doctor's clinic; likely performed at other hospitals
+20b34829:nicu,yes,yes,real,Level III NICU named; Apollo Cradle chain
+0cbe2f73:cardiac_surgery,no,yes,unclear,Only heart institute name and cardiology department; no surgery mentioned
+c881436a:blood_bank,yes,yes,real,On-site government hospital blood bank with location and head named
+2c7687f2:cath_lab,weak,doubtful,unclear,Pacemaker implantation and interventional cardiologist at an eye and heart clinic; no cath lab named
+5e6f6e25:nicu,weak,doubtful,unclear,Neonatology appears in a department list of another hospital (LHDM and Dr. Prem Hospital)
+d6cd7db3:nicu,yes,yes,real,NICU and PICU stated as available in the paediatric department
+c9843fc7:nicu,weak,yes,unclear,Neonatal care and a neonatologist at a clinic; no intensive care unit named
+16c6b758:dialysis,yes,yes,real,On-site round-the-clock dialysis facilities stated
+4de58800:nicu,no,yes,false,Newborn checkups and jaundice monitoring at an outpatient clinic; not intensive care
+6166304d:dialysis,yes,yes,real,Dialysis and AV fistula surgery offered at a kidney hospital
+4ea3a2c5:cath_lab,yes,doubtful,unclear,Catheterisation procedure list at a cardiologist's clinic; no lab or equipment named
+8ac427f5:cardiac_surgery,no,yes,unclear,"Bypass graft vessel PCI is a catheter procedure, not surgery; only cardiac sciences otherwise"
+db696811:cath_lab,yes,yes,real,Cath lab named as equipment with angiogram and angioplasty
+4f722256:emergency_obstetric,yes,yes,real,Delivery services and cervical stitch for high-risk pregnancy at a maternity home
+66657b96:nicu,weak,doubtful,false,Newborn jaundice care at a small clinic with a dental website; no NICU
+b77ac271:cath_lab,yes,yes,real,Coronary angiography and angioplasty performed by the hospital's interventional cardiologist
+013d88ce:cath_lab,yes,doubtful,unclear,"Angioplasty and stenting listed, but the clinic description shows only outpatient diagnostics"
+5f4871e8:emergency_obstetric,yes,yes,real,Operating theatre for obstetric procedures and 5-bed inpatient maternity
+67570d10:cardiac_surgery,weak,doubtful,false,One CTVS line at an outpatient polyclinic with OP timings; surgery implausible there
+db696811:cardiac_surgery,yes,yes,real,Open heart surgery and CABG listed with cardiothoracic surgery specialty
+1771720d:cath_lab,yes,yes,real,"Coronary angiography, primary PTCA, stenting and IVUS listed at a heart hospital"
+eb9fa959:emergency_obstetric,yes,yes,real,Childbirth in an equipped maternity ward and complicated pregnancy treatment
+450d3c7e:emergency_obstetric,weak,yes,unclear,Generic maternity and obstetric care; a stethoscope photo; no delivery details
+96ef5b53:emergency_obstetric,yes,yes,real,"Caesarean section, labor room and delivery room named"
+96ac71e2:dialysis,yes,yes,real,Dialysis services and AV fistula surgery at a kidney care hospital
+e7934891:emergency_obstetric,yes,doubtful,unclear,Cesarean sections claimed by a single-doctor clinic; likely done at another hospital
+caf1028e:nicu,weak,yes,unclear,Newborn surgeries by a pediatric surgeon; no NICU mentioned
+3e808597:cath_lab,yes,yes,real,"Angiography suite, angioplasty and electrophysiology lab equipment named"
+bf4c94b0:dialysis,weak,yes,unclear,Nephrology only appears in a specialty list; dialysis never mentioned
+7dd8d745:cardiac_surgery,no,yes,unclear,Only directory listings as a cardiology hospital; no surgery mentioned
+b77ac271:cardiac_surgery,yes,doubtful,unclear,"Cardiac surgery sentences describe Metro Heart Institute Faridabad, not the Rewari unit"
+18539bb7:emergency_obstetric,yes,yes,real,400-500 LSCS a year and high-risk pregnancy management quantified
+01b4a481:cardiac_surgery,no,yes,unclear,Only location sentence; nothing about surgery
+d4737fdd:emergency_obstetric,yes,yes,real,Caesarean sections and high-risk obstetrics listed
+10078a2f:nicu,yes,yes,real,NICU stated as available at a women and children hospital
+6e49ccdd:emergency_obstetric,weak,yes,real,Labor and delivery in LDR suites; C-section not named
+966c2d68:emergency_obstetric,weak,yes,real,"Labor room, birthing bed and childbirth services; C-section not named"
+8a5e6d99:nicu,yes,yes,real,Neonatal intensive care unit with surfactant therapy for preterm neonates
+43e47a1b:cardiac_surgery,no,yes,unclear,"ASD device closure is catheter-based, not surgery; nothing else on surgery"
+06059452:cardiac_surgery,yes,yes,real,"Heart bypass and minimally invasive heart surgeries listed, though description stresses interventions"
+7058a301:emergency_obstetric,weak,yes,real,Painless normal delivery at a maternity hospital; C-section not named
+73bf12c1:cath_lab,yes,yes,real,Stent placement and pacemaker implantation stated as done at the hospital
+180df6d2:emergency_obstetric,yes,doubtful,unclear,Cesarean and high-risk care claimed by a women's clinic; setting for surgery unclear
+de46c638:cardiac_surgery,weak,yes,unclear,Cardiothoracic surgery only appears in a department list
+4a5f77a4:nicu,yes,yes,real,"Twenty-bed NICU with ventilators, CPAP and warmers detailed"
+cba994e0:emergency_obstetric,yes,yes,real,Cesarean section delivery and inpatient obstetric care stated
+d3b7f858:emergency_obstetric,weak,yes,unclear,Generic pregnancy care and obstetrics services; no delivery or surgery detail
+800c8b0f:emergency_obstetric,weak,yes,real,Childbirth services at a 25-bed maternity and surgical hospital; C-section not named
+469f772c:cardiac_surgery,yes,yes,real,"Bypass, valve replacement and open heart surgeries; famous cardiac institute"
+7015b1dc:emergency_obstetric,weak,yes,real,"Labor room and delivery counters shown, but counts are unrendered zeros"
+f3d903e7:dialysis,weak,yes,unclear,Nephrology and urology services only; dialysis never mentioned
+46f1868e:cardiac_surgery,no,yes,false,EECP non-invasive therapy centre; no surgery
+0b02d119:cardiac_surgery,yes,yes,real,"Bypass surgery and over 2,000 cardiac surgeries stated; transplant claim looks inflated"
+3451b5f4:cardiac_surgery,weak,doubtful,unclear,Single bare heart transplant keyword at a small cardiac clinic-hospital; implausible alone
+e76ffec7:emergency_obstetric,yes,yes,real,"Cesarean, high-risk and instrumental deliveries all stated"
+acaf69ee:nicu,yes,yes,real,"Detailed NICU procedures: ventilators, exchange transfusion, parenteral nutrition"
+7f05fe47:nicu,weak,yes,unclear,Newborn care and a neonatologist biography; no unit named
+dafc740f:dialysis,no,yes,false,Renal pathology laboratory serving nephrologists; no dialysis
+c828a808:nicu,yes,yes,real,PICU and NICU units stated; single sentence
+3938eff3:emergency_obstetric,weak,doubtful,unclear,Delivery services listed by an outpatient wellness clinic; no labour room or C-section
+4ee8994b:nicu,yes,yes,real,NICU named as equipment with PICU
+3798141e:nicu,yes,yes,real,NICU in the name and stated in a 30-bed paediatric hospital
+d6ed2253:cath_lab,yes,yes,real,"Angioplasty, angiogram, stenting and EP studies at a well-known heart centre"
+8e5dd52e:emergency_obstetric,weak,yes,unclear,Only maternity home and address; no delivery detail
+62092a68:cardiac_surgery,no,yes,false,Explicit negation: does not perform bypass surgery; EECP centre
+dc663928:cardiac_surgery,yes,yes,real,Cardiac operation theatre and cath lab stated; Narayana Health unit
+809750ff:cardiac_surgery,no,yes,false,Dental and medical clinic with a heart center label; no surgery
+53746012:dialysis,yes,yes,real,Dialysis treatment and dialysis program at a kidney care hospital
+88fd94fe:nicu,weak,yes,unclear,Neonatology services and neonatologists only; no unit named
+2fc4a403:nicu,yes,yes,real,"Critical care neonatal, advanced neonatal care and premature baby procedures"
+ddcdc6a2:cardiac_surgery,no,yes,unclear,Only a cath lab and ICU described; cardiac surgery not mentioned
+67c3e3f6:cardiac_surgery,yes,yes,real,Modular operation theatre for cardiac surgery; major public cardiology institute
+b05cc82d:cardiac_surgery,no,yes,false,EECP non-invasive therapy only; some sentences about other branches
+01e5cba5:emergency_obstetric,weak,yes,unclear,High-risk pregnancy clinic and fetal medicine at a fertility centre; no delivery or C-section
+d4faa64a:emergency_obstetric,weak,yes,unclear,Only says it specializes in maternity and pediatric care
+0509238c:cath_lab,no,yes,false,"Directory category only; physician's general heart clinic, no procedures"
+a3bd73ec:emergency_obstetric,weak,yes,real,1000+ deliveries and safe deliveries at a hospital and maternity home; C-section not named
+224f04d3:cath_lab,yes,doubtful,unclear,Angiography and angioplasty listed by a cardiologist's clinic; site of procedures unclear
+a572d143:emergency_obstetric,yes,yes,real,"Vacuum, forceps and painless deliveries performed; operative obstetrics though C-section not named"
+39fac026:cardiac_surgery,yes,yes,real,Two dedicated cardiac operation theatres and valve replacement
+5bae028e:emergency_obstetric,weak,yes,unclear,Pre- and post-delivery care and sonography only; delivery itself not stated
+34a73e42:cardiac_surgery,weak,doubtful,false,Single coronary bypass keyword at a cardiologist clinic with pathology lab
+dd834093:nicu,no,yes,false,Outpatient newborn care and jaundice management at a clinic; not NICU
+1016cd65:nicu,no,yes,false,One line of newborn care at a vaccination clinic
+15e6621c:cath_lab,no,yes,unclear,Only an interventional cardiologist on staff at a diagnostic centre; no cath lab stated
+bcfc6086:cath_lab,yes,doubtful,unclear,Angioplasty and TAVI claimed at a pediatric cardiologist's clinic; implausible on site
+1f600f3d:emergency_obstetric,weak,yes,unclear,Generic obstetric care and directory listings; source itself notes no procedures listed
+90293936:nicu,yes,yes,real,"NICU with monitoring systems, radiant warmers and exchange transfusion"
+45a4db60:dialysis,yes,doubtful,unclear,"Most dialysis sentences name a centre in Mancherial, Telangana, not Madanapalle"
+a4e3e6fd:emergency_obstetric,yes,yes,real,"LSCS, high-risk pregnancy care and labor and delivery listed"
+2ae53c4d:emergency_obstetric,weak,yes,unclear,Long-standing maternity hospital but only generic maternity services; no delivery detail
+3c59dd35:nicu,yes,yes,real,"Level 3 NICU, 40 beds, neonatal ventilators and cooling device"
+fa690324:emergency_obstetric,weak,yes,unclear,Generic maternity care and listings; garbled description; no delivery detail
+e48a8f48:dialysis,yes,yes,real,"On-site dialysis centre, NephroPlus affiliation, free dialysis scheme"
+d4faa64a:nicu,weak,yes,unclear,Only incubators visible in photos; no NICU statement

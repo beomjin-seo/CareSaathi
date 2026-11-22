@@ -1,0 +1,121 @@
+claim_id,text_supports,about_this_facility,verdict,reason
+120572cf:nicu,weak,yes,unclear,Neonatology only in a specialty list; no NICU unit or equipment named
+87b922dc:emergency_obstetric,weak,doubtful,unclear,Generic OBG mention; description is about a different hospital in Chennai
+36556485:trauma_emergency,yes,yes,real,"24-hour emergency, trauma care and ambulances stated repeatedly; description agrees"
+82596faf:emergency_obstetric,weak,yes,unclear,"Only ""offers maternity services""; no delivery, C-section or labour unit named"
+b825327a:trauma_emergency,yes,doubtful,unclear,"24/7 emergency stated, but website and description point to another hospital and city"
+adfecbb0:nicu,yes,yes,real,"Named neonatal care unit with warmer, phototherapy, monitors; probably basic level"
+0f78f083:emergency_obstetric,yes,yes,real,Cesarean delivery and high-risk pregnancy care both stated
+2c764aec:trauma_emergency,yes,yes,real,Casualty room plus dedicated emergency operation theatre at 60-bed hospital
+ae6dbcdf:emergency_obstetric,weak,yes,unclear,"Only department name ""Obstetrics And Gynecology""; nothing on delivery or C-section"
+c14cb861:emergency_obstetric,yes,yes,real,High-risk pregnancy unit and management named; OBG department listed
+5464fc7b:emergency_obstetric,no,yes,unclear,Only a doctor biography naming an OBG specialist; no service statement
+9387e991:nicu,yes,yes,unclear,"NICU named once alongside ICU; no beds, equipment or staff detail"
+9184efcd:emergency_obstetric,weak,yes,unclear,Generic OBGYN line; description is an IVF and infertility centre
+2cb66ffa:dialysis,yes,yes,real,"Dialysis in ICU, dialysis beds and equipment; nephrology centre at chain hospital"
+e97101fd:dialysis,yes,yes,real,Dialysis stated as provided treatment; nephrology department in 100-bed hospital
+adfecbb0:emergency_obstetric,yes,yes,real,Caesarean for urgency and high-risk pregnancy management explicitly listed
+f2272f70:trauma_emergency,yes,yes,real,24/7 emergency care and on-call ambulance stated
+14f7d2e2:emergency_obstetric,weak,doubtful,unclear,"Generic maternity lines; description places hospital in Vadodara, not Khedbrahma"
+1ea3efe5:trauma_emergency,yes,yes,real,24/7 emergency care at a government general hospital; single line
+2e5f00b6:mri,yes,yes,real,3 Tesla MRI scanner named several times at teaching hospital
+66f082f1:emergency_obstetric,yes,yes,real,Labor room and OBG department with procedures at 300-bed general hospital
+1c92266e:emergency_obstetric,weak,yes,unclear,Pregnancy care and OBG department only; no delivery or C-section mentioned
+4592713c:dialysis,yes,yes,real,Kidney dialysis listed as a procedure with nephrology specialists
+797acc17:cardiac_surgery,yes,yes,real,CABG and paediatric cardiac surgeries named; cardiac sciences department
+31a69711:emergency_obstetric,weak,yes,unclear,OBG only in department lists of government hospital; no delivery details
+3fc1cb91:trauma_emergency,yes,yes,real,24/7 casualty and emergency medical services stated three times
+1589ba2e:burn_care,yes,yes,real,Burns treatment stated; plastic surgery department explicitly covers burns
+f4e59208:trauma_emergency,weak,yes,unclear,Emergency appears only as one word in a generic service list
+3907ac55:dialysis,weak,doubtful,unclear,Nephrology in a specialty list only; description is an eye and diabetes centre
+83a7f081:trauma_emergency,weak,yes,unclear,"Only ""offers emergency services""; no hours, unit or equipment"
+3c737b5e:mri,yes,yes,real,1.5T MRI named as equipment at speciality hospital
+874b1482:trauma_emergency,yes,yes,real,24x7 emergency care stated repeatedly and in own description; nursing home scale
+c0a0485f:trauma_emergency,yes,yes,real,"Named 24/7 Accident & Emergency department, repeated; tertiary hospital"
+169d80e2:emergency_obstetric,weak,yes,unclear,"Only ""Gynaecology"" in a specialty list; obstetrics and delivery not mentioned"
+46ba31bf:emergency_obstetric,weak,yes,unclear,Only says OBG department available; no delivery or C-section detail
+2456cba2:emergency_obstetric,yes,yes,real,"Painless labour clinic and obstetric services named, though mainly an IVF hospital"
+46c9c40f:trauma_emergency,yes,yes,real,"Emergency & Trauma Care department named, available 24/7"
+eb7be388:trauma_emergency,yes,yes,real,24/7 emergency care; description also mentions urgent care; single line
+ce61ac83:emergency_obstetric,weak,yes,unclear,Generic OBG services plus a doctor biography; no delivery capability stated
+0020c82a:dialysis,yes,doubtful,unclear,Dialysis sentence names SPMM Hospital; facility name and description name different hospitals
+7f1d01c2:cardiac_surgery,yes,yes,unclear,"CTVS named once with cardiology; no theatre, procedures or surgeon detail"
+613cfd34:trauma_emergency,weak,yes,unclear,"Only ""offers medical emergency services""; rest is a police directory listing"
+02987e8e:emergency_obstetric,yes,yes,real,"24-hour maternity services including delivery, repeated in own description"
+1ff6caf8:trauma_emergency,yes,yes,unclear,One templated 24/7 emergency line at a dedicated cancer hospital; trauma care doubtful
+49485fba:trauma_emergency,yes,yes,real,"Emergency unit, 24/7 care and trauma care named in several lines"
+2404aae8:dialysis,yes,yes,real,Dialysis named as its own department in hospital department list
+5ed31c9d:trauma_emergency,yes,yes,real,"Round-the-clock casualty department, head and accidental injury treatment"
+4f2a0eb4:nicu,no,doubtful,false,"Only a neonatologist on staff; ENT hospital, no neonatal unit described"
+17a99a64:emergency_obstetric,no,yes,unclear,Only a directory ranking listing; no statement of obstetric services
+35dc2cd9:mri,yes,yes,real,3.0 Tesla on-site MRI scanner; description names imaging centre at this hospital
+2062bf9b:mri,yes,yes,unclear,"""MRI Scan"" named once only; no detail, no website, description is a listing"
+c599e4ad:dialysis,yes,yes,real,"In-house dialysis facility, machines and cashless scheme for dialysis patients"
+26b535e0:cardiac_surgery,no,yes,false,"Surgical microscopes line; hospital does microvascular, spine, neuro surgery, no cardiac department"
+1fc510fc:trauma_emergency,yes,yes,real,"Emergency operation theatre, emergency wing and 24/7 care at large public hospital"
+c815b7c7:cardiac_surgery,yes,yes,real,"Dedicated cardiac surgery theatre with over 5,000 surgeries claimed"
+0a661398:trauma_emergency,yes,yes,real,24/7 emergency ward and ambulance at 50-bed Apollo secondary hospital
+6efe95fc:trauma_emergency,yes,doubtful,real,"Trauma centre, polytrauma, 24/7 emergency matching name; description gives another city"
+f67f6103:dialysis,yes,yes,real,24/7 dialysis facility stated explicitly at superspeciality centre
+a63f8dd0:mri,yes,yes,real,MRI unit said to be functioning in the hospital's cancer facility
+d60bdb0f:trauma_emergency,yes,yes,real,Emergency Medicine and Trauma Care named as department in own description
+0c5a8e83:dialysis,weak,yes,unclear,Only paediatric nephrology and planned courses; dialysis itself never mentioned
+7ae333aa:emergency_obstetric,yes,yes,real,Caesarean section and normal delivery performed; OBG is a core specialty
+4f2a0eb4:trauma_emergency,yes,doubtful,unclear,Emergency is ENT-specific; trauma centre named is a separate Trisha Trauma Centre
+017a80f7:nicu,yes,yes,real,NICU with invasive and high-frequency ventilation at medical college hospital
+e2533fff:nicu,yes,yes,real,States it maintains a NICU and has a neonatology department
+373756b9:emergency_obstetric,yes,yes,unclear,One high-risk pregnancy line; description covers gastroenterology and ICU only
+63e0cf6f:trauma_emergency,weak,yes,unclear,"Only ""emergency services available""; description just says medical centre"
+ba15f9b3:trauma_emergency,yes,yes,real,24/7 emergency services and care stated twice
+ee21e4d4:trauma_emergency,yes,yes,real,"24x7 Emergency Services stated; single line, description lists elective procedures"
+62627348:emergency_obstetric,weak,yes,unclear,"OBG with fertility services named only; 35 beds, no delivery detail"
+0d1a002a:burn_care,yes,yes,unclear,Burn appears only inside a department title; no burn unit or procedures
+82b68813:trauma_emergency,yes,yes,real,24/7 emergency and accident services plus complex trauma orthopaedics
+3bfba808:trauma_emergency,yes,yes,real,"24/7 Accident & Emergency department managing trauma, repeated across lines"
+2b5be093:nicu,yes,yes,real,Level 3 NICU with NNF neonatology accreditation and fellowship
+adddf489:emergency_obstetric,weak,yes,unclear,Maternity and OBG services listed generically; no delivery or C-section statement
+3ac6386f:trauma_emergency,yes,yes,real,"24/7 emergency care stated; single line, bare description"
+f1980f39:trauma_emergency,yes,yes,real,Emergency and trauma centre in own description plus 24x7 emergency services
+d6326dac:trauma_emergency,yes,yes,real,24-hour emergency and surgical services stated; small nursing home
+44022c70:dialysis,yes,yes,real,"Haemodialysis, peritoneal dialysis and CRRT listed as procedures"
+204b83bc:nicu,yes,yes,real,NICU named explicitly as equipment and capability; no further detail
+6c08e1f3:emergency_obstetric,yes,yes,real,"Caesarean section, delivery rooms and high-risk pregnancy care with intensive care"
+d8244671:dialysis,yes,doubtful,real,"Dialysis volume stated, but 74,000 a month looks inflated for one hospital"
+6f87ded9:trauma_emergency,weak,yes,unclear,"Odd phrase ""32+ emergency services""; no emergency department or hours given"
+a00b6ebd:emergency_obstetric,yes,yes,real,Cesarean delivery listed as procedure; OBG among specialties
+1199e1d7:emergency_obstetric,yes,yes,real,Cesarean delivery listed as procedure; OBG department
+050479fe:mri,yes,yes,real,"MRI scan listed in radiology department's own description, with scanner"
+16cf9fd6:mri,yes,yes,real,Open MRI system named as equipment at 160-bed hospital
+23c73604:emergency_obstetric,weak,doubtful,unclear,"Pregnancy care through delivery, no C-section; website and description name Thangam Hospital"
+83703c0d:trauma_emergency,yes,yes,real,"24/7 emergency department, resuscitation, thrombolysis; hospital specialises in emergency care"
+21aff767:trauma_emergency,yes,doubtful,real,24x7 emergency facilities stated; description is about a different hospital in Indore
+8ecc04a9:dialysis,yes,yes,real,"Kidney dialysis listed as a procedure; single line, public-insurance empanelled hospital"
+317f5057:mri,yes,yes,real,"MRI scans available in radiology department, scanner listed"
+1ec90a4b:trauma_emergency,yes,yes,real,24/7 emergency and trauma services with ambulance stated twice
+91712035:trauma_emergency,yes,yes,real,24/7 emergency plus emergency surgeries for abdominal trauma and perforation
+b36ffd6e:mri,yes,doubtful,unclear,"3 Tesla MRI and PET-CT claimed, but website belongs to a different institution"
+e7aa29b7:dialysis,yes,yes,real,Dialysis services stated as available onsite at multi-department hospital
+398d9f9c:trauma_emergency,yes,yes,real,"Accident and emergency care, 24x7 services and trauma surgery stated"
+07a18e5e:nicu,no,yes,false,"False friend: an IVF lab incubator, not a neonatal unit"
+90eaae09:emergency_obstetric,weak,yes,unclear,Generic OBG services plus a doctor biography; no delivery capability stated
+a28d6a39:trauma_emergency,yes,yes,real,24/7 emergency services at orthopaedic hospital treating trauma and spinal injuries
+7d528d2e:trauma_emergency,yes,yes,real,"Emergency room, 24/7 emergency and trauma care centre stated repeatedly"
+c826aa92:cardiac_surgery,yes,yes,real,"Performs cardiac surgery, heart-lung machine, CTVS specialty named"
+d61f3c5a:emergency_obstetric,weak,doubtful,unclear,OBG in a template-like department list; description calls it an eye hospital
+268245b0:cardiac_surgery,yes,yes,real,Minimal access cardiac bypass surgery programme named at 200-bed hospital
+5f551b24:trauma_emergency,yes,yes,real,"Trauma surgery performed, 24x7 emergency care, 2,500 emergencies managed"
+70537965:emergency_obstetric,weak,yes,unclear,One generic OBG line; description is a surgical and chemotherapy hospital
+5048b210:emergency_obstetric,yes,yes,real,CeMONC unit and maternity ward; receives obstetric referrals from health centres
+36c25453:emergency_obstetric,no,yes,unclear,Only a past-employment biography of an obstetrician; no service statement
+76d3602d:trauma_emergency,yes,yes,real,24-hour emergency stated in several lines at NABH multispeciality hospital
+2ee91ec2:emergency_obstetric,yes,yes,real,Cesarean section operation theatre named at government medical college
+1bef1fad:trauma_emergency,yes,no,unclear,"Emergency sentence names KTCT Hospital in Attingal, a different hospital and district"
+b9386c11:emergency_obstetric,weak,doubtful,unclear,Only a planned maternity ward expansion; website and description name other colleges
+04309af6:mri,yes,yes,real,MRI listed as procedure and scanner as equipment; terse but repeated
+9387e991:burn_care,yes,yes,real,Burn injury treatment and skin grafting listed as a procedure
+8cf683af:trauma_emergency,yes,yes,real,Emergency room named and round-the-clock emergency services stated
+6dd04d6c:trauma_emergency,yes,yes,real,"24x7 emergency unit, trauma surgery and fracture fixation at Medanta network hospital"
+10361924:emergency_obstetric,no,yes,unclear,Only a directory ranking listing; no statement of obstetric services
+120572cf:dialysis,yes,yes,real,"On-site haemodialysis, named dialysis machines, emergency and ICU dialysis"
+f73e1e8e:trauma_emergency,weak,doubtful,unclear,Paediatric ambulance and neonatal-maternal emergency only; website belongs to another chain
+20bea7f8:emergency_obstetric,no,yes,unclear,Five directory ranking listings only; no statement of obstetric services

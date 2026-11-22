@@ -1,0 +1,228 @@
+claim_id,text_supports,about_this_facility,verdict,reason
+02e20079:emergency_obstetric,no,yes,false,"Dental delivery unit is dental equipment, not obstetrics."
+036198f5:nicu,no,yes,false,"RetCam screening of babies is eye imaging, not a NICU."
+049a2f48:emergency_obstetric,weak,doubtful,unclear,"OB/GYN department stated but name says eye hospital; generic domain, no C-section detail."
+05e535b3:emergency_obstetric,no,yes,false,Dental delivery units are dental equipment.
+07577094:emergency_obstetric,no,yes,false,"Ayurvedic prenatal Garbha Sanskar, not emergency obstetric capability."
+07cc65ed:emergency_obstetric,no,yes,false,Homeopathy clinic aiming to reduce caesareans; does not perform deliveries.
+07cc65ed:nicu,no,yes,false,Homeopathic support for neonatal jaundice is not a NICU.
+0a77c719:emergency_obstetric,no,yes,false,"'Implant Prosthetic Section' is a dental credential, not C-section."
+0c36cc3b:emergency_obstetric,weak,doubtful,unclear,Many maternity statements but name is eye hospital; no C-section or emergency detail.
+0c36cc3b:nicu,yes,doubtful,unclear,"On-site NICU stated, yet facility named eye hospital; possible mixed record."
+0cac5019:cath_lab,no,yes,false,"Surgical stents for dental implants, not cardiac catheterisation."
+0d17bd9d:emergency_obstetric,no,yes,false,"Dental chair delivery unit, not obstetrics."
+0dcce993:cath_lab,no,yes,false,"Zeiss angiography is retinal fundus imaging, not cath lab."
+0dcce993:nicu,weak,doubtful,false,Newborn jaundice treatment is not NICU and unlikely at eye hospital.
+0e388917:burn_care,weak,yes,false,Leech therapy listing burns among many conditions; no burn unit.
+0ed24ab4:cath_lab,yes,no,false,Balloon angioplasty named but facility is a charitable eye hospital.
+0f355580:dialysis,no,yes,false,Ayurvedic clinic treating kidney stones; no dialysis mentioned.
+0f9ad219:cath_lab,no,yes,false,"Retinal angiography imaging, not cardiac catheterisation."
+12c08131:cath_lab,no,yes,false,"Fluorescein/ICG angiography is eye imaging, not cath lab."
+12fe95f9:emergency_obstetric,yes,no,false,"C-section text contradicts eye hospital name, domain and description."
+13a84ca8:burn_care,yes,yes,real,"Named burns unit with three isolated burn beds, dermatome, attached OT."
+13a84ca8:nicu,weak,yes,unclear,Paediatric unit with phototherapy only; no NICU named.
+14166899:dialysis,yes,doubtful,unclear,"Exclusive dialysis unit stated, but text is from Radhika hospital site, name is Ayurveda college."
+14166899:emergency_obstetric,yes,doubtful,unclear,Obstetric surgeries stated; source site differs from Ayurveda college name.
+14166899:nicu,yes,doubtful,unclear,NICU/PICU stated; source site differs from Ayurveda college name.
+1451fd33:emergency_obstetric,weak,yes,unclear,Only 'maternity services available' at 200-bed Ayurved college; no emergency detail.
+14b9d15e:cardiac_surgery,no,no,false,"Sentence lists neighbouring heart hospital in the campus, not this eye hospital."
+177de524:cardiac_surgery,yes,no,false,CABG and aortic surgery list cannot belong to an eye hospital.
+177de524:emergency_obstetric,weak,doubtful,false,"OB/GYN doctor bio at 'Deshmukh Hospital'; eye hospital, no delivery detail."
+186f0154:emergency_obstetric,no,yes,false,"Homeopathic pregnancy support, not obstetric delivery service."
+1b9479b0:emergency_obstetric,weak,yes,unclear,General hospital lists OB/GYN specialty only; no delivery or C-section detail.
+1c5736bd:cath_lab,no,no,false,Bile duct stenting is not cardiac cath and not eye care.
+1ddb0dbe:emergency_obstetric,yes,no,false,"Labour suites text describes Maruthi multispecialty hospital in Bengaluru, not Gadag eye hospital."
+1ddb0dbe:nicu,yes,no,false,"NICU text describes Maruthi Hospital Bengaluru, not this eye hospital."
+1ec86e7a:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+1f84d54d:nicu,no,yes,false,"UV-A phototherapy is dermatology, not neonatal care."
+233f02f1:nicu,no,yes,false,"Phototherapy for psoriasis and vitiligo, not neonatal."
+2347564a:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+23e40dca:emergency_obstetric,no,yes,false,Ayurvedic gynaecology consultation and post-delivery care only.
+288bb055:cath_lab,no,yes,false,"Retinal angiography imaging, not cardiac cath lab."
+2aa88d73:dialysis,no,no,false,"Sentence is about Aster CMI's nephrology centre, another hospital."
+2b5f98aa:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+2d9cd702:cath_lab,yes,no,false,Coronary angiogram listed but clinic is cosmetic surgery and aesthetics.
+2f7486d4:emergency_obstetric,no,yes,false,'Email delivery of X-ray images' is not childbirth.
+30698804:cardiac_surgery,yes,no,false,CABG and aortic surgery list cannot belong to an eye hospital.
+30867991:emergency_obstetric,no,yes,false,Dental delivery units with suction and handpieces.
+32e351e3:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+33ddfc1a:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+35af3912:emergency_obstetric,no,yes,false,"'Delivery of anesthesia' in dentistry, not obstetrics."
+35ec756c:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+36b8a1d6:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+36fced29:emergency_obstetric,weak,yes,unclear,Gynaecologist clinic offers normal delivery; no C-section or emergency capability stated.
+3885e8c1:emergency_obstetric,yes,yes,real,IVF and maternity centre stating deliveries and high-risk pregnancy care.
+3a368df7:emergency_obstetric,weak,yes,false,Ayurvedic pregnancy care only; no delivery or surgery.
+3bcb46c8:cardiac_surgery,yes,no,false,Bypass and valve surgery text conflicts with eye hospital name and domain.
+3bcb46c8:cath_lab,yes,no,false,Angioplasty text conflicts with eye hospital name and domain.
+3c0caea5:emergency_obstetric,yes,no,false,Maternity text describes a multispecialty hospital; description is purely eye care.
+3c227c48:nicu,weak,yes,false,Newborn specialist bio at eye-and-child clinic; no NICU unit.
+3c4046fe:emergency_obstetric,weak,yes,unclear,Vague 'programs for safe delivery' at Ayurveda college hospital.
+3c4046fe:nicu,weak,yes,false,Vague 'neonatal/baby care programs'; no NICU named.
+3d03b133:emergency_obstetric,no,yes,false,"'Timely delivery' is boilerplate business text, not childbirth."
+3d9d4079:burn_care,yes,no,false,"Burn unit text is from Ravi Hospital Agra site, not this Gorakhpur eye hospital."
+3d9d4079:cath_lab,yes,no,false,"Cath lab text is from Ravi Hospital Agra site, not this eye hospital."
+3d9d4079:dialysis,yes,no,false,"Dialysis text names Ravi/Rana Hospital, not this eye hospital."
+3d9d4079:emergency_obstetric,yes,no,false,"Emergency caesarean text describes Ravi Hospital Agra, not Gorakhpur eye hospital."
+3d9d4079:nicu,yes,no,false,"NICU text describes Ravi Hospital Agra, not this eye hospital."
+3da15818:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+3e8efbf0:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+3fe6ee61:emergency_obstetric,weak,yes,false,Ayurveda-based gynaecology clinic of one BAMS doctor; no deliveries or surgery.
+41fbfebc:emergency_obstetric,no,yes,false,'Delivery of dental aligners' is not childbirth.
+458c3ca5:dialysis,no,doubtful,false,"Nephrology diagnostic test panels, not dialysis; eye hospital."
+49c62c24:emergency_obstetric,weak,doubtful,false,OB/GYN centre of excellence is chain-site text; this unit is an eye hospital.
+4a80ca71:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+4a832634:emergency_obstetric,no,yes,false,"Unani herbal pregnancy care, not obstetric delivery."
+4b4ad275:blood_bank,weak,doubtful,unclear,Blood bank appears in campus facility list of dental college; ownership unclear.
+4bee4feb:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+4c6e0f30:emergency_obstetric,yes,yes,real,General hospital states normal and caesarean deliveries.
+4ddde88c:emergency_obstetric,weak,doubtful,false,Generic obstetrics mention at a skin and laser clinic.
+50a0889d:emergency_obstetric,no,yes,false,Prenatal rehab instructor certificate at physiotherapy clinic.
+519ae7e6:burn_care,no,yes,false,"Corneal burns managed as eye disorder, not burn injury care."
+519ae7e6:cath_lab,no,yes,false,"Retinal fluorescein/ICG angiography, not cardiac cath."
+519ae7e6:emergency_obstetric,no,yes,false,'Chemotherapy delivery to the eye' is not childbirth.
+5217ad6b:emergency_obstetric,no,yes,false,'Delivery of dentures' is not childbirth.
+53d014ef:emergency_obstetric,weak,doubtful,false,Generic pregnancy care line contradicts eye hospital name and domain.
+547f6216:emergency_obstetric,no,yes,false,'Retainer delivery' is not childbirth.
+5526d53a:cath_lab,no,yes,false,"3D-printed surgical stents for dental implants, not cardiac."
+5526d53a:emergency_obstetric,no,doubtful,false,Only a gynaecologist doctor biography at a dental clinic.
+55b66a16:dialysis,no,yes,false,Herbal program to reduce dialysis dependence; no dialysis offered.
+572538a6:emergency_obstetric,no,yes,false,"'Timely delivery' of dental service, not childbirth."
+579c512d:nicu,weak,yes,false,Outpatient paediatric clinic with newborn checkups; no NICU.
+587e58f8:emergency_obstetric,no,yes,unclear,Only an obstetrician/IVF doctor biography; no delivery or C-section statement.
+58f4d06e:cath_lab,yes,no,false,Bare 'Cath Lab' at an ENT and dental facility is implausible.
+59e6b2c9:emergency_obstetric,no,yes,false,"'Timely delivery' of eyewear, not childbirth."
+5b3fc978:emergency_obstetric,no,yes,false,"A patient case outcome at an Ayurveda dispensary, not a delivery service."
+5ecdbf7f:emergency_obstetric,no,yes,false,"Ayurvedic pre/post-delivery care, not obstetric delivery."
+5f201319:nicu,no,yes,false,ROP eye treatment in newborns is not a NICU.
+5f2f247b:emergency_obstetric,weak,yes,false,Generic OBGYN line at laser cosmetic gynae clinic; no deliveries stated.
+5fda0230:dialysis,no,yes,false,"Homeopathy for nephrological conditions, no dialysis."
+5fe4b03b:cardiac_surgery,yes,no,false,'Open heart surgery' cannot belong to an eye and laser centre.
+5fe4b03b:dialysis,yes,no,false,Bare 'Dialysis' listing at an eye and laser centre is implausible.
+605bf900:emergency_obstetric,no,yes,false,'Implant placement and delivery' is dental.
+61ae3ebc:cath_lab,no,yes,false,"Stent-guided dental implant placement, not cardiac."
+62780637:emergency_obstetric,weak,yes,false,Homeopathy centre lists OB/GYN speciality; no deliveries.
+62f443c8:nicu,no,yes,false,"ROP screening for premature babies is eye screening, not NICU."
+6421cd50:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+68716595:emergency_obstetric,no,yes,false,Dental chairs with delivery units false friend.
+6933bb1f:emergency_obstetric,no,yes,false,'Treatment planning and delivery' is dental workflow.
+69800946:dialysis,yes,doubtful,unclear,"Hemodialysis unit belongs to host Elite Mission Hospital, where this institute is housed."
+69800946:emergency_obstetric,weak,doubtful,unclear,OB/GYN listed for host Elite Mission Hospital; no C-section detail.
+6c793bca:cath_lab,no,yes,false,"Ophthalmic angiography equipment, not cardiac cath."
+70a57f42:emergency_obstetric,no,yes,false,'Delivery of ocular prosthesis' is not childbirth.
+71d200d9:emergency_obstetric,no,yes,false,Dental delivery units false friend.
+72d8005b:emergency_obstetric,no,doubtful,false,Teaching department list of a college; no obstetric service at dental hospital.
+74627bdf:emergency_obstetric,weak,yes,unclear,Labour room and OT stated at Ayurveda institute; C-section capability not stated.
+75a05c1e:emergency_obstetric,no,doubtful,false,"Antenatal sonography only; eye hospital, no delivery service."
+760eae50:emergency_obstetric,no,yes,false,Dental delivery units false friend.
+7692b331:cath_lab,no,yes,false,Retinal camera and angiography is eye imaging.
+76c4eda7:emergency_obstetric,no,yes,false,"'Treatment delivery' is generic wording, not childbirth."
+76fcd188:dialysis,weak,yes,unclear,Bare 'CRRT' and nephrologist listing; no dialysis unit described.
+76fcd188:nicu,yes,yes,real,Child care hospital listing newborn intensive care and critical neonatal care.
+798aae27:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+7b4e2f09:cardiac_surgery,yes,no,false,CABG and aortic surgery list cannot belong to an eye care centre.
+7bb249be:cath_lab,no,yes,false,ICG and OCT angiography are retinal imaging.
+7bdd1e41:emergency_obstetric,no,yes,false,"Ayurvedic prenatal and postnatal care, no deliveries."
+805b4e58:emergency_obstetric,no,yes,false,Wall-mounted dental delivery unit false friend.
+815094e3:nicu,no,yes,false,"Excimer UV phototherapy for skin, not neonatal care."
+826ecf18:emergency_obstetric,no,yes,false,"Prenatal check-up at a homeopathy clinic, not delivery capability."
+82f5f2c0:emergency_obstetric,weak,no,false,"Sentences describe 'Sai Clinic & Maternity' in Peenya, a different facility."
+83bb8b54:emergency_obstetric,yes,doubtful,unclear,LSCS cited at 'Sandhya Hospital' Surat; also 'maternity and eye hospital'; identity mixed.
+87995fe8:emergency_obstetric,no,yes,false,"Courier delivery of medicines, not childbirth."
+885c2504:dialysis,yes,no,false,'Offers dialysis' at a known eye-only chain is implausible.
+888c008d:cardiac_surgery,yes,no,false,Aortic aneurysm surgery cannot belong to an eye hospital.
+892547b1:emergency_obstetric,no,yes,false,"Ayurvedic pregnancy care packages, not delivery or surgery."
+8b5d6123:emergency_obstetric,yes,doubtful,unclear,"Caesareans and an obstetrician lead stated, but name and description are eye care."
+8c0ec23b:emergency_obstetric,no,yes,false,'Economic sections of society' matched the word section.
+8e2dc800:nicu,yes,no,false,Newborn intensive care claim contradicts eye hospital name and domain.
+8e6659a9:emergency_obstetric,no,yes,false,'Timely delivery' boilerplate for dental services.
+9421d561:emergency_obstetric,no,yes,false,Dental delivery units false friend.
+94afefad:emergency_obstetric,no,no,false,"Staff directory counts with 16 orthopedists describe another hospital, not charitable eye hospital."
+94afefad:nicu,yes,no,false,ICU/NICU line conflicts with detailed charitable eye hospital description.
+95223a3e:cath_lab,no,yes,false,Fluorescein/ICG angiography for retinal imaging.
+963543bf:cath_lab,no,yes,false,Computer-guided stents for dental implants.
+96b5758b:emergency_obstetric,no,yes,false,"Dental delivery unit false friend, repeated five times."
+9778b758:dialysis,no,yes,false,Only says the hospital is near a separate dialysis centre.
+985a68fa:emergency_obstetric,no,yes,false,Dental instrument delivery unit false friend.
+98e15e38:dialysis,no,yes,false,"Ayurvedic CKD care programme, no dialysis."
+98f817f4:emergency_obstetric,no,yes,false,"Obstetric physiotherapy, not delivery service."
+9965c906:nicu,no,yes,false,"Dermatology phototherapy, not neonatal."
+9b3d7512:emergency_obstetric,no,doubtful,false,Directory specialization tag only; super-specialty eye facility.
+9b47971c:emergency_obstetric,no,doubtful,false,Antenatal exercises from a physiotherapy site; facility is a dental clinic.
+a1525ada:emergency_obstetric,no,yes,false,'Delivery of prosthetics' from a dental lab.
+a6760a78:emergency_obstetric,no,no,false,"Obstetrician biography at 'KSB Mother and Child Care', a different facility."
+a7412c6a:emergency_obstetric,no,yes,false,'Timely delivery' boilerplate for dental services.
+a8f0d365:nicu,no,yes,false,"Body phototherapy unit for skin disease, not neonatal."
+acd22962:dialysis,yes,no,false,"Dialysis text names B.C.J./Asha Parekh Hospital and a drug-bank network, not this eye hospital."
+ae220f18:emergency_obstetric,no,yes,false,'Treatment planning and delivery' is dental workflow.
+af230685:cath_lab,weak,doubtful,false,Interventional cardiologist on staff listed for a dental clinic; no cath lab named.
+b0d9d65e:nicu,no,yes,false,"Dermatology phototherapy, not neonatal."
+b178384f:emergency_obstetric,yes,doubtful,unclear,"Labour room, CTG and high-risk pregnancy stated, but described as ophthalmology centre."
+b178384f:nicu,yes,doubtful,unclear,"NICU named, but facility is described as ophthalmology centre."
+b1dd2441:emergency_obstetric,weak,doubtful,false,Mixed-source maternity lines citing G.G. Hospital Jamnagar; facility is eye and retina centre.
+b25a02bb:nicu,weak,yes,false,Newborn jaundice treatment at paediatric therapy and dental centre; no NICU.
+b511b444:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+b5296b60:emergency_obstetric,no,yes,false,Ayurvedic post-delivery care packages only.
+b5c37196:nicu,no,yes,false,LED mask phototherapy for acne.
+b5d2c415:cardiac_surgery,yes,no,false,CABG and aortic surgery list cannot belong to an eye hospital.
+b6d0f3aa:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+b874698a:nicu,no,yes,false,"Ayurvedic postpartum care for mother and newborn, not NICU."
+b897a3d8:emergency_obstetric,no,yes,false,'Electronic X-ray delivery' is not childbirth.
+b8a5401f:blood_bank,yes,no,false,"Blood bank 'linked to DDUH' describes a government general hospital, not Aravind eye chain."
+b8a5401f:burn_care,yes,no,false,"Burn ward text belongs to a general hospital, not an eye hospital."
+b8a5401f:cath_lab,yes,no,false,"Cath labs and neuro DSA describe a large general hospital, not an eye hospital."
+b8a5401f:dialysis,yes,no,false,"20-bed PMNDP dialysis unit is government general hospital text, not Aravind eye chain."
+b8a5401f:emergency_obstetric,weak,no,false,"Labour room and nursery line belongs to a general hospital, not eye hospital."
+b8a5401f:nicu,yes,no,false,"10-bed NICU and many departments describe a general hospital, not eye hospital."
+b8f3b9af:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+bc190bc8:blood_bank,yes,no,false,"On-site blood bank at a slimming, skin and hair clinic is implausible."
+bd03e6f5:emergency_obstetric,weak,yes,unclear,Eye and mother care centre offers pregnancy care; no delivery or C-section stated.
+bd2a61e5:dialysis,no,yes,false,Homeopathy 'specializes in nephrology'; no dialysis.
+bd4244fd:emergency_obstetric,no,yes,false,Ayurvedic Garbhsanskar and antenatal programs only.
+bfdaa215:cath_lab,no,yes,false,Digital angiography of the eye.
+c07334bc:emergency_obstetric,weak,no,false,"OBG unit text is about Nayana Hospital in Bhadravathi, another facility."
+c15717b4:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+c2216a2a:nicu,weak,doubtful,false,"Neonatal surgery and PICU lines, no NICU; facility is an eye hospital."
+c389be80:emergency_obstetric,no,no,false,"Line names 'Garg Hospital & Maternity Centre' and its doctor, another facility."
+c389be80:nicu,weak,doubtful,false,"Generic 'neonatal care' speciality line; eye hospital, no NICU named."
+c5bd42a9:emergency_obstetric,weak,doubtful,unclear,"Says maternity and general hospital with 24/7 maternity, but name is eye hospital."
+cee7e0a0:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+d182434e:cardiac_surgery,weak,no,false,Heart Centre belongs to KC Roy Memorial Hospital; this is a dental clinic.
+d56f67f6:cath_lab,weak,no,false,"Cerebral DSA and aneurysm clipping, not cardiac cath, and not eye-chain service."
+d81ca096:nicu,no,yes,false,"'Treats all ages, newborns to elderly' at an eye clinic; not NICU."
+da424446:blood_bank,yes,doubtful,unclear,"On-site blood bank stated; text likely about parent Anandrishiji general hospital, not eye wing."
+da424446:dialysis,yes,doubtful,unclear,"Dialysis department stated; likely parent Anandrishiji general hospital, not the eye wing."
+da424446:nicu,yes,doubtful,unclear,"NICU stated; likely parent Anandrishiji general hospital, not the eye wing."
+db2b2a59:emergency_obstetric,weak,doubtful,false,"Templated maternity lines contradict eye/LASIK name, domain and description."
+dba0f13a:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+dc86e92d:emergency_obstetric,weak,doubtful,false,Gynaecologist memberships and pregnancy care at a skin clinic; no deliveries stated.
+dd7a3e79:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+ddc8d084:emergency_obstetric,no,yes,false,Dental delivery units false friend.
+dfee8966:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+e2bea954:blood_bank,no,no,false,"Plasmapheresis is not a blood bank, and unlikely at eye/ENT hospital."
+e2bea954:dialysis,yes,no,false,Haemodialysis and CRRT list does not fit an eye and ENT hospital.
+e3da3802:emergency_obstetric,weak,doubtful,false,Templated outpatient gynaecology lines at a dermatology clinic.
+e5f7aaaf:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+e66893dc:emergency_obstetric,no,yes,false,Dental delivery units false friend.
+e6bdef2d:emergency_obstetric,no,yes,false,Dental chairs with delivery units false friend.
+e887980f:dialysis,no,doubtful,false,Directory-style list of specialties including nephrologist at a dental clinic.
+e8b15b0b:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+ec6a4be5:emergency_obstetric,no,yes,false,Dental operatory delivery unit false friend.
+f06f2719:burn_care,weak,yes,unclear,Single 'Skin Burn Treatment' line at eye and skin hospital; level of burn care unknown.
+f1444677:nicu,no,yes,false,"Syntonic phototherapy is vision therapy, not neonatal."
+f1dbb7e4:emergency_obstetric,no,yes,false,Ayurvedic post-delivery packages only.
+f22a5809:emergency_obstetric,no,no,false,"Directory line about 'Jain Hospital' in Gurgaon, a different facility."
+f3222b21:dialysis,weak,doubtful,unclear,Only a Nephrology department in a list; no dialysis named; record is the eye center.
+f3222b21:emergency_obstetric,weak,doubtful,unclear,OB/GYN department in a list from parent site; record is described as eye care center.
+f3222b21:nicu,yes,doubtful,unclear,'Paediatrics and NICU' department listed; record is described as eye care center.
+f3d8d958:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+f4b37fda:cath_lab,no,yes,false,Retinal laser and angiography is eye imaging.
+f4b37fda:emergency_obstetric,weak,yes,unclear,30-bed eye and maternity centre with obstetric services; no C-section detail.
+f6eed14c:cath_lab,yes,no,false,Bare 'Cath Lab' at an eye-only hospital is implausible.
+f764091a:emergency_obstetric,no,yes,false,Dental delivery unit false friend.
+fa8e4805:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+fd0c3dc2:emergency_obstetric,no,yes,false,Dental chair delivery unit false friend.
+fd1abb7f:nicu,no,yes,false,"ROP screening for premature babies is eye screening, not NICU."
+fe3e8600:emergency_obstetric,no,yes,false,'Delivery of compassionate eye care' is not childbirth.
+fe3e8600:nicu,no,yes,false,"ROP screening is eye screening, not NICU."
+ff43b1d5:emergency_obstetric,no,no,false,"Obstetrician biography at 'Life Spring Maternity Hospital', a different facility."

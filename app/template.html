@@ -1,0 +1,299 @@
+<meta charset="utf-8">
+<title>Sahi Ilaj</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Noto+Sans+Devanagari:wght@500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+/* Layout: three short picture questions, then a delivery-app style answer: a real map on the left with you and five numbered places, a ranked list on the right; each card opens to WHY and HOW. */
+:root{
+  --bg:#FAF4E8; --surface:#FFFFFF; --ink:#1F2A44; --muted:#7B7262; --line:#EBDFC9; --soft:#F5EDDC;
+  --accent:#E8741A; --accentink:#B9560A; --accentbg:#FFE7CF; --ok:#1E8E3E; --okbg:#E1F3E4; --warn:#9A6B00; --warnbg:#FFF2CC; --bad:#D2453D; --badbg:#FDE6E3;
+  --font:"Nunito","Noto Sans Devanagari",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-block:14px 40px;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+p{margin:0} button,input{font:inherit;color:inherit} a{color:var(--accentink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.bar{display:flex;align-items:center;gap:12px;min-height:44px}
+.back{width:42px;height:42px;border-radius:50%;border:0;background:var(--surface);font-size:20px;cursor:pointer;flex:none}
+.brand{font-weight:900;font-size:21px;letter-spacing:-.01em;flex:none} .brand span{color:var(--accent)}
+.dots{display:flex;gap:6px;flex:1;max-width:420px;margin:0 auto}
+.dots i{height:6px;flex:1;border-radius:3px;background:var(--line)} .dots i.on{background:var(--accent)}
+.lang{border:0;background:var(--surface);border-radius:999px;padding:9px 16px;font-weight:800;font-size:14px;cursor:pointer;flex:none}
+h1{font-size:34px;line-height:1.2;font-weight:900;margin:8px 0 0;text-wrap:balance;letter-spacing:-.01em}
+.hint{color:var(--muted);font-size:15px;font-weight:600}
+.screen{display:flex;flex-direction:column;gap:18px}
+.narrow{max-width:600px;width:100%;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.tile{background:var(--surface);border:0;border-radius:26px;padding:22px 12px 18px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0;text-align:center;transition:transform .12s;box-shadow:0 1px 0 var(--line)}
+.tile:hover,.opt:hover{box-shadow:0 0 0 2px var(--accent) inset} .tile:active,.opt:active{transform:scale(.97)}
+.bub{width:84px;height:84px;border-radius:28px;display:flex;align-items:center;justify-content:center;background:var(--accentbg);color:var(--accentink)}
+.bub svg{width:54px;height:54px;display:block}
+.h0{background:#FFE7CF;color:#B9560A} .h1{background:#FDE2E0;color:#B5352E} .h2{background:#E1F3E4;color:#1B7A36} .h3{background:#E3ECFB;color:#2B55A8} .h4{background:#F1E6FA;color:#6B3FA0}
+.tile b{font-weight:800;font-size:16.5px;overflow-wrap:anywhere}
+.big{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.opt{background:var(--surface);border:0;border-radius:26px;padding:22px 20px;cursor:pointer;display:flex;align-items:center;gap:16px;text-align:left;transition:transform .12s;box-shadow:0 1px 0 var(--line)}
+.opt .bub{flex:none;width:72px;height:72px} .opt.red .bub{background:var(--badbg);color:var(--bad)}
+.opt b{font-size:19px;font-weight:900;display:block} .opt span{color:var(--muted);font-size:14.5px;font-weight:600}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:var(--surface);border:0;border-radius:999px;padding:8px 15px;font-size:14.5px;font-weight:800;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:#fff}
+.field{background:var(--surface);border:2px solid transparent;border-radius:20px;padding:17px 20px;font-size:21px;font-weight:800;width:100%;min-width:0}
+.field:focus{border-color:var(--accent);outline:none}
+.cta{background:var(--accent);color:#fff;border:0;border-radius:20px;padding:17px;font-size:19px;font-weight:900;cursor:pointer;width:100%}
+.ghost{background:var(--surface);border:0;border-radius:20px;padding:15px;font-size:16px;font-weight:800;cursor:pointer;width:100%}
+.err{color:var(--bad);font-weight:700;font-size:15px}
+.res{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;align-items:start}
+.mapcol{position:sticky;top:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+#map{width:100%;height:min(72vh,640px);min-height:360px;border-radius:26px;overflow:hidden;background:#EDE6D6;z-index:0}
+.listcol{display:flex;flex-direction:column;gap:12px;min-width:0}
+.rule{background:var(--ink);color:#fff;border-radius:20px;padding:14px 18px;font-weight:700;font-size:15px}
+.rule b{color:#FFC48A}
+.banner{border-radius:20px;padding:13px 18px;font-weight:800;font-size:15px}
+.banner.red{background:var(--badbg);color:var(--bad)} .banner.amber{background:var(--warnbg);color:var(--warn)}
+.card{background:var(--surface);border-radius:24px;box-shadow:0 1px 0 var(--line);overflow:hidden}
+.card.sel{box-shadow:0 0 0 2px var(--accent)}
+.chead{display:flex;gap:14px;align-items:center;padding:16px 18px;cursor:pointer;border:0;background:transparent;width:100%;text-align:left}
+.rk{width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none}
+.rk.x{background:var(--badbg);color:var(--bad)}
+.cname{font-weight:900;font-size:17.5px;line-height:1.25;overflow-wrap:anywhere}
+.cmeta{color:var(--muted);font-size:13.5px;font-weight:700;margin-top:2px}
+.kmb{margin-left:auto;text-align:right;flex:none} .kmb .n{font-size:24px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums} .kmb .u{font-size:12px;font-weight:800;color:var(--muted)}
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.pill{font-size:12.5px;font-weight:800;border-radius:999px;padding:3px 10px}
+.b2{color:var(--ok);background:var(--okbg)} .b1{color:var(--warn);background:var(--warnbg)} .b0{color:var(--bad);background:var(--badbg)} .pn{color:var(--muted);background:var(--soft)}
+.cbody{padding:0 18px 18px;display:flex;flex-direction:column;gap:14px;font-size:14.5px}
+.q3{display:grid;gap:10px}
+.qa{background:var(--soft);border-radius:16px;padding:12px 14px}
+.qa h4{margin:0 0 4px;font-size:12.5px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--accentink)}
+.quote{background:var(--surface);border-radius:12px;padding:9px 12px;font-weight:700;margin:6px 0;overflow-wrap:anywhere}
+.check{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.check li{border-radius:999px;padding:3px 10px;font-size:13px;font-weight:800} .check .y{background:var(--okbg);color:var(--ok)} .check .n{background:var(--surface);color:var(--muted)}
+.eq{font-family:var(--mono);font-size:13px;background:var(--ink);color:#fff;border-radius:12px;padding:10px 12px;overflow-x:auto;white-space:nowrap}
+.eq b{color:#FFC48A;font-weight:500}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.call{background:var(--ok);color:#fff;border-radius:16px;padding:12px 20px;font-weight:900;font-size:16px;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.call svg{width:20px;height:20px}
+.sec{background:var(--soft);border:0;border-radius:16px;padding:12px 18px;font-weight:900;font-size:15px;cursor:pointer;text-decoration:none;color:var(--ink);display:inline-block}
+.phone{font-family:var(--mono);font-size:14px;color:var(--muted);user-select:all;align-self:center}
+.warnl{background:var(--badbg);color:var(--bad);border-radius:12px;padding:8px 12px;font-weight:800;margin-top:6px}
+ul.ask{margin:4px 0 0;padding-left:18px} ul.ask li{margin:2px 0}
+details{background:var(--surface);border-radius:22px;padding:2px 18px;box-shadow:0 1px 0 var(--line)}
+details>summary{cursor:pointer;font-weight:900;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:10px}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:"＋";color:var(--muted)} details[open]>summary::after{content:"－"}
+.inner{display:flex;flex-direction:column;gap:10px;padding:0 0 16px;font-size:14.5px}
+.flow{display:grid;gap:8px}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border-radius:16px;padding:12px 14px}
+.step i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;flex:none;font-size:14px}
+.small{font-size:12.5px;color:var(--muted);font-weight:700}
+.lab{font-size:12.5px;font-weight:900;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+@media (max-width:860px){.res{grid-template-columns:minmax(0,1fr)}.mapcol{position:static}#map{height:46vh}.big{grid-template-columns:minmax(0,1fr)}.brand{display:none}h1{font-size:28px}}
+.whyline{font-weight:800;font-size:15px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.lab.g{color:var(--ok)} .lab.r{color:var(--bad)}
+ul.hl{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:5px}
+ul.hl li{border-radius:12px;padding:7px 11px;font-weight:700;font-size:13.5px;overflow-wrap:anywhere}
+ul.hl.ok li{background:var(--okbg);color:#14602B} ul.hl.no li{background:var(--badbg);color:#9C2F29} ul.hl li.none{background:var(--soft);color:var(--muted)}
+.quote.q2{background:var(--soft);font-size:16px}
+details.sub{background:var(--soft);border-radius:16px;padding:0 14px;box-shadow:none}
+details.sub>summary{padding:11px 0;font-size:14.5px}
+table.math{border-collapse:collapse;width:100%;font-size:13.5px}
+table.math td{padding:5px 8px 5px 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.math td.num{font-family:var(--mono);white-space:nowrap;font-weight:500}
+table.math tr.tot td{border-bottom:0;font-weight:800}
+.other{background:var(--surface);border-radius:26px;padding:18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 0 var(--line)}
+.other .rowi{display:flex;gap:10px;flex-wrap:wrap}
+.other input{flex:1 1 240px;min-width:0;background:var(--soft);border:2px solid transparent;border-radius:16px;padding:13px 16px;font-size:17px;font-weight:700}
+.other input:focus{border-color:var(--accent);outline:none}
+.other button.gobtn{background:var(--ink);color:#fff;border:0;border-radius:16px;padding:13px 22px;font-weight:900;cursor:pointer}
+@media (max-width:860px){.two{grid-template-columns:minmax(0,1fr)}}
+.cost{background:var(--warnbg);color:#6B4A00;border-radius:14px;padding:10px 13px;font-weight:700;font-size:14px}
+/* map library styles (inlined) */
+.leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
+.leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;outline:0;font:12px var(--font)}
+.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{user-select:none;-webkit-user-drag:none}
+.leaflet-tile{visibility:hidden}.leaflet-tile-loaded{visibility:inherit}
+.leaflet-container .leaflet-tile,.leaflet-container img.leaflet-tile{max-width:none!important;max-height:none!important;width:256px;height:256px;padding:0}
+.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}
+.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}
+.leaflet-control{position:relative;z-index:800;pointer-events:auto;float:left;clear:both}
+.leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}
+.leaflet-right .leaflet-control{float:right;margin-right:12px}.leaflet-top .leaflet-control{margin-top:12px}.leaflet-left .leaflet-control{margin-left:12px}.leaflet-bottom .leaflet-control{margin-bottom:6px}
+.leaflet-zoom-animated{transform-origin:0 0}.leaflet-zoom-anim .leaflet-zoom-animated{transition:transform .25s cubic-bezier(0,0,.25,1)}
+.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:grab}.leaflet-dragging .leaflet-grab{cursor:grabbing}
+.leaflet-bar{border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.leaflet-bar a{display:block;width:36px;height:36px;line-height:36px;text-align:center;text-decoration:none;color:var(--ink);background:#fff;font-weight:900;font-size:18px;border-bottom:1px solid var(--line)}
+.leaflet-control-attribution{background:rgba(255,255,255,.8);padding:0 6px;font-size:10px;border-radius:8px 0 0 0}
+.leaflet-div-icon{background:none;border:none}
+.leaflet-tooltip{position:absolute;padding:5px 10px;background:#fff;border-radius:10px;white-space:nowrap;pointer-events:none;box-shadow:0 1px 4px rgba(0,0,0,.25);font-weight:800;color:var(--ink)}
+.pin{width:36px;height:36px;border-radius:50% 50% 50% 4px;transform:rotate(-45deg);background:var(--accent);border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center}
+.pin span{transform:rotate(45deg);color:#fff;font-weight:900;font-size:15px}
+.me{width:22px;height:22px;border-radius:50%;background:#2B6BE4;border:4px solid #fff;box-shadow:0 0 0 6px rgba(43,107,228,.25),0 2px 6px rgba(0,0,0,.3)}
+</style>
+
+<div class="wrap">
+  <div class="bar"><button class="back" id="back" aria-label="Back">←</button><div class="brand">Sahi <span>Ilaj</span></div><div class="dots" id="dots"></div><button class="lang" id="lang">हिन्दी</button></div>
+  <div id="view"></div>
+</div>
+
+<script>
+const D=/*__DATA__*/null;
+const ICON=/*__ICONS__*/{};
+const FAC=D.fac, PL=D.places, CL=D.claims, M=D.meta, W=M.weights;
+const NEEDS=[
+ ['kidney','Kidney / dialysis','किडनी / डायलिसिस',0,[['dialysis','Dialysis','डायलिसिस']]],
+ ['birth','Childbirth','प्रसव',1,[['emergency_obstetric','Delivery / C-section','प्रसव / सिज़ेरियन']]],
+ ['newborn','Sick newborn','बीमार नवजात',1,[['nicu','Newborn ICU','नवजात आईसीयू']]],
+ ['heart','Heart','दिल',0,[['cardiac_surgery','Heart surgery','हृदय की सर्जरी'],['cath_lab','Angiography / stent','एंजियोग्राफी / स्टेंट']]],
+ ['injury','Accident / injury','दुर्घटना / चोट',1,[['trauma_emergency','Emergency / trauma','आपातकाल / ट्रॉमा'],['ortho_surgery','Bone and joint surgery','हड्डी की सर्जरी']]],
+ ['burn','Burn','जलना',1,[['burn_care','Burn care','जलने का इलाज']]],
+ ['breath','Critical / breathing','गंभीर / साँस',1,[['icu','ICU','आईसीयू'],['ventilator','Ventilator','वेंटिलेटर']]],
+ ['stroke','Stroke','लकवा / स्ट्रोक',1,[['stroke','Stroke care','स्ट्रोक का इलाज']]],
+ ['bite','Snakebite / poison','साँप का काटना / ज़हर',1,[['snakebite_poison','Snakebite / poison care','साँप / ज़हर का इलाज']]],
+ ['scan','Scan','स्कैन',0,[['mri','MRI','एमआरआई'],['ct_scan','CT scan','सीटी स्कैन']]],
+ ['cancer','Cancer','कैंसर',0,[['chemotherapy','Chemotherapy','कीमोथेरेपी'],['radiotherapy','Radiotherapy','रेडियोथेरेपी']]],
+ ['eye','Eye','आँख',0,[['cataract_surgery','Cataract surgery','मोतियाबिंद का ऑपरेशन']]],
+ ['tb','TB / chest','टीबी / छाती',0,[['tb','TB care','टीबी का इलाज']]],
+ ['blood','Blood','खून',1,[['blood_bank','Blood bank','ब्लड बैंक']]]];
+const TX={en:{q1:'What do you need help with?',h1:'Tap a picture.',q2:'Is it an emergency?',u1:'Yes, right now',u1s:'Nearest places that pass our evidence check',u0:'No, I can plan',u0s:'Best-supported places in your area',which:'Which one?',q3:'Where are you?',h3:'Type a PIN code or a town, or share your location.',ph:'PIN or town',go:'Find care',gps:'Use my location',nf:'We could not find that place. Try a 6-digit PIN or a district name.',km:'km',call:'Call',area:'About this area',notrec:'Nearby places we left out, and why',how:'How we decide',b2:'Strong evidence',b1:'Some evidence',b0:'Weak evidence',pub:'Public',priv:'Private',again:'Start again'},
+ hi:{q1:'आपको किस चीज़ में मदद चाहिए?',h1:'तस्वीर दबाएँ।',q2:'क्या यह आपातकाल है?',u1:'हाँ, अभी',u1s:'सबसे पास की भरोसेमंद जगहें',u0:'नहीं, समय है',u0s:'आपके इलाके की सबसे भरोसेमंद जगहें',which:'कौन सा?',q3:'आप कहाँ हैं?',h3:'पिन कोड या शहर लिखें, या अपनी जगह बताएँ।',ph:'पिन या शहर',go:'खोजें',gps:'मेरी जगह इस्तेमाल करें',nf:'यह जगह नहीं मिली। 6 अंकों का पिन या ज़िले का नाम लिखें।',km:'किमी',call:'कॉल करें',area:'इस इलाके के बारे में',notrec:'पास की जगहें जिन्हें हमने नहीं चुना',how:'हम कैसे तय करते हैं',b2:'मज़बूत प्रमाण',b1:'कुछ प्रमाण',b0:'कमज़ोर प्रमाण',pub:'सरकारी',priv:'निजी',again:'फिर से शुरू करें'}};
+const SIGN=['Map point, postcode and city all point to different places','The text names two or more towns over 60 km away','The row was built from the websites of two or more other organisations'];
+const SIGNW=['all_differ','far2','other_sites_2plus'];
+const NEGNAME={eye:'eye-care',dental:'dental',skin_hair:'skin and hair',physio:'physiotherapy',alt_med:'ayurveda / homeopathy'};
+const KW=[['kidney',/kidney|dialysis|urine|किडनी|गुर्द/i],['birth',/pregnan|labou?r|deliver|birth|contraction|गर्भ|प्रसव/i],['newborn',/newborn|new born|baby|infant|नवजात|शिशु/i],['heart',/chest pain|heart|palpitat|सीने|दिल/i],['injury',/accident|injur|fractur|bleed|fell|fall|broken|wound|दुर्घटना|चोट/i],['burn',/burn|fire|scald|जल/i],['breath',/breath|unconscious|faint|not responding|साँस|बेहोश/i],['stroke',/stroke|paraly|face droop|slurred|लकवा/i],['bite',/snake|bite|poison|साँप|ज़हर|जहर/i],['scan',/scan|mri|\bct\b|x-?ray/i],['cancer',/cancer|tumou?r|lump|कैंसर/i],['eye',/eye|vision|cataract|आँख|आंख/i],['tb',/cough|\btb\b|tubercul|खाँसी|खांसी|टीबी/i],['blood',/blood|transfus|खून/i]];
+let sugg=null, typed='', sector='any', rad=0;
+const GL={'RO water':'Water purifier for dialysis (RO plant)','sessions or machine count':'Number of dialysis machines or sessions','nephrologist':'Kidney doctor (nephrologist)','ICU':'Intensive care unit (ICU)','operation theatre':'Operating theatre','anaesthesia':'Anaesthesia doctor','blood bank':'Blood bank or blood storage','round the clock':'Open 24 hours','round the clock emergency':'24-hour emergency','newborn care':'Newborn care unit','obstetrician':'Delivery doctor (obstetrician)','ventilator':'Breathing machine (ventilator)','warmer or incubator':'Baby warmer or incubator','neonatologist':'Newborn doctor (neonatologist)','phototherapy':'Light therapy for newborn jaundice','CPAP':'Breathing support for babies (CPAP)','paediatrician':'Child doctor (paediatrician)','cardiac OT':'Heart operating theatre','cath lab':'Heart catheter lab','cath lab or DSA':'Catheter lab','heart lung machine':'Heart-lung machine','cardiac surgeon':'Heart surgeon','cardiac ICU':'Heart ICU','cardiologist':'Heart doctor (cardiologist)','cardiac surgery backup':'Heart surgery backup','plastic surgeon':'Plastic surgeon','skin graft or bank':'Skin graft or skin bank','tesla spec':'MRI strength stated (Tesla)','radiologist':'Scan doctor (radiologist)','slice spec':'CT slice count stated','CT':'CT scanner','MRI':'MRI scanner','CT or MRI':'CT or MRI scanner','ambulance':'Ambulance','orthopaedic surgeon':'Bone surgeon','neurologist':'Brain doctor (neurologist)','xray':'X-ray','lab':'Laboratory','oxygen':'Oxygen supply','pharmacy':'Pharmacy','surgeon ortho or neuro':'Bone or brain surgeon','neurosurgery':'Brain surgery','defibrillator':'Heart shock machine (defibrillator)','monitors':'Patient monitors','bed count':'Number of beds stated','ventilator count':'Number of ventilators stated','intensivist or anaesthetist':'ICU doctor','C arm':'X-ray arm for surgery (C-arm)','physiotherapy':'Physiotherapy','implants volume':'Number of implant surgeries stated','pulmonologist':'Lung doctor','sputum or naat':'TB test (sputum or NAAT)','DOTS':'Free TB medicine programme (DOTS)','physician':'General doctor','medical oncologist':'Cancer doctor','day care':'Day-care ward','pathologist':'Lab doctor (pathologist)','tumour board':'Cancer team review','linac or cobalt':'Radiation machine','radiation oncologist':'Radiation doctor','physicist':'Radiation physicist','planning':'Radiation planning system','AERB':'Radiation safety licence','ophthalmologist':'Eye doctor','phaco machine':'Cataract machine (phaco)','operating microscope':'Operating microscope','biometry':'Eye measurement (biometry)','YAG laser':'Eye laser (YAG)','volume':'Number of cases stated','licence':'Blood bank licence','component separation':'Blood component separation','dialysis backup':'Dialysis available','ABG':'Blood gas test','echo TMT':'Heart scan (echo / TMT)','chemotherapy':'Chemotherapy','radiotherapy':'Radiotherapy'};
+const gl=n=>GL[n]||n;
+let lang='en', step=1, need=null, svc=null, urgent=false, here=null, last=null, locErr='', open=0, map=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const nz=s=>String(s).toUpperCase().replace(/&/g,'AND').replace(/[^A-Z]/g,'');
+const T=k=>TX[lang][k]||TX.en[k];
+const tr=(en,hi)=>lang==='hi'?hi:en;
+const curNeed=()=>NEEDS.find(n=>n[0]===need);
+const curSvc=()=>curNeed()[4].find(s=>s[0]===svc);
+const hav=(a,b,c,d)=>{const R=Math.PI/180,x=Math.sin((c-a)*R/2)**2+Math.cos(a*R)*Math.cos(c*R)*Math.sin((d-b)*R/2)**2;return 12742*Math.asin(Math.sqrt(x));};
+const CITY={};for(const k in D.cities)CITY[k.toLowerCase()]=[k,...D.cities[k]];
+
+function resolve(q){q=q.trim();if(!q)return null;
+  let m=q.replace(/\s/g,'').match(/^(\d{6})$/);if(m){const p=D.pins[m[1]];return p?{lat:p[0],lon:p[1],pl:p[2],label:'PIN '+m[1]}:null;}
+  m=q.match(/^(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)$/);if(m)return nearPlace(+m[1],+m[2],q);
+  const c=CITY[q.toLowerCase()];if(c)return{lat:c[1],lon:c[2],pl:c[3],label:c[0]};
+  const k=Object.keys(CITY).find(x=>x.startsWith(q.toLowerCase()));if(k){const c2=CITY[k];return{lat:c2[1],lon:c2[2],pl:c2[3],label:c2[0]};}
+  return null;}
+function nearPlace(lat,lon,label){let best=null,bd=1e9;for(const k in D.pins){const p=D.pins[k],d=(p[0]-lat)**2+(p[1]-lon)**2;if(d<bd){bd=d;best=p;}}return{lat,lon,pl:best?best[2]:null,label:label||'My location'};}
+
+/* Ranking.  Emergency: nearest first among places that pass the evidence check.  Planned: highest trust first inside the local area. */
+function search(){
+  const cl=CL[svc].c, all=[];
+  for(const k in cl){const f=FAC[k],c=cl[k];all.push({i:+k,f,c,d:hav(here.lat,here.lon,f[3],f[4])});}
+  const ok=all.filter(x=>!x.c[8]&&x.c[1]>=1&&(sector==='any'||x.f[7]===sector)), radii=urgent?[25,50,100,200]:[25,50,150,300];
+  let R=radii[radii.length-1];if(rad)R=rad;else for(const r of radii){if(ok.filter(x=>x.d<=r).length>=5){R=r;break;}}
+  const pool=ok.filter(x=>x.d<=R);
+  const top=(urgent?pool.sort((a,b)=>a.d-b.d):pool.sort((a,b)=>b.c[0]-a.c[0]||a.d-b.d)).slice(0,5);
+  const off=all.filter(x=>x.d<=Math.max(R,top.length?top[top.length-1].d:R)&&(x.c[8]||x.c[1]===0)).sort((a,b)=>a.d-b.d).slice(0,4);
+  const nextOut=ok.filter(x=>x.d>R).sort((a,b)=>a.d-b.d)[0];
+  return{top,off,R,n:pool.length,all,nextOut};}
+
+function parts(c){const co=CL[svc].coreq.length,share=co?c[3].length/co:0;
+  const e1=c[2]===3?W.t3:(c[2]===2?W.t2:1), e2=Math.pow(W.coreq,share), e3=c[7]?W.ownurl:1;let C=1;const fired=[];
+  for(let b=0;b<3;b++)if(c[6]>>b&1){C*=W[SIGNW[b]];fired.push(b);}
+  return{e1,e2,e3,E:e1*e2*e3,C,fired,share};}
+function reasonOff(x){const c=x.c;if(c[8])return'Left out by rule: this is a '+(NEGNAME[c[9]]||'single-specialty')+' facility and the service is outside its specialty, so the text probably belongs to another hospital.';
+  const s=[];if(c[2]===1)s.push('only a loose mention of the service');for(let b=0;b<3;b++)if(c[6]>>b&1)s.push(SIGN[b].toLowerCase());if(!s.length)s.push('too little supporting text');return'Left out: weak evidence ('+s.join('; ')+').';}
+const opLabel=f=>f[7]==='public'?T('pub'):(f[7]==='private'?T('priv'):'');
+
+function body(x,rank,r){const f=x.f,c=x.c,co=CL[svc].coreq,found=new Set(c[3]),p=parts(c),sv=curSvc()[1].toLowerCase();
+  const good=[],bad=[];
+  if(f[5]!=null&&f[5]>=0.85)good.push('Address, postcode and map point agree');else if(f[5]!=null&&f[5]>=0.6)good.push('Two of address, postcode and map point agree');else bad.push('Address, postcode and map point disagree, so the distance may be wrong');
+  if(c[2]>=2)good.push('Its '+c[5]+' list says: “'+c[4]+'”');else bad.push('It mentions '+sv+' only loosely: “'+c[4]+'”');
+  co.forEach((n,j)=>{if(found.has(j))good.push('Has: '+gl(n));else bad.push('Not mentioned: '+gl(n));});
+  if(c[7])good.push('Its own website has a page for this service');
+  p.fired.forEach(b=>bad.push(SIGN[b]));if(!f[8])bad.push('No phone number on the record');
+  const asks=['Is '+sv+' working today, and can you take a patient now?',...co.filter((n,j)=>!found.has(j)).slice(0,2).map(n=>'Do you have this: '+gl(n)+'?')];
+  const why=urgent?'Number '+rank+' because it is the '+['','nearest','2nd nearest','3rd nearest','4th nearest','5th nearest'][rank]+' of '+r.n+' places within '+r.R+' km that passed the check.':'Number '+rank+' because it has the '+['','highest','2nd highest','3rd highest','4th highest','5th highest'][rank]+' trust score of '+r.n+' places within '+r.R+' km that passed the check.';
+  const info=[];if(f[11]){if(f[11][0])info.push(f[11][0]+' beds');if(f[11][1])info.push(f[11][1]+' doctors');if(f[11][2])info.push('since '+f[11][2]);}
+  let h='<div class="cbody"><div class="btns">'+(f[8]?'<a class="call" href="tel:'+esc(f[8].replace(/[^+\d]/g,''))+'">'+ICON.phone+esc(T('call'))+'</a><span class="phone">'+esc(f[8])+'</span>':'')+'<button class="sec" data-say="'+(rank-1)+'">'+esc(tr('Listen','सुनें'))+'</button></div>';
+  h+='<p class="whyline">'+esc(why)+'</p>';
+  const cost=f[7]==='public'?'Public facility: treatment is usually free or low cost.'+(svc==='emergency_obstetric'?' Delivery, C-section, medicines and transport are free in public facilities (JSSK scheme).':'')+(svc==='dialysis'?' Dialysis is free for poor families at national programme centres.':''):(f[7]==='private'?'Private facility: ask the price before you go. Ask if they accept the Ayushman card (PM-JAY pays up to ₹5 lakh a year for eligible families).':'We do not know if this is public or private. Ask the price before you go.');
+  h+='<div class="cost">₹ '+esc(cost)+'</div>';
+  h+='<div class="two"><div><div class="lab g">✓ What the record confirms</div><ul class="hl ok">'+good.map(g=>'<li>'+esc(g)+'</li>').join('')+'</ul></div><div><div class="lab r">? What we could not confirm</div><ul class="hl no">'+(bad.length?bad.map(g=>'<li>'+esc(g)+'</li>').join(''):'<li class="none">Nothing missing in the record</li>')+'</ul></div></div>';
+  h+='<div><div class="lab">Ask on the phone before you go</div><ul class="ask">'+asks.map(a=>'<li>'+esc(a)+'</li>').join('')+'</ul></div>';
+  if(info.length)h+='<div class="pills">'+info.map(i=>'<span class="pill pn">'+esc(i)+'</span>').join('')+'<span class="small" style="align-self:center">as stated on the record</span></div>';
+  const lines=[['Start',M.base,'the same for every claim'],['Text strength','× '+p.e1.toFixed(1),['','only a loose mention','names the procedure or unit','describes equipment or a unit'][c[2]]],['Needs found','× '+p.e2.toFixed(1),found.size+' of '+co.length+' things this service needs']];
+  if(c[7])lines.push(['Own website page','× '+p.e3.toFixed(1),'the facility\'s own site has a page for it']);
+  p.fired.forEach(b=>lines.push(['Warning','× '+W[SIGNW[b]],SIGN[b]]));
+  const odds=M.base*p.E*p.C;
+  h+='<details class="sub"><summary>Show the math: trust '+c[0]+' out of 100</summary><div class="inner"><table class="math">'+lines.map(l=>'<tr><td>'+esc(l[0])+'</td><td class="num">'+esc(String(l[1]))+'</td><td>'+esc(l[2])+'</td></tr>').join('')+'<tr class="tot"><td>Result</td><td class="num">'+odds.toFixed(1)+'</td><td>'+odds.toFixed(1)+' to 1 that the claim is real, which is '+odds.toFixed(1)+' ÷ ('+odds.toFixed(1)+' + 1) = <b>'+c[0]+' out of 100</b></td></tr></table><p class="small">Good signs multiply the number up, warning signs multiply it down. The multipliers were measured on '+M.n_labelled+' claims whose answer we know.</p></div></details>';
+  h+='<details class="sub"><summary>Doctors named on this record'+(f[10]&&f[10].length?' ('+f[10].length+')':'')+'</summary><div class="inner">'+(f[10]&&f[10].length?'<ul class="ask">'+f[10].map(d=>'<li>'+esc(d)+'</li>').join('')+'</ul>':'<p class="small">None named in the record.</p>')+'<p class="small">Copied from the record, not verified; a doctor may also work elsewhere.'+(f[9]?' For qualifications and experience, see the facility\'s own site: <a href="https://'+esc(f[9].replace(/^https?:\/\//,''))+'" target="_blank" rel="noopener">'+esc(f[9])+'</a>':'')+'</p></div></details>';
+  return h+'</div>';}
+
+function areaHtml(){const pl=here.pl!=null?PL[here.pl]:null;let h='';if(!pl)return h;const key=nz(pl[0])+'|'+nz(pl[1]),n=D.nfhs[key];
+  if(n){const share=n[0]&&n[1]?Math.round(n[1]/n[0]*100):null;const G=[['Hard to reach','Basic care reaches fewer people here than in two thirds of districts. Expect long travel; use the ambulance numbers and ask a health worker to go with you.'],['Partly reached','Basic care reaches people here about as often as in a typical district.'],['Well reached','Basic care reaches most people here.']][n[8]];
+    h+='<p class="small">'+esc(pl[1])+', '+esc(pl[0])+' · government survey NFHS-5</p>';if(G)h+='<p><span class="pill b'+n[8]+'">'+G[0]+'</span> '+G[1]+'</p>';
+    if(share!=null)h+='<p>'+share+'% of births in a facility here happen in <b>public</b> facilities. Our table is only '+M.public_share_table+'% public, so this list is mostly private hospitals. Check your district hospital too.</p>';
+    if(svc==='emergency_obstetric'&&n[2]!=null)h+='<p>C-sections: '+n[2]+'% of births in public facilities'+(n[3]!=null?', '+n[3]+'% in private':'')+'.'+(n[2]<5?' Public facilities here rarely perform them; ask before you travel.':'')+'</p>';
+    if(svc==='emergency_obstetric'&&n[6]!=null)h+='<p>'+n[6]+'% of women here are anaemic, which raises the risk in childbirth. Ask whether blood is available.</p>';
+    if(n[10]!=null)h+='<p>Families here pay about ₹'+Math.round(n[10]).toLocaleString('en-IN')+' out of pocket for a delivery even in a public facility (India district median ₹2,809).</p>';
+    if(n[9]!=null)h+='<p>'+n[9]+'% of girls aged 15 to 19 here are already mothers or pregnant (India district median 4.8%)'+(n[11]!=null?', and '+n[11]+'% of young women married before 18':'')+'. Young mothers need a facility that can handle a difficult birth.</p>';
+    if(n[4]!=null)h+='<p>'+n[4]+'% of households have health insurance.'+(n[4]<25?' Ask about government schemes (PM-JAY).':'')+'</p>';}
+  if(svc==='dialysis'){const p=D.pmndp[key];if(p&&p.length)h+='<div><div class="lab">Public dialysis centres here (PMNDP, free or low cost)</div><p>'+p.map(esc).join(' · ')+'</p><p class="small">From the official list. Not in our table, so no distance or evidence.</p></div>';}
+  return h;}
+
+function drawMap(r){if(map){map.remove();map=null;}if(!window.L||!$('map'))return;
+  map=L.map('map',{zoomControl:true,attributionControl:true,preferCanvas:true});
+  let failed=false;const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap contributors'}).addTo(map);
+  tiles.on('tileerror',()=>{if(failed)return;failed=true;const b=map.getBounds().pad(.4);let k=0;for(const p in D.pins){const q=D.pins[p];if(b.contains([q[0],q[1]])&&k++<4000)L.circleMarker([q[0],q[1]],{radius:2,stroke:false,fillColor:'#B9AE98',fillOpacity:.7,interactive:false}).addTo(map);}$('mapnote').textContent='Street map could not load here, so grey dots show post offices instead. On the deployed app you see streets.';});
+  const pts=[[here.lat,here.lon]];
+  for(const x of r.all){if(x.c[8]||x.c[1]===0){if(x.d<=r.R)L.circleMarker([x.f[3],x.f[4]],{radius:5,color:'#D2453D',weight:2,fill:false}).addTo(map).bindTooltip(esc(x.f[0])+' · left out');}}
+  r.top.forEach((x,j)=>{pts.push([x.f[3],x.f[4]]);L.marker([x.f[3],x.f[4]],{icon:L.divIcon({className:'',html:'<div class="pin"><span>'+(j+1)+'</span></div>',iconSize:[36,36],iconAnchor:[18,36]}),zIndexOffset:1000-j}).addTo(map).bindTooltip(esc(x.f[0])+' · '+Math.round(x.d)+' km',{direction:'top',offset:[0,-34]}).on('click',()=>{open=j;paintCards();const el=document.querySelector('[data-card="'+j+'"]');if(el)el.scrollIntoView({behavior:'smooth',block:'nearest'});});});
+  L.marker([here.lat,here.lon],{icon:L.divIcon({className:'',html:'<div class="me"></div>',iconSize:[22,22],iconAnchor:[11,11]}),zIndexOffset:2000}).addTo(map).bindTooltip('You: '+esc(here.label),{direction:'top',offset:[0,-12]});
+  if(pts.length>1)map.fitBounds(pts,{padding:[50,50],maxZoom:14});else map.setView(pts[0],11);}
+
+function cardsHtml(r){return r.top.map((x,j)=>'<div class="card'+(j===open?' sel':'')+'" data-card="'+j+'"><button class="chead" data-open="'+j+'"><span class="rk">'+(j+1)+'</span><span style="min-width:0"><span class="cname">'+esc(x.f[0])+'</span><div class="cmeta">'+esc(x.f[1])+(PL[x.f[2]]?', '+esc(PL[x.f[2]][0]):'')+'</div><div class="pills"><span class="pill b'+x.c[1]+'">'+esc(T('b'+x.c[1]))+' · '+x.c[0]+'</span>'+(opLabel(x.f)?'<span class="pill pn">'+esc(opLabel(x.f))+'</span>':'')+'</div></span><span class="kmb"><div class="n">'+Math.round(x.d)+'</div><div class="u">'+esc(T('km'))+'</div></span></button>'+(j===open?body(x,j+1,r):'')+'</div>').join('');}
+function paintCards(){$('cards').innerHTML=cardsHtml(last);$('cards').querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>{const j=+b.dataset.open;open=open===j?-1:j;paintCards();if(map&&open>=0){const x=last.top[open];map.panTo([x.f[3],x.f[4]]);}});$('cards').querySelectorAll('[data-say]').forEach(b=>b.onclick=()=>speak(last.top[+b.dataset.say]));}
+
+function speak(x){if(!x)return;try{const en='For '+curSvc()[1]+', choice '+(last.top.indexOf(x)+1)+' is '+x.f[0]+' in '+x.f[1]+', about '+Math.round(x.d)+' kilometres away. '+TX.en['b'+x.c[1]]+'. Please call before you go.';const hi=curSvc()[2]+' के लिए विकल्प: '+x.f[0]+', '+x.f[1]+', लगभग '+Math.round(x.d)+' किलोमीटर दूर। '+TX.hi['b'+x.c[1]]+'। जाने से पहले फ़ोन करें।';const u=new SpeechSynthesisUtterance(lang==='hi'?hi:en);u.lang=lang==='hi'?'hi-IN':'en-IN';speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
+function results(){const r=search();last=r;open=0;const s=curSvc();let h='<div class="screen"><div class="chips"><button class="chip" data-go="1">'+esc(tr(s[1],s[2]))+'</button><button class="chip" data-go="2">'+(urgent?esc(T('u1')):esc(T('u0')))+'</button><button class="chip" data-go="3">'+esc(here.label)+'</button></div>';
+  h+='<div class="res"><div class="mapcol"><div id="map"></div><p class="small" id="mapnote">Blue dot is you. Numbers are our choices. Red rings are places we left out. Distances are straight lines; roads are longer.</p></div><div class="listcol">';
+  if(urgent)h+='<div class="banner red">Ambulance 108 · pregnancy and newborn 102 · any emergency 112</div>';
+  h+='<div class="rule">'+(urgent?'<b>Emergency rule.</b> We first remove places with weak evidence or a rule violation. Then we list the <b>nearest</b> ones.':'<b>Planned rule.</b> We first remove places with weak evidence or a rule violation. Then, inside your area, we list the ones with the <b>highest trust score</b>.')+' Found '+r.n+' within '+r.R+' km.</div>';
+  if(!r.top.length)h+='<div class="banner amber">No place with enough evidence within '+r.R+' km. This can mean there is no such care nearby, or that our table does not see it (it misses most public facilities).'+(r.nextOut?' Nearest one with evidence: '+esc(r.nextOut.f[0])+', '+esc(r.nextOut.f[1])+', about '+Math.round(r.nextOut.d)+' km.':'')+'</div>';
+  h+='<div class="chips"><span class="small" style="align-self:center">Show</span>'+[['any','All'],['public','Public (low cost)'],['private','Private']].map(o=>'<button class="chip" data-sec="'+o[0]+'" aria-pressed="'+(sector===o[0])+'">'+o[1]+'</button>').join('')+'<span class="small" style="align-self:center;margin-left:8px">Within</span>'+[[0,'Auto'],[30,'30 km'],[50,'50 km'],[100,'100 km']].map(o=>'<button class="chip" data-rad="'+o[0]+'" aria-pressed="'+(rad===o[0])+'">'+o[1]+'</button>').join('')+'</div>';
+  if(sector==='public')h+='<p class="small">Our table lists few public facilities (5% of rows). Your district hospital may not appear here.</p>';
+  h+='<div id="cards" style="display:flex;flex-direction:column;gap:12px"></div>';
+  const ah=areaHtml();if(ah)h+='<details><summary>'+esc(T('area'))+'</summary><div class="inner">'+ah+'</div></details>';
+  if(r.off.length)h+='<details><summary>'+esc(T('notrec'))+' ('+r.off.length+')</summary><div class="inner">'+r.off.map(x=>'<div><b>'+esc(x.f[0])+'</b> <span class="small">· '+Math.round(x.d)+' km · '+esc(x.f[1])+'</span><p>'+esc(reasonOff(x))+'</p><p class="small">“'+esc(x.c[4])+'”</p></div>').join('')+'</div></details>';
+  h+='<details><summary>Who can help, and what to take</summary><div class="inner"><p><b>People who can help.</b> Your village health worker (ASHA) or nurse (ANM) knows the nearest public facility. Free ambulance: 108. Free transport for pregnant women and newborns: 102. Any emergency: 112. Ayushman card questions: 14555.</p><p><b>What to take.</b> An ID such as Aadhaar. Your Ayushman card or ration card if you have one. For pregnancy or a child: the mother and child card (MCP card) and the vaccination card. Old prescriptions and test reports. The phone number shown on this page.</p><p class="small">Numbers are national; services differ by state.</p></div></details>';
+  h+='<details><summary>'+esc(T('how'))+'</summary><div class="inner"><div class="flow">'
+   +'<div class="step"><i>1</i><div><b>Find the sentences.</b> For each of 9,989 facility records we find every sentence about the service. A service word inside the hospital\'s own name does not count.</div></div>'
+   +'<div class="step"><i>2</i><div><b>Grade the evidence.</b> Loose mention ×1, named procedure or unit ×'+W.t2+', equipment or unit with detail ×'+W.t3+'. Then up to ×'+W.coreq+' for the share of things the service needs (theatre, anaesthesia, blood…) found in the record, and ×'+W.ownurl+' if its own website has a page for it.</div></div>'
+   +'<div class="step"><i>3</i><div><b>Check the row is one real place.</b> Map point, postcode and city all differ ×'+W.all_differ+'. Text names 2+ towns over 60 km away ×'+W.far2+'. Built from 2+ other organisations\' websites ×'+W.other_sites_2plus+'.</div></div>'
+   +'<div class="step"><i>4</i><div><b>Score.</b> odds = '+M.base+' × evidence × one-real-place; trust = 100 × odds ÷ (1 + odds). Strong ≥ '+M.high+', some ≥ '+M.low+', weak below.</div></div>'
+   +'<div class="step"><i>5</i><div><b>Remove.</b> Weak evidence is removed. A single-specialty facility (eye, dental, skin, physio, ayurveda) claiming acute care outside its specialty is removed. Both are shown in the left-out list with the reason.</div></div>'
+   +'<div class="step"><i>6</i><div><b>Rank.</b> Emergency: nearest first. Planned: highest trust first inside your area. The area starts at 25 km and widens until 5 places are found.</div></div></div>'
+   +'<p><b>Where the numbers come from.</b> They are fitted on '+M.n_labelled+' claims whose answer we could establish, not chosen by hand. <b>Checks:</b> on unseen labelled claims the score separates real from false with AUC 0.88; 98% of "strong" are real, 82% of "some", 44% of "weak".</p><p><b>Limits.</b> The table is 5% public facilities. No text for a service does not mean the place lacks it. Distances are straight lines. The score is an index, not a probability. This tool does not diagnose. Always call first.</p></div></details>';
+  h+='<button class="chip" id="again" style="align-self:center">↺ '+esc(T('again'))+'</button></div></div></div>';return h;}
+
+function render(){const v=$('view');$('dots').innerHTML=[1,2,3,4].map(i=>'<i class="'+(i<=step?'on':'')+'"></i>').join('');$('back').style.visibility=step>1?'visible':'hidden';$('lang').textContent=lang==='en'?'हिन्दी':'English';
+  if(step===1){v.innerHTML='<div class="screen"><div><h1>'+esc(T('q1'))+'</h1><p class="hint">'+esc(T('h1'))+'</p></div><div class="grid">'+NEEDS.map((n,i)=>'<button class="tile" data-n="'+n[0]+'"><span class="bub h'+(i%5)+'">'+ICON[n[0]]+'</span><b>'+esc(tr(n[1],n[2]))+'</b></button>').join('')+'</div><div class="other"><b>'+esc(tr('Not sure? Describe the problem in your own words','पक्का नहीं? अपनी भाषा में समस्या लिखें'))+'</b><div class="rowi"><input id="sym" placeholder="'+esc(tr('for example: fell from a bike and the leg is bleeding','जैसे: बाइक से गिर गए, पैर से खून बह रहा है'))+'" value="'+esc(typed)+'"><button class="gobtn" id="mic" style="background:var(--accent)">'+esc(tr('Speak','बोलें'))+'</button><button class="gobtn" id="symgo">'+esc(tr('Suggest','सुझाव'))+'</button></div>'+(sugg?'<div class="chips">'+sugg.map(k=>{const n=NEEDS.find(x=>x[0]===k);return '<button class="chip" data-sg="'+k+'" style="background:var(--accentbg);color:var(--accentink)">'+esc(tr(n[1],n[2]))+'</button>';}).join('')+'<button class="chip" data-sg="injury" style="background:var(--soft)">'+esc(tr('General hospital with emergency','आपातकाल वाला सामान्य अस्पताल'))+'</button></div><p class="small">'+esc(sugg.length?'These match your words. They are suggestions, not a diagnosis.':'We could not match your words to a category. A general hospital with an emergency department is the safe choice; in danger call 108.')+'</p>':'')+'</div><p class="small">This tool does not diagnose; a health worker or doctor decides what care is needed.</p></div>';
+    const sg=()=>{typed=$('sym').value;sugg=KW.filter(k=>k[1].test(typed)).map(k=>k[0]).slice(0,3);render();};$('symgo').onclick=sg;$('mic').onclick=()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){$('sym').placeholder='Voice input is not available in this browser. Please type.';return;}try{const r=new SR();r.lang=lang==='hi'?'hi-IN':'en-IN';r.onresult=e=>{$('sym').value=e.results[0][0].transcript;sg();};r.onerror=()=>{$('sym').placeholder='Could not hear you. Please type.';};r.start();$('mic').textContent='…';}catch(e){$('sym').placeholder='Voice input is not available here. Please type.';}};$('sym').addEventListener('keydown',e=>{if(e.key==='Enter')sg();});
+    v.querySelectorAll('[data-sg]').forEach(b=>b.onclick=()=>{const n=NEEDS.find(x=>x[0]===b.dataset.sg);need=n[0];svc=n[4][0][0];urgent=!!n[3];step=2;render();});
+    v.querySelectorAll('.tile').forEach(b=>b.onclick=()=>{const n=NEEDS.find(x=>x[0]===b.dataset.n);need=n[0];svc=n[4][0][0];urgent=!!n[3];step=2;render();});}
+  else if(step===2){const n=curNeed();let h='<div class="screen narrow"><div><h1>'+esc(T('q2'))+'</h1><p class="hint">'+esc(tr(n[1],n[2]))+'</p></div>';
+    if(n[4].length>1)h+='<div><p class="hint" style="margin-bottom:8px">'+esc(T('which'))+'</p><div class="chips">'+n[4].map(s=>'<button class="chip" data-s="'+s[0]+'" aria-pressed="'+(s[0]===svc)+'">'+esc(tr(s[1],s[2]))+'</button>').join('')+'</div></div>';
+    h+='<div class="big"><button class="opt red" id="u1"><span class="bub">'+ICON.urgent+'</span><span><b>'+esc(T('u1'))+'</b><span>'+esc(T('u1s'))+'</span></span></button><button class="opt" id="u0"><span class="bub">'+ICON.plan+'</span><span><b>'+esc(T('u0'))+'</b><span>'+esc(T('u0s'))+'</span></span></button></div></div>';v.innerHTML=h;
+    v.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{svc=b.dataset.s;render();});$('u1').onclick=()=>{urgent=true;step=3;render();};$('u0').onclick=()=>{urgent=false;step=3;render();};}
+  else if(step===3){v.innerHTML='<div class="screen narrow"><div><h1>'+esc(T('q3'))+'</h1><p class="hint">'+esc(T('h3'))+'</p></div><input class="field" id="loc" list="cities" autocomplete="off" placeholder="'+esc(T('ph'))+'" value="'+esc(here&&here.label!=='My location'?here.label.replace(/^PIN /,''):'')+'"><datalist id="cities">'+Object.keys(D.cities).sort().map(c=>'<option value="'+esc(c)+'">').join('')+'</datalist>'+(locErr?'<p class="err">'+esc(locErr)+'</p>':'')+'<div class="chips">'+['Patna','Araria','Nashik','Jaipur','Gadchiroli','800001'].map(c=>'<button class="chip" data-c="'+c+'">'+c+'</button>').join('')+'</div><button class="cta" id="go">'+esc(T('go'))+'</button><button class="ghost" id="gps">'+esc(T('gps'))+'</button></div>';
+    const go=q=>{const r=resolve(q!=null?q:$('loc').value);if(!r){locErr=T('nf');render();return;}locErr='';here=r;step=4;render();};
+    $('go').onclick=()=>go();$('loc').addEventListener('keydown',e=>{if(e.key==='Enter')go();});v.querySelectorAll('.chip').forEach(b=>b.onclick=()=>go(b.dataset.c));
+    $('gps').onclick=()=>{const fail=()=>{locErr='Location sharing is not available here. Type a PIN code or a town.';render();};try{navigator.geolocation.getCurrentPosition(p=>{here=nearPlace(p.coords.latitude,p.coords.longitude,'My location');locErr='';step=4;render();},fail,{timeout:8000});}catch(e){fail();}};}
+  else{v.innerHTML=results();paintCards();v.querySelectorAll('[data-sec]').forEach(b=>b.onclick=()=>{sector=b.dataset.sec;render();});v.querySelectorAll('[data-rad]').forEach(b=>b.onclick=()=>{rad=+b.dataset.rad;render();});v.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{step=+b.dataset.go;render();});$('again').onclick=()=>{step=1;render();};drawMap(last);}
+  window.scrollTo(0,0);}
+$('back').onclick=()=>{if(step>1){step--;render();}};
+$('lang').onclick=()=>{lang=lang==='en'?'hi':'en';render();};
+render();
+</script>

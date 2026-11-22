@@ -1,0 +1,1983 @@
+state_id,state,district_id,district,facility_id,facility
+35,Andaman & Nicobar Islands,603,Nicobars,3119,BJR Hospital Headquarter
+35,Andaman & Nicobar Islands,632,North  & Middle Andaman,241,CHC Diglipur
+35,Andaman & Nicobar Islands,632,North  & Middle Andaman,242,CHC Rangat
+35,Andaman & Nicobar Islands,632,North  & Middle Andaman,240,Dr Rajendra Prasad Hospital
+35,Andaman & Nicobar Islands,602,South Andamans,239,CHC Bambooflat
+35,Andaman & Nicobar Islands,602,South Andamans,238,GB Pant Hospital
+35,Andaman & Nicobar Islands,602,South Andamans,3118,Health and wellness center
+28,Andhra Pradesh,745,Alluri Sitharama Raju,3271,Area Hospital Araku Valley
+28,Andhra Pradesh,745,Alluri Sitharama Raju,1294,Area Hospital Rampachodavaram
+28,Andhra Pradesh,745,Alluri Sitharama Raju,1291,Govt. General Hospital Paderu
+28,Andhra Pradesh,744,Anakapalli,352,Area Hospital. Narsipatnam
+28,Andhra Pradesh,744,Anakapalli,3270,District Hospital Anakapalli
+28,Andhra Pradesh,502,Anantapur,3259,Area Hospital  Guntakal
+28,Andhra Pradesh,502,Anantapur,3260,Area Hospital  Rayadurgam
+28,Andhra Pradesh,502,Anantapur,3149,"GGH, Anantapur"
+28,Andhra Pradesh,753,Annamayya,3262,Area Hopital Rajampet
+28,Andhra Pradesh,753,Annamayya,1309,Area Hospital. Rayachoti
+28,Andhra Pradesh,753,Annamayya,1282,Govt. General Hospital Madanapalle
+28,Andhra Pradesh,750,Bapatla,357,Area Hospital Chirala
+28,Andhra Pradesh,503,Chittoor,1276,Area Govt Hospital  Kuppam
+28,Andhra Pradesh,503,Chittoor,3258,Area Hospital  Nagari
+28,Andhra Pradesh,503,Chittoor,3337,Community Health Center  Bangarupalem
+28,Andhra Pradesh,503,Chittoor,1300,Community Health Center  Punganuru
+28,Andhra Pradesh,505,East Godavari,1240,Govt. General Hopsital. RAJAHMUNDRY
+28,Andhra Pradesh,748,Eluru,1288,Area Hospital  Nuziveedu
+28,Andhra Pradesh,748,Eluru,1270,Area hospital  Jangareddygudem
+28,Andhra Pradesh,748,Eluru,3266,Community Health Center. Kaikaluru
+28,Andhra Pradesh,506,Guntur,355,District Hospital  Tenali
+28,Andhra Pradesh,746,Kakinada,1297,Area Hospital Tuni
+28,Andhra Pradesh,747,Konaseema,1255,Area Govt Hospital  Amalapuram
+28,Andhra Pradesh,747,Konaseema,3269,Community Health Center RAZOLE
+28,Andhra Pradesh,510,Krishna,3199,Community Health Center Avanigadda
+28,Andhra Pradesh,510,Krishna,354,Govt. General Hospital. Machilipatnam
+28,Andhra Pradesh,511,Kurnool,1252,Govt. General Hospital Adoni
+28,Andhra Pradesh,749,NTR,1303,Community Health Center Tiruvuru
+28,Andhra Pradesh,749,NTR,1267,Community Health Center. JAGGAYYAPETA
+28,Andhra Pradesh,749,NTR,3116,PHC . A. KONDURU
+28,Andhra Pradesh,755,Nandyal,1246,Govt. General Hospital NANDYAL
+28,Andhra Pradesh,751,Palnadu,1285,Area Hospital Narasaraopeta
+28,Andhra Pradesh,751,Palnadu,1279,Community Health Center Macherla
+28,Andhra Pradesh,743,Parvathipuram Manyam,3574,AH  Seethampeta
+28,Andhra Pradesh,743,Parvathipuram Manyam,347,Area Hospital Palakonda
+28,Andhra Pradesh,743,Parvathipuram Manyam,1261,Community Health Center Chintoor
+28,Andhra Pradesh,743,Parvathipuram Manyam,353,District Hospital Parvathipuram
+28,Andhra Pradesh,517,Prakasam,3267,AREA HOSPITAL GIDDALURU
+28,Andhra Pradesh,517,Prakasam,3268,Area Hopital Yerragondapalem
+28,Andhra Pradesh,517,Prakasam,1249,Community Health Center KANIGIRI
+28,Andhra Pradesh,517,Prakasam,360,Govt. General Hospital Markapuram
+28,Andhra Pradesh,515,Spsr Nellore,359,Area Hospital Kandukur
+28,Andhra Pradesh,515,Spsr Nellore,3351,CHC Vinjamur
+28,Andhra Pradesh,515,Spsr Nellore,3350,Community Health Centre Podalakuru
+28,Andhra Pradesh,515,Spsr Nellore,1258,DISTRICT HOSPITAL ATMAKUR
+28,Andhra Pradesh,754,Sri Sathya Sai,3377,Area Hospital  Dharmavaram
+28,Andhra Pradesh,754,Sri Sathya Sai,1273,Area Hospital Kadiri
+28,Andhra Pradesh,754,Sri Sathya Sai,361,District Hospital Hindupur
+28,Andhra Pradesh,519,Srikakulam,3379,CHC Ichapuram
+28,Andhra Pradesh,519,Srikakulam,1264,Community Health Center Haripuram
+28,Andhra Pradesh,519,Srikakulam,1243,Community Health Center KAVITI
+28,Andhra Pradesh,519,Srikakulam,348,Community Health Center Palasa
+28,Andhra Pradesh,519,Srikakulam,349,Community Health Center Sompeta
+28,Andhra Pradesh,519,Srikakulam,3142,DISTIRICT HOSPITAL TEKKALI
+28,Andhra Pradesh,752,Tirupati,356,Area Hospital Gudur
+28,Andhra Pradesh,752,Tirupati,365,Area Hospital Srikalahasti
+28,Andhra Pradesh,520,Visakhapatnam,3352,AH Govt Hospital  Aganampudi
+28,Andhra Pradesh,520,Visakhapatnam,3148,KGH Vizag
+28,Andhra Pradesh,521,Vizianagaram,3575,AH Srungavarapukota
+28,Andhra Pradesh,521,Vizianagaram,2344,GGH Vizianagaram
+28,Andhra Pradesh,523,West Godavari,3378,Area Hospital Palakollu
+28,Andhra Pradesh,523,West Godavari,351,Area Hospital Tadepalligudem
+28,Andhra Pradesh,504,Y.S.R.,3261,Community Health Center Badvel
+28,Andhra Pradesh,504,Y.S.R.,1306,District Hospital Proddatur
+28,Andhra Pradesh,504,Y.S.R.,363,Govt. General Hospital Pulivendula
+12,Arunachal Pradesh,628,Anjaw,3169,DH-Hayuliang
+12,Arunachal Pradesh,229,Changlang,3180,DH-Changlang
+12,Arunachal Pradesh,230,Dibang Valley,3174,DH-Anini
+12,Arunachal Pradesh,231,East Kameng,2998,DH Seppa
+12,Arunachal Pradesh,232,East Siang,245,Bekin Pertin General Hospital
+12,Arunachal Pradesh,718,Kamle,3171,CHC-Raga
+12,Arunachal Pradesh,677,Kra Daadi,3167,DH-Palin
+12,Arunachal Pradesh,233,Kurung Kumey,3173,DH-Koloriang
+12,Arunachal Pradesh,724,Leparada,3176,DH-Basar
+12,Arunachal Pradesh,234,Lohit,2188,DH Lohit
+12,Arunachal Pradesh,666,Longding,3175,DH-Longding
+12,Arunachal Pradesh,235,Lower Dibang Valley,3179,DH Roing
+12,Arunachal Pradesh,719,Lower Siang,3178,DH-Likabali
+12,Arunachal Pradesh,236,Lower Subansiri,2191,DH Lower Subansiri
+12,Arunachal Pradesh,678,Namsai,244,DH Namsai
+12,Arunachal Pradesh,723,Pakke Kessang,3170,CHC-Seijosa
+12,Arunachal Pradesh,237,Papum Pare,243,TRIHMS
+12,Arunachal Pradesh,725,Shi Yomi,3172,CHC-Tato
+12,Arunachal Pradesh,679,Siang,3168,DH-Boleng
+12,Arunachal Pradesh,238,Tawang,246,DH Tawang
+12,Arunachal Pradesh,239,Tirap,3182,ZGH Khonsa
+12,Arunachal Pradesh,240,Upper Siang,2194,DH Yingkiong
+12,Arunachal Pradesh,241,Upper Subansiri,3177,DH-Daporijo
+12,Arunachal Pradesh,242,West Kameng,3434,CHC DIRANG
+12,Arunachal Pradesh,242,West Kameng,3181,DH-Bomdila
+12,Arunachal Pradesh,243,West Siang,2185,West Siang DH
+18,Assam,739,BAJALI,3561,PATHSALA SDCH
+18,Assam,616,Baksa,832,Dr. Ravi Boro Civil Hospital Baksa
+18,Assam,280,Barpeta,3368,Barpeta Civil Hospital Kalgachia
+18,Assam,280,Barpeta,809,Barpeta Medical College and Hospital
+18,Assam,280,Barpeta,3564,Chenga Model Hospital
+18,Assam,705,Biswanath,3471,Biswanath District Hospital
+18,Assam,705,Biswanath,839,Gohpur SDCH
+18,Assam,281,Bongaigaon,3375,Abhayapuri CHC FRU
+18,Assam,281,Bongaigaon,810,Bongaigaon Civil Hospital
+18,Assam,282,Cachar,3638,Dholai BPHC
+18,Assam,282,Cachar,3372,Katigorah Modal Hospital
+18,Assam,282,Cachar,3639,MG Model Hospital Tikal  Salganga
+18,Assam,282,Cachar,831,Silchar Medical College and Hospital Silchar
+18,Assam,708,Charaideo,838,Charaideo District Hospital
+18,Assam,708,Charaideo,3559,Sapekhati Model Hospital
+18,Assam,612,Chirang,3563,BIJNI SDCH
+18,Assam,612,Chirang,3092,JSB CH CHIRANG
+18,Assam,283,Darrang,813,MANGALDAI CIVIL HOSPITAL
+18,Assam,283,Darrang,3438,SIPAJHAR CHC
+18,Assam,284,Dhemaji,822,Dhemaji Civil Hospital
+18,Assam,284,Dhemaji,3560,Jonai SDCH
+18,Assam,285,Dhubri,820,Dhubri Medical College and Hospital
+18,Assam,285,Dhubri,3640,Diparkuti SDCH Bilasipara
+18,Assam,286,Dibrugarh,830,Assam Medical College Hospital
+18,Assam,286,Dibrugarh,3566,Moran Tiloi CHC
+18,Assam,286,Dibrugarh,3474,Naharkatia SD
+18,Assam,299,Dima Hasao,3093,Haflong Civil Hospital
+18,Assam,287,Goalpara,3475,DUDHNOI FRU
+18,Assam,287,Goalpara,3446,Lakhipur CHC and BPHC
+18,Assam,287,Goalpara,821,Martyr Nidhanu Ram Rajbongshi Civil Hospital Goalpara
+18,Assam,288,Golaghat,3569,Sarupathar Co District Civil Hospital
+18,Assam,288,Golaghat,3473,Swahid Kamala Miri SDCH Bokakhat
+18,Assam,288,Golaghat,837,Swahid Kushal Konwar Civil Hospital Golaghat
+18,Assam,289,Hailakandi,3442,Lala CHC
+18,Assam,289,Hailakandi,835,S.K.Roy Civil Hospital
+18,Assam,709,Hojai,3440,Dr. Shyama Prasad Mukherjee SDCH
+18,Assam,709,Hojai,3095,Hojai Civil Hospital
+18,Assam,290,Jorhat,826,Jorhat Medical College and Hospital
+18,Assam,290,Jorhat,3641,Nakachari Model Hospital
+18,Assam,290,Jorhat,3367,Teok FRU
+18,Assam,290,Jorhat,827,Titabar SDCH
+18,Assam,291,Kamrup,3642,Bamunigaon Model Hospital
+18,Assam,291,Kamrup,833,Rangia Model Hospital
+18,Assam,291,Kamrup,834,Singimari Dadara Model Hospital
+18,Assam,291,Kamrup,3568,Uparhali BPHC
+18,Assam,618,Kamrup Metropolitan,829,Gauhati Medical College and Hospital
+18,Assam,618,Kamrup Metropolitan,3108,LGB CHEST HOSPITAL
+18,Assam,618,Kamrup Metropolitan,3567,PANDU FRU
+18,Assam,292,Karbi Anglong,840,Bokajan CHC
+18,Assam,292,Karbi Anglong,825,Diphu Medical College and Hospital
+18,Assam,292,Karbi Anglong,3643,Phuloni Model Hospital
+18,Assam,293,Karimganj,3443,Baroigram MG Model Hospital
+18,Assam,293,Karimganj,828,Karimganj Civil Hospital
+18,Assam,294,Kokrajhar,3371,Kokrajhar Medical College and Hospital
+18,Assam,294,Kokrajhar,3096,RNB C.H. GOSSAIGAON
+18,Assam,295,Lakhimpur,3644,Dhakuakhana SDCH
+18,Assam,295,Lakhimpur,823,Lakhimpur Medical College and Hospital
+18,Assam,295,Lakhimpur,3373,Laluk Model Hospital
+18,Assam,706,Majuli,836,SRI SRI PITAMBARDEV GOSWAMI DISTRICT HOSPITAL MAJULI
+18,Assam,296,Marigaon,812,Mahatma Gandhi Model Hospital Nakhola
+18,Assam,296,Marigaon,811,STHG Civil Hospital
+18,Assam,297,Nagaon,3645,Kachua Model Hospital
+18,Assam,297,Nagaon,3472,Kaliabor SDCH
+18,Assam,297,Nagaon,819,Nagaon Medical College and Hospital
+18,Assam,298,Nalbari,3374,Nalbari Medical College and Hospital
+18,Assam,298,Nalbari,808,SMK Hospital Nalbari
+18,Assam,298,Nalbari,3562,Tihu FRU
+18,Assam,300,Sibsagar,3444,KSHS Nazira SDH Ligiripukhuri
+18,Assam,300,Sibsagar,824,Sivasagar Civil Hospital
+18,Assam,301,Sonitpur,3565,Dekargaon SD
+18,Assam,301,Sonitpur,3445,Dhekiajuli CHC
+18,Assam,301,Sonitpur,815,Kanaklata Civil Hospital
+18,Assam,301,Sonitpur,814,Tezpur Medical College and Hospital
+18,Assam,707,South Salmara Mancachar,3104,District Hospital Hatsingimari
+18,Assam,756,TAMULPUR,3369,Tamulpur SDCH
+18,Assam,302,Tinsukia,3370,Digboi UHWC
+18,Assam,302,Tinsukia,817,Margherita FRU
+18,Assam,302,Tinsukia,818,SDCH Sadiya
+18,Assam,302,Tinsukia,816,Tinsukia Civil Hospital
+18,Assam,302,Tinsukia,3470,Tinsukia Medical College and Hospital
+18,Assam,617,Udalguri,3094,Udalguri Civil Hospital
+18,Assam,710,West Karbi Anglong,3105,Donkamokam CHC
+10,Bihar,188,Araria,368,Apollo dialysis Araria
+10,Bihar,188,Araria,3654,SDH Forbesganz
+10,Bihar,611,Arwal,369,Sadar hospital Arwal
+10,Bihar,189,Aurangabad,3655,SDH DAUDNAGAR
+10,Bihar,189,Aurangabad,370,Sadar Hospital
+10,Bihar,190,Banka,371,BANKA
+10,Bihar,191,Begusarai,372,Dialysis
+10,Bihar,191,Begusarai,3618,SDH Ballia
+10,Bihar,191,Begusarai,3617,SDH Manjhaul
+10,Bihar,191,Begusarai,3616,SDH Teghra
+10,Bihar,192,Bhagalpur,373,Nephroplus
+10,Bihar,192,Bhagalpur,3623,SDH Kahalgaon
+10,Bihar,192,Bhagalpur,3622,SDH Naughachia
+10,Bihar,193,Bhojpur,374,SADAR HOSPITAL ARA
+10,Bihar,193,Bhojpur,3656,SDH JAGDISHPUR
+10,Bihar,194,Buxar,375,Distric hospital buxar
+10,Bihar,194,Buxar,3657,SDH DUMRAON
+10,Bihar,195,Darbhanga,376,Apollo Dialysis Pvt Ltd
+10,Bihar,195,Darbhanga,3658,SDH BENIPUR
+10,Bihar,195,Darbhanga,3659,SDH BIRAUL
+10,Bihar,196,Gaya,378,Apollo Dialysis
+10,Bihar,196,Gaya,3661,SDH Sherghati
+10,Bihar,196,Gaya,3660,SDH TEKARI
+10,Bihar,197,Gopalganj,3628,SDH Hathua
+10,Bihar,197,Gopalganj,379,Sadar Hospital Gopalganj
+10,Bihar,198,Jamui,380,Nephroplus
+10,Bihar,199,Jehanabad,400,APOLLO DIALYSIS CLINICS
+10,Bihar,200,Kaimur (Bhabua),3662,SDH MOHANIA
+10,Bihar,200,Kaimur (Bhabua),381,Sadar Hospital Kaimur
+10,Bihar,201,Katihar,3664,SDH Barsoi
+10,Bihar,201,Katihar,3663,SDH Manihari
+10,Bihar,201,Katihar,401,Sadar Hospital Katihar
+10,Bihar,202,Khagaria,382,Nephroplus
+10,Bihar,202,Khagaria,3619,SDH Gogri
+10,Bihar,203,Kishanganj,383,Apollo Dialysis Pvt Ltd
+10,Bihar,204,Lakhisarai,384,Sadar Hospital Biharsharif
+10,Bihar,205,Madhepura,385,APOLLO DIALYSIS PVT LTD
+10,Bihar,205,Madhepura,3665,SDH Udakishunganj
+10,Bihar,206,Madhubani,386,Apollo Dialysis clinics
+10,Bihar,206,Madhubani,3668,CSC JHANJHARPUR
+10,Bihar,206,Madhubani,3666,SDH BENIPATTI
+10,Bihar,206,Madhubani,3667,SDH JAYNAGAR
+10,Bihar,206,Madhubani,3669,SDH Phulparas
+10,Bihar,207,Munger,387,Nephroplus Dialysis Center
+10,Bihar,207,Munger,3620,SDH Haweli Kharagpur
+10,Bihar,207,Munger,3621,SDH Tarapur
+10,Bihar,208,Muzaffarpur,388,SADAR HOSDPITAL  MUZAFFARPUR
+10,Bihar,209,Nalanda,3625,SDH Hilsa
+10,Bihar,209,Nalanda,3624,SDH Rajgir
+10,Bihar,209,Nalanda,389,Sadar Hospital Biharsharif
+10,Bihar,210,Nawada,390,NAWADA  SADAR HOSPITAL
+10,Bihar,210,Nawada,3626,SDH Rajauli
+10,Bihar,211,Pashchim Champaran,3630,SDH Bagha
+10,Bihar,211,Pashchim Champaran,3629,SDH Narkatiaganj
+10,Bihar,211,Pashchim Champaran,1144,Sadar Hospital
+10,Bihar,212,Patna,391,NMCH
+10,Bihar,212,Patna,3670,SDH BARH
+10,Bihar,212,Patna,3653,SDH DANAPUR
+10,Bihar,212,Patna,3671,SDH MASAURHI
+10,Bihar,212,Patna,3672,SDH PALIGANJ
+10,Bihar,213,Purba Champaran,377,Dialysis
+10,Bihar,213,Purba Champaran,3635,SDH Areraj
+10,Bihar,213,Purba Champaran,3634,SDH Chakia
+10,Bihar,213,Purba Champaran,3633,SDH Dhaka
+10,Bihar,213,Purba Champaran,3632,SDH Pakridayal
+10,Bihar,213,Purba Champaran,3631,SDH Raxaul
+10,Bihar,214,Purnia,1150,GMCH Sadar Hospital Purnea
+10,Bihar,214,Purnia,3673,SDH Banmankhi
+10,Bihar,214,Purnia,3674,SDH Damdaha
+10,Bihar,215,Rohtas,3676,SDH BIKRAMGANJ
+10,Bihar,215,Rohtas,3675,SDH DEHRI
+10,Bihar,215,Rohtas,392,Sadar Hospital Sasaram
+10,Bihar,216,Saharsa,1147,APOLLO DIALYSIS
+10,Bihar,216,Saharsa,3677,SDH Simribaktiyarpur
+10,Bihar,217,Samastipur,393,SADAR HOSPITAL SAMASTIPUR
+10,Bihar,217,Samastipur,3678,SDH DALSINGHSARAI
+10,Bihar,217,Samastipur,3679,SDH Patori
+10,Bihar,217,Samastipur,3680,SDH Pusa
+10,Bihar,217,Samastipur,3681,SDH Rosera
+10,Bihar,218,Saran,1141,Nephroplus
+10,Bihar,218,Saran,3614,SDH Marhaura
+10,Bihar,218,Saran,3615,SDH Sonepur
+10,Bihar,219,Sheikhpura,394,Sadar Hospital Sheikhpura
+10,Bihar,220,Sheohar,395,Sadar Hospital Sheohar
+10,Bihar,221,Sitamarhi,396,Dialysis
+10,Bihar,221,Sitamarhi,3636,SDH Belsand
+10,Bihar,222,Siwan,3627,SDH Maharajganj
+10,Bihar,222,Siwan,397,Sadar hospital siwan
+10,Bihar,223,Supaul,3684,SDH BIRPUR
+10,Bihar,223,Supaul,3682,SDH NIRMALI
+10,Bihar,223,Supaul,3683,SDH TRIVENIGANJ
+10,Bihar,223,Supaul,398,Sadar Hospital Supaul
+10,Bihar,224,Vaishali,3637,SDH Mahua
+10,Bihar,224,Vaishali,399,Sadar hospital Hajipur vaishali
+4,Chandigarh,44,Chandigarh,402,Government Multi Specialty Hospital
+22,Chhattisgarh,646,Balod,2308,District Hospital Balod
+22,Chhattisgarh,644,Baloda Bazar,2287,DH Balodabazar
+22,Chhattisgarh,649,Balrampur,3143,District Hospital Balrampur
+22,Chhattisgarh,374,Bastar,1312,Distict Hospital Jagdalpur
+22,Chhattisgarh,650,Bemetara,3071,District Hospital Bemetara
+22,Chhattisgarh,636,Bijapur,410,DH Bijapur
+22,Chhattisgarh,375,Bilaspur,3263,CIMS Medical College Hospital
+22,Chhattisgarh,375,Bilaspur,405,DISTRICT HOSPITAL  BILASPUR
+22,Chhattisgarh,376,Dantewada,3146,District Hospital Dantewada
+22,Chhattisgarh,377,Dhamtari,2293,District Hospital Dhamtari
+22,Chhattisgarh,378,Durg,403,DH Durg
+22,Chhattisgarh,378,Durg,3264,Durg Govt Medical College
+22,Chhattisgarh,645,Gariyabandh,1321,CHC DEVBHOG
+22,Chhattisgarh,645,Gariyabandh,1339,DH GARIYABAND
+22,Chhattisgarh,734,Gaurella Pendra Marwahi,3090,DIstrict Hospital Gaurella Pendra Marwahi
+22,Chhattisgarh,379,Janjgir - Champa,3604,COMMUNITY HEALTH CENTER SHAKTI
+22,Chhattisgarh,379,Janjgir - Champa,1315,District Hospital
+22,Chhattisgarh,380,Jashpur,3435,CHC Kunkuri
+22,Chhattisgarh,380,Jashpur,3240,Community He pnalth Centre Pathalgaon
+22,Chhattisgarh,380,Jashpur,408,DH Jashpur
+22,Chhattisgarh,382,Kabeerdham,2302,District Hospital Kabeerdham
+22,Chhattisgarh,381,Kanker,404,DH Kanker
+22,Chhattisgarh,643,Kondagaon,2341,DH Kondagaon
+22,Chhattisgarh,383,Korba,407,DH Korba
+22,Chhattisgarh,384,Koriya,3345,Community Health Center Manendragar
+22,Chhattisgarh,384,Koriya,2296,District Hosital Baikunthpur
+22,Chhattisgarh,384,Koriya,3648,District Hospital Chirimiri
+22,Chhattisgarh,385,Mahasamund,406,DH Mahasamund
+22,Chhattisgarh,647,Mungeli,2290,District Hospital Mungeli
+22,Chhattisgarh,637,Narayanpur,3145,Lt. Badrinath Baghel District Hospital Narayanpur
+22,Chhattisgarh,386,Raigarh,3239,Civil Hospital Kharsia
+22,Chhattisgarh,386,Raigarh,3451,District Hospital Saranggarh
+22,Chhattisgarh,386,Raigarh,3144,Kirodimal Govt. District Hospital Raigarh
+22,Chhattisgarh,387,Raipur,1324,DH Raipur
+22,Chhattisgarh,388,Rajnandgaon,3487,CHC Mohla
+22,Chhattisgarh,388,Rajnandgaon,3450,District Hospital Khairagarh
+22,Chhattisgarh,388,Rajnandgaon,2305,District Hospital Rajnandgaon
+22,Chhattisgarh,388,Rajnandgaon,3127,Govt Medical College hospital Rajnandgaon
+22,Chhattisgarh,642,Sukma,3072,District Hospital Sukma
+22,Chhattisgarh,648,Surajpur,2299,District Hospital Surajpur
+22,Chhattisgarh,389,Surguja,409,Medical College Surguja
+38,Dadra & Nagar Haveli and Daman & Diu,465,Dadra & Nagar Haveli,417,Shri Vinoba Bhave Civil Hospital Silvassa
+38,Dadra & Nagar Haveli and Daman & Diu,463,Daman,418,District Hospital Marwad (Permanent Location )
+38,Dadra & Nagar Haveli and Daman & Diu,463,Daman,419,kachigam phc nani daman
+38,Dadra & Nagar Haveli and Daman & Diu,464,Diu,3089,District Hospital Diu
+7,Delhi,77,Central,3493,Burari Hospital
+7,Delhi,77,Central,3106,Lok Nayak Hospital
+7,Delhi,78,East,3132,Khandelwal Hospital
+7,Delhi,79,New Delhi,3130,Ram Manohar Lohia Hospital
+7,Delhi,80,North,412,Maharishi Valmiki Hospital
+7,Delhi,81,North East,3186,Jag pravesh Chandra Hospital
+7,Delhi,82,North West,413,Bhagwan Mahavir Hospital
+7,Delhi,82,North West,411,Deep Chand Bhandhu Hospital
+7,Delhi,82,North West,3492,Dr Baba Saheb Ambedkar Hospital
+7,Delhi,82,North West,3491,Sanjay Gandhi Memorial Hospital
+7,Delhi,82,North West,3013,Shree Aggarsain International Hospital
+7,Delhi,671,Shahdara,3083,Dr  Hedgewar Arogya Sansthan
+7,Delhi,671,Shahdara,3107,Rajiv Gandhi Super Speciality Hospital
+7,Delhi,83,South,3110,All India Institute of Medical Sciences
+7,Delhi,83,South,3490,Ambedkar Nagar Hospital
+7,Delhi,83,South,416,Pandit Madan Mohan Malaviya Hospital
+7,Delhi,83,South,3514,Vijay Kumwar
+7,Delhi,670,South East,3185,ESI Hospital Okhla
+7,Delhi,84,South West,2080,Indira Gandhi Hospital
+7,Delhi,84,South West,3111,Janak Puri Super Speciality Hospital
+7,Delhi,85,West,415,Deen Dayal Upadhayay Hospital
+7,Delhi,85,West,414,Guru Gobind Singh Govt Hospital
+7,Delhi,85,West,3109,MGS HOSPITAL
+30,Goa,551,North Goa,423,CHC Bicholim
+30,Goa,551,North Goa,424,CHC PERNEM
+30,Goa,551,North Goa,3432,CHC Sankhali
+30,Goa,551,North Goa,422,CHC Valpoi
+30,Goa,551,North Goa,3135,GOA MEDICAL COLLEGE AND HOSPITAL
+30,Goa,551,North Goa,420,Goa Medical College
+30,Goa,551,North Goa,421,North Goa District Hospital
+30,Goa,551,North Goa,3290,PHC Porvorim
+30,Goa,551,North Goa,1138,Savoikar Hospital & Laparoscopy Centre (PHC Ponda)
+30,Goa,552,South Goa,426,CHC Canacona
+30,Goa,552,South Goa,3291,CHC Curchorem
+30,Goa,552,South Goa,427,PHC Balli
+30,Goa,552,South Goa,430,PHC Cansaulim
+30,Goa,552,South Goa,429,PHC Dharbandora
+30,Goa,552,South Goa,428,PHC Navelim
+30,Goa,552,South Goa,3605,Phc Sanguem
+30,Goa,552,South Goa,3433,RMD SUB CENTER CARMONA
+30,Goa,552,South Goa,425,South Goa District Hospital
+30,Goa,552,South Goa,3606,Sub Center Varca
+30,Goa,552,South Goa,1135,Sub District Hospital Chicalim
+30,Goa,552,South Goa,1132,Sub District Hospital Ponda
+24,Gujarat,438,Ahmedabad,3363,BEHRAMPURA CHC
+24,Gujarat,438,Ahmedabad,2347,Bagodara
+24,Gujarat,438,Ahmedabad,2815,DHOLERA
+24,Gujarat,438,Ahmedabad,3586,DUDHESHWAR UCHC
+24,Gujarat,438,Ahmedabad,2350,Detroj
+24,Gujarat,438,Ahmedabad,2353,Dhandhuka
+24,Gujarat,438,Ahmedabad,2356,Dholka
+24,Gujarat,438,Ahmedabad,2359,Ghuma
+24,Gujarat,438,Ahmedabad,3346,IKDRC ITS
+24,Gujarat,438,Ahmedabad,3253,Institute of Kidney Diseases and Research Center
+24,Gujarat,438,Ahmedabad,49,SOLA
+24,Gujarat,438,Ahmedabad,2365,Sanand
+24,Gujarat,438,Ahmedabad,2362,Singarva
+24,Gujarat,438,Ahmedabad,47,TRUMA CIVIL
+24,Gujarat,438,Ahmedabad,3570,VEJALPUR UCHC
+24,Gujarat,438,Ahmedabad,949,VIRAMGAM
+24,Gujarat,438,Ahmedabad,2368,Vithlapur
+24,Gujarat,439,Amreli,6,AMRELI
+24,Gujarat,439,Amreli,2452,BAGASARA
+24,Gujarat,439,Amreli,2398,Babra
+24,Gujarat,439,Amreli,2374,Chalala
+24,Gujarat,439,Amreli,2455,DHARI
+24,Gujarat,439,Amreli,2395,Damnagar
+24,Gujarat,439,Amreli,2380,Jafarabad
+24,Gujarat,439,Amreli,2401,KUKAVAV
+24,Gujarat,439,Amreli,2377,Khambha
+24,Gujarat,439,Amreli,2392,LATHI AMRELI
+24,Gujarat,439,Amreli,2389,Liliya
+24,Gujarat,439,Amreli,2383,Rajula
+24,Gujarat,439,Amreli,952,SAVARKUNDALA
+24,Gujarat,439,Amreli,2404,Vadiya
+24,Gujarat,439,Amreli,2386,Vanda
+24,Gujarat,440,Anand,7,ANAND
+24,Gujarat,440,Anand,2422,Ankalav
+24,Gujarat,440,Anand,2425,Borsad
+24,Gujarat,440,Anand,2410,Khambhat
+24,Gujarat,440,Anand,3418,MEHLAV
+24,Gujarat,440,Anand,8,PETLAD
+24,Gujarat,440,Anand,2413,Ras
+24,Gujarat,440,Anand,2419,Sojitra
+24,Gujarat,440,Anand,2416,Tarapur
+24,Gujarat,440,Anand,2428,Umreth
+24,Gujarat,440,Anand,2407,Undel
+24,Gujarat,440,Anand,2818,VASAD
+24,Gujarat,672,Arvalli,2821,BAYAD
+24,Gujarat,672,Arvalli,10,BHILODA
+24,Gujarat,672,Arvalli,2458,DHANSURA
+24,Gujarat,672,Arvalli,2461,MALPUR
+24,Gujarat,672,Arvalli,2464,MEDHASAN
+24,Gujarat,672,Arvalli,1054,MEGHRAJ
+24,Gujarat,672,Arvalli,3242,SHAMLAJI
+24,Gujarat,441,Banaskantha,5,AMBAJI
+24,Gujarat,441,Banaskantha,955,AMIRGADH
+24,Gujarat,441,Banaskantha,2791,BHABHAR
+24,Gujarat,441,Banaskantha,2806,CHCLAKHANI
+24,Gujarat,441,Banaskantha,2794,DANTA
+24,Gujarat,441,Banaskantha,3,DEESA
+24,Gujarat,441,Banaskantha,2803,DHANERA
+24,Gujarat,441,Banaskantha,2797,Dantiwada
+24,Gujarat,441,Banaskantha,2800,KOTARWADA
+24,Gujarat,441,Banaskantha,3243,MORIYA
+24,Gujarat,441,Banaskantha,2,PALANPUR
+24,Gujarat,441,Banaskantha,3249,SHIHORI
+24,Gujarat,441,Banaskantha,2809,Suigam
+24,Gujarat,441,Banaskantha,4,THARAD
+24,Gujarat,441,Banaskantha,2824,VAV
+24,Gujarat,441,Banaskantha,2812,Vadgam
+24,Gujarat,442,Bharuch,2431,AMOD
+24,Gujarat,442,Bharuch,2449,AVIDHA(JAGADIA)
+24,Gujarat,442,Bharuch,9,BHARUCH
+24,Gujarat,442,Bharuch,2446,GARKHOL(ANKLESHWAR)
+24,Gujarat,442,Bharuch,2437,HANSOT(KUDADRA)
+24,Gujarat,442,Bharuch,958,JAMBUSAR
+24,Gujarat,442,Bharuch,2443,NETRANG
+24,Gujarat,442,Bharuch,2440,VAGARA
+24,Gujarat,442,Bharuch,2434,VALIA(KONDH)
+24,Gujarat,443,Bhavnagar,2833,BAGDANA
+24,Gujarat,443,Bhavnagar,52,BHAVNAGAR
+24,Gujarat,443,Bhavnagar,2827,GARIYADHAR
+24,Gujarat,443,Bhavnagar,2467,GHOGHA
+24,Gujarat,443,Bhavnagar,2830,JESAR
+24,Gujarat,443,Bhavnagar,2836,MAHUVA
+24,Gujarat,443,Bhavnagar,2839,PALITANA
+24,Gujarat,443,Bhavnagar,2842,SIHOR
+24,Gujarat,443,Bhavnagar,2845,TALAJA
+24,Gujarat,443,Bhavnagar,2473,THALIYA
+24,Gujarat,443,Bhavnagar,2470,UMRALA
+24,Gujarat,443,Bhavnagar,2476,VALLABHIPUR
+24,Gujarat,676,Botad,2479,BARWALA
+24,Gujarat,676,Botad,11,BOTAD
+24,Gujarat,676,Botad,2485,GADHADA
+24,Gujarat,676,Botad,2482,RANPUR
+24,Gujarat,668,Chhota Udepur,2488,BODELI
+24,Gujarat,668,Chhota Udepur,1057,CHOTA UDEPUR
+24,Gujarat,668,Chhota Udepur,2491,KAWANT
+24,Gujarat,668,Chhota Udepur,2851,NASVADI
+24,Gujarat,668,Chhota Udepur,2848,PAVI JETPUR
+24,Gujarat,668,Chhota Udepur,2854,SANKHEDA
+24,Gujarat,445,Dahod,2497,CHC  FATEHPURA
+24,Gujarat,445,Dahod,2857,DAHOD CITY
+24,Gujarat,445,Dahod,13,DEVGADHBARIA
+24,Gujarat,445,Dahod,964,DHANPUR
+24,Gujarat,445,Dahod,2503,GARBADA
+24,Gujarat,445,Dahod,2506,KATWARA
+24,Gujarat,445,Dahod,3245,LIMKHEDA
+24,Gujarat,445,Dahod,2860,SANJELI
+24,Gujarat,445,Dahod,2500,SINGHVAD
+24,Gujarat,445,Dahod,961,ZALOD
+24,Gujarat,674,Devbhumi Dwarka,2512,BHANVAD
+24,Gujarat,674,Devbhumi Dwarka,1060,DWARKA
+24,Gujarat,674,Devbhumi Dwarka,18,JAMKHAMBHALIYA
+24,Gujarat,674,Devbhumi Dwarka,2509,KALYANPUR
+24,Gujarat,446,Gandhinagar,2515,DAHEGAM
+24,Gujarat,446,Gandhinagar,60,GANDHINAGAR
+24,Gujarat,446,Gandhinagar,59,KALOL
+24,Gujarat,446,Gandhinagar,58,MANSA
+24,Gujarat,446,Gandhinagar,3461,Namostute Hospitals
+24,Gujarat,446,Gandhinagar,3462,Namostute Hospitals
+24,Gujarat,675,Gir Somnath,2518,GIR-GHADHADA
+24,Gujarat,675,Gir Somnath,1063,Government Hospital Veraval
+24,Gujarat,675,Gir Somnath,3582,Government Hospital Veraval
+24,Gujarat,675,Gir Somnath,2863,KODINAR
+24,Gujarat,675,Gir Somnath,2866,PRABHASH PATAN
+24,Gujarat,675,Gir Somnath,3380,SUTRAPADA
+24,Gujarat,675,Gir Somnath,2521,TALALA
+24,Gujarat,675,Gir Somnath,1066,UNA
+24,Gujarat,447,Jamnagar,2527,DHROL
+24,Gujarat,447,Jamnagar,53,JAMJODHPUR
+24,Gujarat,447,Jamnagar,2872,JAMNAGAR
+24,Gujarat,447,Jamnagar,2524,JODIYA
+24,Gujarat,447,Jamnagar,2869,KALAVAD
+24,Gujarat,447,Jamnagar,2530,LALPUR
+24,Gujarat,448,Junagadh,2542,BHESAN
+24,Gujarat,448,Junagadh,2875,Government Hospital Visavadar
+24,Gujarat,448,Junagadh,2074,JUNAGADH
+24,Gujarat,448,Junagadh,2533,JUNAGADH-GRAMYA(BILKHA)
+24,Gujarat,448,Junagadh,2536,KESHOD
+24,Gujarat,448,Junagadh,2539,MALIYA HATINA
+24,Gujarat,448,Junagadh,2548,MANAVADAR
+24,Gujarat,448,Junagadh,2545,MANGROL JUNAGADH
+24,Gujarat,448,Junagadh,2551,MENDARDA
+24,Gujarat,448,Junagadh,2554,VANTHALI
+24,Gujarat,449,Kachchh,2575,ABDASA NALIYA
+24,Gujarat,449,Kachchh,2581,ANJAR
+24,Gujarat,449,Kachchh,2572,BHACHAU
+24,Gujarat,449,Kachchh,37,GANDHIDHAM
+24,Gujarat,449,Kachchh,38,MANDVI-KUTCH
+24,Gujarat,449,Kachchh,2578,MUNDRA
+24,Gujarat,449,Kachchh,2584,NAKHTRANA
+24,Gujarat,449,Kachchh,2569,RAPAR
+24,Gujarat,450,Kheda,2566,DAKOR SDH
+24,Gujarat,450,Kheda,2881,KAPADVANJ
+24,Gujarat,450,Kheda,2557,KATHLAL
+24,Gujarat,450,Kheda,2560,KHEDA
+24,Gujarat,450,Kheda,2563,MAHUDHA
+24,Gujarat,450,Kheda,2887,MATAR
+24,Gujarat,450,Kheda,2890,MEHMDABAD
+24,Gujarat,450,Kheda,36,NADIAD
+24,Gujarat,450,Kheda,2878,SEVALIYA PALI
+24,Gujarat,450,Kheda,2884,VASO
+24,Gujarat,451,Mahesana,970,BECHARAJI
+24,Gujarat,451,Mahesana,2614,JOTANA
+24,Gujarat,451,Mahesana,27,KADI
+24,Gujarat,451,Mahesana,2617,KHERALU
+24,Gujarat,451,Mahesana,26,MEHSANA
+24,Gujarat,451,Mahesana,2608,SDH SATLASNA
+24,Gujarat,451,Mahesana,28,UNJHA
+24,Gujarat,451,Mahesana,29,VADNAGAR
+24,Gujarat,451,Mahesana,2611,VIJAPUR
+24,Gujarat,451,Mahesana,30,VISNAGAR
+24,Gujarat,669,Mahisagar,2590,BALASINOR
+24,Gujarat,669,Mahisagar,2593,KADANA
+24,Gujarat,669,Mahisagar,2587,KHANPUR(BAKOR)
+24,Gujarat,669,Mahisagar,1069,LUNAVADA
+24,Gujarat,669,Mahisagar,42,SANTRAMPUR
+24,Gujarat,669,Mahisagar,2596,VIRPUR
+24,Gujarat,673,Morbi,3584,GMERS Medical College and Hospital Morbi
+24,Gujarat,673,Morbi,2605,HALVAD
+24,Gujarat,673,Morbi,2602,MALIA
+24,Gujarat,673,Morbi,35,MORBI
+24,Gujarat,673,Morbi,2599,TANKARA
+24,Gujarat,673,Morbi,34,WANKANER
+24,Gujarat,452,Narmada,2626,DEDIYAPADA
+24,Gujarat,452,Narmada,2629,GARUDESHWAR
+24,Gujarat,452,Narmada,41,RAJPIPLA
+24,Gujarat,452,Narmada,2623,SAGBARA
+24,Gujarat,452,Narmada,2620,TILAKWADA
+24,Gujarat,453,Navsari,973,CHIKHALI
+24,Gujarat,453,Navsari,2638,GANDEVI
+24,Gujarat,453,Navsari,2635,KHERGAM
+24,Gujarat,453,Navsari,2641,MANDIR
+24,Gujarat,453,Navsari,2644,MAROLI
+24,Gujarat,453,Navsari,2632,NAVSARI
+24,Gujarat,453,Navsari,2893,VANSDA
+24,Gujarat,454,Panchmahals,19,GODHARA
+24,Gujarat,454,Panchmahals,2650,Ghoghamba
+24,Gujarat,454,Panchmahals,2647,HALOL
+24,Gujarat,454,Panchmahals,976,JAMBUGHODA
+24,Gujarat,454,Panchmahals,2653,Kaalol
+24,Gujarat,454,Panchmahals,20,MORVA HADAF
+24,Gujarat,454,Panchmahals,2656,Shehera
+24,Gujarat,455,Patan,2659,CHANASMA
+24,Gujarat,455,Patan,2896,DHARPUR
+24,Gujarat,455,Patan,2665,HARIJ
+24,Gujarat,455,Patan,2902,JANGRAL
+24,Gujarat,455,Patan,44,PATAN
+24,Gujarat,455,Patan,979,RADHANPUR
+24,Gujarat,455,Patan,2668,SAMI
+24,Gujarat,455,Patan,2905,SANKHESWAR
+24,Gujarat,455,Patan,2662,SANTALPUR
+24,Gujarat,455,Patan,2899,SIDHPUR
+24,Gujarat,456,Porbandar,2674,ADVANA
+24,Gujarat,456,Porbandar,3580,BHAVSINHJI GENERAL HOSPITAL PORBANDAR
+24,Gujarat,456,Porbandar,2680,KUTIYANA
+24,Gujarat,456,Porbandar,2677,MADHAVPURA
+24,Gujarat,456,Porbandar,40,PORBANDAR
+24,Gujarat,456,Porbandar,2671,RANAVAV
+24,Gujarat,457,Rajkot,2701,AMRAPUR
+24,Gujarat,457,Rajkot,982,DHORAJI
+24,Gujarat,457,Rajkot,23,GONDAL
+24,Gujarat,457,Rajkot,2683,GOVERNMENT HOSPITAL JETPUR
+24,Gujarat,457,Rajkot,2686,JAMKANDORNA
+24,Gujarat,457,Rajkot,2689,JASDAN
+24,Gujarat,457,Rajkot,2698,KOTADA-SANGANI
+24,Gujarat,457,Rajkot,3515,KOTHARIYA UHC
+24,Gujarat,457,Rajkot,2695,LODHIKA
+24,Gujarat,457,Rajkot,3513,NANA MAUVA
+24,Gujarat,457,Rajkot,3517,Narayannagar
+24,Gujarat,457,Rajkot,2692,PADADHARI
+24,Gujarat,457,Rajkot,3098,PADMAKUNVARBA GENERAL HOSPITAL RAJKOT
+24,Gujarat,457,Rajkot,21,RAJKOT PDU
+24,Gujarat,457,Rajkot,22,RAJKOT PK
+24,Gujarat,457,Rajkot,3581,SDH JETPUR
+24,Gujarat,457,Rajkot,3516,SHAYAMNAGAR UHC
+24,Gujarat,457,Rajkot,25,UPLETA
+24,Gujarat,458,Sabarkantha,3101,GMERS MEDICAL COLLEGE GENERAL HOSPITAL HIMATNAGAR
+24,Gujarat,458,Sabarkantha,2071,IDAR
+24,Gujarat,458,Sabarkantha,31,KHEDBRAHMA
+24,Gujarat,458,Sabarkantha,2704,POSHINA
+24,Gujarat,458,Sabarkantha,2707,PRANTIJ
+24,Gujarat,458,Sabarkantha,2710,TALOD
+24,Gujarat,458,Sabarkantha,2716,VADAALI
+24,Gujarat,458,Sabarkantha,2713,VIJAYNAGAR
+24,Gujarat,459,Surat,2908,BARDOLI(KADOD)
+24,Gujarat,459,Surat,3366,Bamroli UCHC
+24,Gujarat,459,Surat,2914,KAMREJ
+24,Gujarat,459,Surat,2911,KHARVASA(CHORYASI)
+24,Gujarat,459,Surat,2917,MAHUVA SURAT
+24,Gujarat,459,Surat,56,MANDVI
+24,Gujarat,459,Surat,985,MANGROLS SURAT
+24,Gujarat,459,Surat,3364,Maskati Dharmarth Hospital
+24,Gujarat,459,Surat,2920,OLPAD
+24,Gujarat,459,Surat,2923,PALSANA
+24,Gujarat,459,Surat,3365,Paal UCHC
+24,Gujarat,459,Surat,3246,SMIMER HOSPITAL
+24,Gujarat,459,Surat,55,SURAT
+24,Gujarat,459,Surat,2926,UMARPADA
+24,Gujarat,460,Surendranagar,2929,CHOTILA
+24,Gujarat,460,Surendranagar,2737,CHUDA
+24,Gujarat,460,Surendranagar,2722,DASDA(PATDI)
+24,Gujarat,460,Surendranagar,2728,DHRANGANDHRA
+24,Gujarat,460,Surendranagar,2725,LAKHTAR
+24,Gujarat,460,Surendranagar,33,LIMBDI
+24,Gujarat,460,Surendranagar,2734,SAYALA
+24,Gujarat,460,Surendranagar,32,SURENDRANAGAR
+24,Gujarat,460,Surendranagar,2731,THANGAD
+24,Gujarat,460,Surendranagar,2719,WADHVAN
+24,Gujarat,641,Tapi,2740,DOLVAN
+24,Gujarat,641,Tapi,2743,KUKARMUNDA
+24,Gujarat,641,Tapi,2752,NIZAR
+24,Gujarat,641,Tapi,2746,SONGADH
+24,Gujarat,641,Tapi,988,UCHCHHAL
+24,Gujarat,641,Tapi,2749,VALOD
+24,Gujarat,641,Tapi,46,VYARA
+24,Gujarat,444,The Dangs,1,AHWA
+24,Gujarat,444,The Dangs,2494,SUBIR
+24,Gujarat,444,The Dangs,967,WAGHAI
+24,Gujarat,461,Vadodara,2758,BAJWA
+24,Gujarat,461,Vadodara,2755,DABHOI
+24,Gujarat,461,Vadodara,2776,DESAR
+24,Gujarat,461,Vadodara,51,GOTRI
+24,Gujarat,461,Vadodara,2779,JAROD
+24,Gujarat,461,Vadodara,2767,KARJAN
+24,Gujarat,461,Vadodara,2770,PADRA
+24,Gujarat,461,Vadodara,2764,POR
+24,Gujarat,461,Vadodara,2773,SAVLI
+24,Gujarat,461,Vadodara,2761,SINOR(MOTA-FOFADIYA)
+24,Gujarat,461,Vadodara,50,Vadodara
+24,Gujarat,462,Valsad,16,DHARAMPUR
+24,Gujarat,462,Valsad,2785,KAPRADA
+24,Gujarat,462,Valsad,2788,PARDI
+24,Gujarat,462,Valsad,991,UMARGAM
+24,Gujarat,462,Valsad,2782,VALSAD
+24,Gujarat,462,Valsad,15,VAPI
+6,Haryana,58,Ambala,339,Civil Hospital Ambala
+6,Haryana,58,Ambala,3010,M M INSTITUTE OF MEDICAL SCIENCES AND RESEARCH
+6,Haryana,59,Bhiwani,336,Civil Hospital Bhiwani
+6,Haryana,701,Charki Dadri,2986,MCH Charki Dadri
+6,Haryana,60,Faridabad,343,Civil Hospital Faridabad
+6,Haryana,61,Fatehabad,327,Civil Hospital Fatehabad
+6,Haryana,62,Gurgaon,141,Civil Hospital
+6,Haryana,62,Gurgaon,1420,Civil Hospital Gurugram
+6,Haryana,62,Gurgaon,2932,SGT University
+6,Haryana,63,Hisar,340,Civil Hospital Hisar
+6,Haryana,63,Hisar,2977,DCDC KIDNEY CARE MAMC AGROHA
+6,Haryana,64,Jhajjar,1441,Civil Hospital Bahadurgarh
+6,Haryana,64,Jhajjar,334,Civil Hospital Jhajjar
+6,Haryana,65,Jind,342,Civil Hospital Jind
+6,Haryana,66,Kaithal,328,Civil Hospital Kaithal
+6,Haryana,67,Karnal,3016,Kalpana Chawla Government Medical Collage
+6,Haryana,68,Kurukshetra,1423,Govt. Polyclinic Kurukshetra
+6,Haryana,69,Mahendragarh,1438,Civil Hospital Narnaul
+6,Haryana,69,Mahendragarh,3081,Civil Hospital Narnaul
+6,Haryana,604,Nuh,2980,DCDC HEALTH SERVICE PVT LTD
+6,Haryana,619,Palwal,330,Civil Hospital Palwal
+6,Haryana,70,Panchkula,1327,Civil Hospital
+6,Haryana,71,Panipat,329,Civil Hospital Panipat
+6,Haryana,72,Rewari,331,Civil Hospital Rewari
+6,Haryana,73,Rohtak,333,Civil Hospital Rohtak
+6,Haryana,73,Rohtak,2992,DCDC PGI Rohtak
+6,Haryana,73,Rohtak,2935,PT BD SHARMA PGIMS ROHTAK
+6,Haryana,74,Sirsa,341,Civil Hospital Sirsa
+6,Haryana,75,Sonipat,3452,BPS GMC FOR WOMEN
+6,Haryana,75,Sonipat,338,Civil Sonipat
+6,Haryana,76,Yamunanagar,1435,Civil Hospital Jagadhari
+2,Himachal Pradesh,15,Bilaspur,431,Hans Renal Care Centre RH Bilaspur
+2,Himachal Pradesh,16,Chamba,438,HANS RENAL CARE CENTER GMCH Chamba
+2,Himachal Pradesh,17,Hamirpur,437,HRCC GMCH Hamirpur
+2,Himachal Pradesh,18,Kangra,916,HRCC Civil Hospital Palampur
+2,Himachal Pradesh,18,Kangra,913,Hans Renal Care Center at CH Nurpur
+2,Himachal Pradesh,18,Kangra,3047,Hans Renal Care centre Zonal Hospital Dharmshala
+2,Himachal Pradesh,19,Kinnaur,3075,RH
+2,Himachal Pradesh,20,Kullu,3289,Hans Renal Care Centre Civil Hospital Manali
+2,Himachal Pradesh,20,Kullu,904,Hans Renal Care Centre Kullu
+2,Himachal Pradesh,21,Lahul & Spiti,3158,Distt Hospital Keylong
+2,Himachal Pradesh,22,Mandi,898,CH Sundrnagar
+2,Himachal Pradesh,22,Mandi,3292,HIMALAYA HEALTHCARE DIALYSIS CENTRE
+2,Himachal Pradesh,22,Mandi,3086,Hans Renal Care Center Karsog
+2,Himachal Pradesh,22,Mandi,3048,Hans Renal Care center Civil Hospital Joginder Nagar
+2,Himachal Pradesh,22,Mandi,3062,Hans Renal Care center Sarkaghat
+2,Himachal Pradesh,22,Mandi,3046,Hans Renal Care centre Zonal Hospital mandi
+2,Himachal Pradesh,22,Mandi,901,SLBS Medical College Nerchoak
+2,Himachal Pradesh,23,Shimla,3078,CH Rampur
+2,Himachal Pradesh,23,Shimla,3077,CH Rohru
+2,Himachal Pradesh,23,Shimla,436,Hans Renal Care Centre Shimla
+2,Himachal Pradesh,23,Shimla,3293,LIONS RIAN DIALYSIS AND HEALTH CARE CENTRE
+2,Himachal Pradesh,24,Sirmaur,910,CH Ponta
+2,Himachal Pradesh,24,Sirmaur,907,Hans Renal Care Center CH Nahan HP
+2,Himachal Pradesh,24,Sirmaur,3241,Hans Renal Care Center Paonta Sahib
+2,Himachal Pradesh,25,Solan,3088,Hans Renal Care Center Dharampur
+2,Himachal Pradesh,25,Solan,3084,Hans Renal Care Center Nalagarh
+2,Himachal Pradesh,25,Solan,3049,Hans Renal Care Center Solan
+2,Himachal Pradesh,26,Una,435,Hans Renal Care Centre Regional Hospital Una
+1,Jammu & Kashmir,1,Anantnag,3482,CHC Bijbehara
+1,Jammu & Kashmir,1,Anantnag,315,GMC Anantnag
+1,Jammu & Kashmir,623,Bandipora,3360,CHC SUMBAL
+1,Jammu & Kashmir,623,Bandipora,309,DH Bandipora
+1,Jammu & Kashmir,3,Baramulla,3469,CHC Tangmarg
+1,Jammu & Kashmir,3,Baramulla,304,GMC Baramulla
+1,Jammu & Kashmir,2,Budgam,3506,CHC Chadoora
+1,Jammu & Kashmir,2,Budgam,1168,District Hospital
+1,Jammu & Kashmir,4,Doda,313,DH Doda
+1,Jammu & Kashmir,4,Doda,3607,SDH Baderwah
+1,Jammu & Kashmir,626,Ganderbal,321,DH Ganderbal
+1,Jammu & Kashmir,5,Jammu,1162,DH Jammu
+1,Jammu & Kashmir,5,Jammu,1165,SMGS Hospital  JAMMU
+1,Jammu & Kashmir,7,Kathua,1159,DH Kathua
+1,Jammu & Kashmir,620,Kishtwar,305,DH Kishtwar
+1,Jammu & Kashmir,622,Kulgam,3603,CHC D H Pora
+1,Jammu & Kashmir,622,Kulgam,310,DH Kulgam
+1,Jammu & Kashmir,8,Kupwara,1342,CHC Kupwara
+1,Jammu & Kashmir,8,Kupwara,1345,CHC Sogam
+1,Jammu & Kashmir,8,Kupwara,1156,GMC Handwara
+1,Jammu & Kashmir,8,Kupwara,3572,SDH Tanghdar
+1,Jammu & Kashmir,10,Poonch,3692,CHC Surankote
+1,Jammu & Kashmir,10,Poonch,320,DH Poonch
+1,Jammu & Kashmir,11,Pulwama,317,DH Pulwama
+1,Jammu & Kashmir,11,Pulwama,3505,SDH Pampore
+1,Jammu & Kashmir,11,Pulwama,3649,SDH TRAL
+1,Jammu & Kashmir,12,Rajauri,308,Associated Hospital GMC Rajouri
+1,Jammu & Kashmir,621,Ramban,3646,CHC BANIHAL
+1,Jammu & Kashmir,621,Ramban,307,DH Ramban
+1,Jammu & Kashmir,627,Reasi,318,DH Reasi
+1,Jammu & Kashmir,624,Samba,314,DH Samba
+1,Jammu & Kashmir,625,Shopian,3688,CHC ZAINAPORA
+1,Jammu & Kashmir,625,Shopian,312,DH Shopian
+1,Jammu & Kashmir,13,Srinagar,1153,JLNM Hospital
+1,Jammu & Kashmir,14,Udhampur,316,DH Udhampur
+20,Jharkhand,322,Bokaro,445,Sadar Hospital Bokaro
+20,Jharkhand,323,Chatra,454,sadar hospital
+20,Jharkhand,324,Deogarh,448,sadar hospital deoghar
+20,Jharkhand,325,Dhanbad,3068,PATLIPUTRA MEDICAL COLLEGE HOSPITAL
+20,Jharkhand,325,Dhanbad,440,Sadar Hospital Dhanbad
+20,Jharkhand,326,Dumka,443,Sadar Hospital Dumka
+20,Jharkhand,328,Garhwa,455,Dailysis
+20,Jharkhand,329,Giridih,456,SADAR HOSPITAL GIRIDIH
+20,Jharkhand,330,Godda,451,Sadar hospital godda
+20,Jharkhand,331,Gumla,3343,CHC Ghaghra The Hans Foundation
+20,Jharkhand,331,Gumla,457,GUMLA
+20,Jharkhand,331,Gumla,3344,Referral hospital Basia
+20,Jharkhand,332,Hazaribagh,3436,Godavari Hospitals
+20,Jharkhand,332,Hazaribagh,446,Sadar Hospital Hazaribagh
+20,Jharkhand,333,Jamtara,450,"Sadar Hospital, 
+Jamtara"
+20,Jharkhand,606,Khunti,3061,MCH Hospital Khunti
+20,Jharkhand,334,Koderma,447,"Sadar Hospital, Koderma"
+20,Jharkhand,335,Latehar,453,Eskag Sanjeevani Dialysis Unit
+20,Jharkhand,336,Lohardaga,3059,Sadar Hospital Lohardagha
+20,Jharkhand,337,Pakaur,3057,Sadar Hospital Pakur
+20,Jharkhand,338,Palamu,442,Sadar Hospital Daltanganj
+20,Jharkhand,343,Pashchimi Singhbhum,441,Sadar Hospital Chaibasa
+20,Jharkhand,327,Purbi Singhbhum,3652,Ghatshila sub divisional hospital
+20,Jharkhand,327,Purbi Singhbhum,444,MGM Jamshedpur
+20,Jharkhand,607,Ramgarh,3058,Sadar Hospital Ramgarh
+20,Jharkhand,339,Ranchi,3342,CHC RATU
+20,Jharkhand,339,Ranchi,3341,SDH BUNDU
+20,Jharkhand,339,Ranchi,452,sadar hospitl ranchi ccu
+20,Jharkhand,340,Sahibganj,3060,Sadar Hospital Sahibganj
+20,Jharkhand,341,Sarikela-Kharswana,449,pallav ghoshal
+20,Jharkhand,342,Simdega,439,Sadar Hospital Simdega
+29,Karnataka,524,Bagalkot,800,BADAMI
+29,Karnataka,524,Bagalkot,799,BAGALKOT
+29,Karnataka,524,Bagalkot,1834,BILIGI
+29,Karnataka,524,Bagalkot,1840,GULEDAGUDDA
+29,Karnataka,524,Bagalkot,1831,HUNAGUNDA
+29,Karnataka,524,Bagalkot,3331,Ilkal
+29,Karnataka,524,Bagalkot,1837,JAMAKHANDI
+29,Karnataka,524,Bagalkot,801,MUDHOL
+29,Karnataka,524,Bagalkot,3332,Rabkavibanatti
+29,Karnataka,525,Bangalore,1810,ANEKAL
+29,Karnataka,525,Bangalore,3650,DASAPPA UFWC UPHC
+29,Karnataka,525,Bangalore,3422,Employees State Insurance Corporation Medical College Bangalore
+29,Karnataka,525,Bangalore,3579,Ganganagar Maternity Center UPHC Dialysis
+29,Karnataka,525,Bangalore,1804,JAYANAGAR
+29,Karnataka,525,Bangalore,1801,K C GENERAL
+29,Karnataka,525,Bangalore,1813,KR PURAM
+29,Karnataka,525,Bangalore,3601,Mathikere UPHC
+29,Karnataka,525,Bangalore,3599,N R colony UFWC UPHC
+29,Karnataka,525,Bangalore,1807,SIR C V RAMAN
+29,Karnataka,525,Bangalore,3602,Srirampura UFWC UPHC
+29,Karnataka,525,Bangalore,1816,YELAHANKA
+29,Karnataka,525,Bangalore,3600,cottonpete UPHC and R.Gundu Rao dialysis centre
+29,Karnataka,526,Bangalore Rural,1645,DEVANAHALLI
+29,Karnataka,526,Bangalore Rural,1648,Doddaballapur
+29,Karnataka,526,Bangalore Rural,1663,Hosakote
+29,Karnataka,526,Bangalore Rural,2083,Nelamangala
+29,Karnataka,527,Belgaum,728,Athani
+29,Karnataka,527,Belgaum,729,Bailhongal
+29,Karnataka,527,Belgaum,1891,Chikkodi
+29,Karnataka,527,Belgaum,730,Gokak
+29,Karnataka,527,Belgaum,731,HUKKERI
+29,Karnataka,527,Belgaum,3319,Kagawad
+29,Karnataka,527,Belgaum,3322,Khanapur
+29,Karnataka,527,Belgaum,3320,Mudalgi
+29,Karnataka,527,Belgaum,3318,Nippani
+29,Karnataka,527,Belgaum,1894,Ramdurga
+29,Karnataka,527,Belgaum,1897,Rayabhag
+29,Karnataka,527,Belgaum,3323,Saundatti
+29,Karnataka,527,Belgaum,3321,Yaragatti
+29,Karnataka,528,Bellary,1666,DH Ballari
+29,Karnataka,528,Bellary,3297,Kampli
+29,Karnataka,528,Bellary,3296,Kurugodu
+29,Karnataka,528,Bellary,733,Sandur
+29,Karnataka,528,Bellary,1678,Siriguppa
+29,Karnataka,528,Bellary,3521,bellari medical college and research centre
+29,Karnataka,529,Bidar,1681,Aurad
+29,Karnataka,529,Bidar,1684,Basavakalyan
+29,Karnataka,529,Bidar,734,Bhalki
+29,Karnataka,529,Bidar,3585,Bidar MCH
+29,Karnataka,529,Bidar,3298,Chittaguppa
+29,Karnataka,529,Bidar,3299,Halsuru
+29,Karnataka,529,Bidar,1687,Humnabad
+29,Karnataka,529,Bidar,3300,Kamalanagara
+29,Karnataka,530,Bijapur,3330,Almel
+29,Karnataka,530,Bijapur,736,Basavan Bagevadi
+29,Karnataka,530,Bijapur,3329,Chadachan
+29,Karnataka,530,Bijapur,735,DH vijayapura
+29,Karnataka,530,Bijapur,737,Indi
+29,Karnataka,530,Bijapur,738,Muddebihal
+29,Karnataka,530,Bijapur,3327,Nidagundi
+29,Karnataka,530,Bijapur,739,Sindgi
+29,Karnataka,530,Bijapur,3328,Talikota
+29,Karnataka,531,Chamarajanagar,3203,Chamarajanagara
+29,Karnataka,531,Chamarajanagar,740,DH Chamarajanagar
+29,Karnataka,531,Chamarajanagar,1693,Gundlupet
+29,Karnataka,531,Chamarajanagar,1690,NEPHROPLUS Kollegala Government  Hospital
+29,Karnataka,531,Chamarajanagar,3478,Rampura
+29,Karnataka,531,Chamarajanagar,3202,Yallandur
+29,Karnataka,630,Chikkaballapura,1699,Bagepalli
+29,Karnataka,630,Chikkaballapura,1696,Chintamani
+29,Karnataka,630,Chikkaballapura,741,DH Chikkaballapur
+29,Karnataka,630,Chikkaballapura,1702,Gouribidanur
+29,Karnataka,630,Chikkaballapura,742,Gudibande
+29,Karnataka,630,Chikkaballapura,1705,Siddlaghatta
+29,Karnataka,532,Chikmagalur,3310,Ajjampura
+29,Karnataka,532,Chikmagalur,1900,DH Chikkamagaluru
+29,Karnataka,532,Chikmagalur,1903,Kadur
+29,Karnataka,532,Chikmagalur,3311,Kalasa
+29,Karnataka,532,Chikmagalur,3313,Koppa
+29,Karnataka,532,Chikmagalur,1906,Mudigere
+29,Karnataka,532,Chikmagalur,745,Narasimharajapura
+29,Karnataka,532,Chikmagalur,3312,Sringere
+29,Karnataka,532,Chikmagalur,743,Tarikere
+29,Karnataka,533,Chitradurga,1708,Challakere
+29,Karnataka,533,Chitradurga,746,Dialysis DH Chitradurga
+29,Karnataka,533,Chitradurga,747,Hiriyur
+29,Karnataka,533,Chitradurga,1714,Holalkere
+29,Karnataka,533,Chitradurga,1717,Hosadurga
+29,Karnataka,533,Chitradurga,1720,Molkalmuru
+29,Karnataka,534,Dakshina Kannada,1867,BANTWAL
+29,Karnataka,534,Dakshina Kannada,1864,BELTHANGADI
+29,Karnataka,534,Dakshina Kannada,3205,Kadaba
+29,Karnataka,534,Dakshina Kannada,3204,Mudabidare
+29,Karnataka,534,Dakshina Kannada,3206,Mulki
+29,Karnataka,534,Dakshina Kannada,807,PUTTUR
+29,Karnataka,534,Dakshina Kannada,1870,SULIYA GH
+29,Karnataka,534,Dakshina Kannada,3207,Ullala
+29,Karnataka,534,Dakshina Kannada,806,WENLOCK
+29,Karnataka,535,Davanagere,1711,Chennagiri
+29,Karnataka,535,Davanagere,748,DH Davangere
+29,Karnataka,535,Davanagere,1729,Harihara
+29,Karnataka,535,Davanagere,3315,Honnalli
+29,Karnataka,535,Davanagere,1723,Jagaluru
+29,Karnataka,535,Davanagere,3314,Nyamatti
+29,Karnataka,536,Dharwad,803,DHARWAD
+29,Karnataka,536,Dharwad,805,KUNDGOL
+29,Karnataka,536,Dharwad,1852,NAVALGUND
+29,Karnataka,536,Dharwad,804,kalghatagi
+29,Karnataka,537,Gadag,1843,GADAG
+29,Karnataka,537,Gadag,3324,Gajendragad
+29,Karnataka,537,Gadag,3325,Lakshmeshwara
+29,Karnataka,537,Gadag,1855,MUNDARAGI
+29,Karnataka,537,Gadag,1861,NARGUND
+29,Karnataka,537,Gadag,1858,RON
+29,Karnataka,537,Gadag,2965,RON
+29,Karnataka,537,Gadag,2086,SHIRAHATTI
+29,Karnataka,538,Gulbarga,750,Afzalpur
+29,Karnataka,538,Gulbarga,1732,Aland
+29,Karnataka,538,Gulbarga,751,Chincholi
+29,Karnataka,538,Gulbarga,752,Chitapur
+29,Karnataka,538,Gulbarga,749,DH Gulbarga
+29,Karnataka,538,Gulbarga,753,Jewargi
+29,Karnataka,538,Gulbarga,3301,Kalgi
+29,Karnataka,538,Gulbarga,1735,Sedam
+29,Karnataka,538,Gulbarga,3303,Shahbad
+29,Karnataka,538,Gulbarga,3302,Yadrami
+29,Karnataka,539,Hassan,3209,Alur
+29,Karnataka,539,Hassan,1738,Arasikere
+29,Karnataka,539,Hassan,1741,Arkalgud
+29,Karnataka,539,Hassan,1744,Belur
+29,Karnataka,539,Hassan,754,Channarayapatna
+29,Karnataka,539,Hassan,1747,Holenarasipura
+29,Karnataka,539,Hassan,755,Sakaleshpur
+29,Karnataka,539,Hassan,3208,Shantigrama
+29,Karnataka,540,Haveri,757,Byadgi
+29,Karnataka,540,Haveri,3520,CHC Rattihalli
+29,Karnataka,540,Haveri,756,DH Haveri
+29,Karnataka,540,Haveri,758,Hangal
+29,Karnataka,540,Haveri,759,Hirekerur
+29,Karnataka,540,Haveri,760,Ranibennur
+29,Karnataka,540,Haveri,761,Savanur
+29,Karnataka,540,Haveri,1750,Shiggaon
+29,Karnataka,541,Kodagu,762,DH Madikeri
+29,Karnataka,541,Kodagu,3210,Khushalnagar
+29,Karnataka,541,Kodagu,2275,Kodagu Institute of Medical Sciences
+29,Karnataka,541,Kodagu,1753,Somwarpet
+29,Karnataka,541,Kodagu,763,Virajpet
+29,Karnataka,542,Kolar,764,DH Kolar
+29,Karnataka,542,Kolar,1756,KGF
+29,Karnataka,542,Kolar,1759,Malur
+29,Karnataka,542,Kolar,1762,Mulbagil
+29,Karnataka,542,Kolar,1765,Srinivasapura
+29,Karnataka,542,Kolar,3316,bangarpete
+29,Karnataka,543,Koppal,1768,Gangawati
+29,Karnataka,543,Koppal,3305,Kanakageri
+29,Karnataka,543,Koppal,3306,Karatagi
+29,Karnataka,543,Koppal,744,Koppal
+29,Karnataka,543,Koppal,3304,Kukkanuru
+29,Karnataka,543,Koppal,765,Kushtagi
+29,Karnataka,543,Koppal,766,Yelburga
+29,Karnataka,544,Mandya,767,Krishnarajpet
+29,Karnataka,544,Mandya,768,Maddur
+29,Karnataka,544,Mandya,769,Malavalli
+29,Karnataka,544,Mandya,770,Nagamangala
+29,Karnataka,544,Mandya,771,Pandavapura
+29,Karnataka,544,Mandya,772,Srirangapatna
+29,Karnataka,545,Mysore,774,Heggadedevankote
+29,Karnataka,545,Mysore,773,Hunsur
+29,Karnataka,545,Mysore,775,Krishnarajanagar
+29,Karnataka,545,Mysore,3213,Mysuru
+29,Karnataka,545,Mysore,776,Nanjangud
+29,Karnataka,545,Mysore,777,Periyapatna
+29,Karnataka,545,Mysore,3212,Salegrama
+29,Karnataka,545,Mysore,3211,Sarguru
+29,Karnataka,545,Mysore,778,T Narasipura
+29,Karnataka,546,Raichur,780,Devadurga
+29,Karnataka,546,Raichur,779,Lingasagur
+29,Karnataka,546,Raichur,781,Manvi
+29,Karnataka,546,Raichur,3307,Raichur DH
+29,Karnataka,546,Raichur,1771,Sindhanur
+29,Karnataka,546,Raichur,3578,Turivihal
+29,Karnataka,631,Ramanagara,1774,Channapatna
+29,Karnataka,631,Ramanagara,782,DH Ramanagara
+29,Karnataka,631,Ramanagara,3217,Harohalli
+29,Karnataka,631,Ramanagara,1777,Kanakapura
+29,Karnataka,631,Ramanagara,3317,Magadi
+29,Karnataka,547,Shimoga,1885,BHADRAVATI
+29,Karnataka,547,Shimoga,1888,HOSANAGAR
+29,Karnataka,547,Shimoga,1873,SAGAR
+29,Karnataka,547,Shimoga,1879,SHIKERAPURA
+29,Karnataka,547,Shimoga,1882,SORABA
+29,Karnataka,547,Shimoga,1876,THIRTHALLI
+29,Karnataka,548,Tumkur,3362,AyushaAum Multispeciality Hospital
+29,Karnataka,548,Tumkur,1819,CHIKKANAYAKANAHALLI
+29,Karnataka,548,Tumkur,795,GUBBI
+29,Karnataka,548,Tumkur,1822,KORTAGERE
+29,Karnataka,548,Tumkur,796,Kunigal
+29,Karnataka,548,Tumkur,794,MADHUGIRI
+29,Karnataka,548,Tumkur,797,PAVAGADA
+29,Karnataka,548,Tumkur,798,SIRA
+29,Karnataka,548,Tumkur,1825,TIPTUR
+29,Karnataka,548,Tumkur,793,TUMKUR
+29,Karnataka,548,Tumkur,1828,TURUVEKERE
+29,Karnataka,549,Udupi,3215,Bauyndur
+29,Karnataka,549,Udupi,3214,Bhramawara
+29,Karnataka,549,Udupi,3216,Hebri
+29,Karnataka,549,Udupi,1780,Karkala
+29,Karnataka,549,Udupi,784,Kundapura
+29,Karnataka,549,Udupi,783,Nephroplus at DH udupi
+29,Karnataka,550,Uttara Kannada,786,Ankola
+29,Karnataka,550,Uttara Kannada,787,Bhatkal
+29,Karnataka,550,Uttara Kannada,1783,Dandeli
+29,Karnataka,550,Uttara Kannada,788,Haliyal
+29,Karnataka,550,Uttara Kannada,789,Honnavar
+29,Karnataka,550,Uttara Kannada,1786,Joida
+29,Karnataka,550,Uttara Kannada,2983,KARWAR INSTITUTE OF MEDICAL SCIENCES  DISTRICT HOSPITAL KARWAR
+29,Karnataka,550,Uttara Kannada,785,Karwar
+29,Karnataka,550,Uttara Kannada,1789,Kumta
+29,Karnataka,550,Uttara Kannada,1792,Mundagod
+29,Karnataka,550,Uttara Kannada,790,Siddapura
+29,Karnataka,550,Uttara Kannada,791,Sirsi
+29,Karnataka,550,Uttara Kannada,3326,Yellapur
+29,Karnataka,738,VIJAYANAGAR,1669,Hagaribommanalli
+29,Karnataka,738,VIJAYANAGAR,1726,Harappanahalli
+29,Karnataka,738,VIJAYANAGAR,732,Hospet
+29,Karnataka,738,VIJAYANAGAR,1672,Huvina Hadaggali
+29,Karnataka,738,VIJAYANAGAR,3587,Kotturu
+29,Karnataka,738,VIJAYANAGAR,1675,Kudligi
+29,Karnataka,635,Yadgir,3608,CHC  GURMITKAL
+29,Karnataka,635,Yadgir,792,DH Yadgir
+29,Karnataka,635,Yadgir,3308,Hunasgi
+29,Karnataka,635,Yadgir,1795,Shahpur
+29,Karnataka,635,Yadgir,1798,Shorapur
+29,Karnataka,635,Yadgir,3309,wadgera
+32,Kerala,554,Alappuzha,608,DH Mavelikara
+32,Kerala,554,Alappuzha,604,GH Alappuzha
+32,Kerala,554,Alappuzha,3019,Govt. TD Medical College Hospital
+32,Kerala,554,Alappuzha,605,TH Thuravoor
+32,Kerala,554,Alappuzha,607,THQH Cherthala
+32,Kerala,554,Alappuzha,997,THQH Harippad
+32,Kerala,554,Alappuzha,606,THQH Kayamkulam
+32,Kerala,555,Ernakulam,614,DH Aluva
+32,Kerala,555,Ernakulam,1009,DH Muvattupuzha
+32,Kerala,555,Ernakulam,613,GH Ernakulam
+32,Kerala,555,Ernakulam,618,MCH Ernakulam
+32,Kerala,555,Ernakulam,1006,TH Piravom
+32,Kerala,555,Ernakulam,616,THQH Fortkochi
+32,Kerala,555,Ernakulam,617,THQH North paravoor
+32,Kerala,555,Ernakulam,615,THQH Perumbavoor
+32,Kerala,555,Ernakulam,619,THQH.tripunithura
+32,Kerala,555,Ernakulam,3447,Taluk Hospital Angamaly
+32,Kerala,555,Ernakulam,3448,Taluk Hospital Palluruthy
+32,Kerala,556,Idukki,612,DH Idukki
+32,Kerala,556,Idukki,611,DH Thodupuzha
+32,Kerala,556,Idukki,3347,THQH Adimali
+32,Kerala,556,Idukki,3651,THQH Nedumkandam
+32,Kerala,556,Idukki,1051,THQH kattappana
+32,Kerala,557,Kannur,644,DH Kannur
+32,Kerala,557,Kannur,645,GH Thalassery
+32,Kerala,557,Kannur,3001,Government Medical College Kannur
+32,Kerala,557,Kannur,651,TH Iritty
+32,Kerala,557,Kannur,647,TH Kuthuparamba
+32,Kerala,557,Kannur,648,TH Payangadi
+32,Kerala,557,Kannur,652,TH Payyannur
+32,Kerala,557,Kannur,650,TH Peravoor
+32,Kerala,557,Kannur,649,THQH Thaliparamba
+32,Kerala,557,Kannur,3114,UDC Edakkad
+32,Kerala,557,Kannur,646,Urban Dialysis Centre Mattannur
+32,Kerala,558,Kasaragod,656,BFHC Periya
+32,Kerala,558,Kasaragod,658,CHC Muliyar
+32,Kerala,558,Kasaragod,654,DH Kanhangad
+32,Kerala,558,Kasaragod,653,GH Kasargode
+32,Kerala,558,Kasaragod,655,TH Mangalpady
+32,Kerala,558,Kasaragod,1039,TH Trikkarpur
+32,Kerala,558,Kasaragod,657,THQH Nileshwar
+32,Kerala,558,Kasaragod,3419,Taluk Hospital Poodamkallu
+32,Kerala,559,Kollam,591,DH Kollam
+32,Kerala,559,Kollam,597,GMCH Parippally
+32,Kerala,559,Kollam,598,TH Nedungolam
+32,Kerala,559,Kollam,594,TH Neendakara
+32,Kerala,559,Kollam,595,THQH Kadakkal
+32,Kerala,559,Kollam,593,THQH Karunagappally
+32,Kerala,559,Kollam,994,THQH Kottarakara
+32,Kerala,559,Kollam,592,THQH Punalur
+32,Kerala,559,Kollam,596,THQH Sasthamkotta
+32,Kerala,560,Kottayam,1003,DH Kottayam
+32,Kerala,560,Kottayam,2944,General Hospital Pala
+32,Kerala,560,Kottayam,3282,Govt Medical College Kottayam
+32,Kerala,560,Kottayam,3033,KR Narayanan Memorial Speciality  Hospital Uzhavoor
+32,Kerala,560,Kottayam,609,PHC Erattupetta
+32,Kerala,560,Kottayam,610,THQH Vaikom
+32,Kerala,561,Kozhikode,638,District Hospital Vadakara
+32,Kerala,561,Kozhikode,636,GGH Kozhikode
+32,Kerala,561,Kozhikode,2947,Government Dialysis Center
+32,Kerala,561,Kozhikode,1036,TH Balussery
+32,Kerala,561,Kozhikode,1033,TH Ferokke
+32,Kerala,561,Kozhikode,2941,THQH Koyilandy
+32,Kerala,561,Kozhikode,637,Th Perambra
+32,Kerala,561,Kozhikode,1030,Th Thamarassery
+32,Kerala,562,Malappuram,632,CHC Chungathara
+32,Kerala,562,Malappuram,1027,CHC Maranchery
+32,Kerala,562,Malappuram,633,CHC valavannur
+32,Kerala,562,Malappuram,628,DH Nilambur
+32,Kerala,562,Malappuram,635,DH Perinthalmanna
+32,Kerala,562,Malappuram,629,District Hospital Tirur
+32,Kerala,562,Malappuram,634,FHC Tanalur
+32,Kerala,562,Malappuram,1102,GMCH Manjeri
+32,Kerala,562,Malappuram,3519,TH Wandoor
+32,Kerala,562,Malappuram,631,THQH Ponnani
+32,Kerala,562,Malappuram,630,THQH Tirurangadi
+32,Kerala,563,Palakkad,624,ATTSH Kottathara
+32,Kerala,563,Palakkad,622,CHC Chalissery
+32,Kerala,563,Palakkad,627,CHC Shornur
+32,Kerala,563,Palakkad,620,DH Palakad
+32,Kerala,563,Palakkad,3489,GOVT.TALUK HEAD QUARTERS
+32,Kerala,563,Palakkad,626,THQH Alathur
+32,Kerala,563,Palakkad,625,THQH Chitoor
+32,Kerala,563,Palakkad,623,THQH Mannarkad
+32,Kerala,563,Palakkad,621,THQH Ottappalam
+32,Kerala,564,Pathanamthitta,600,DH Kozhencherry
+32,Kerala,564,Pathanamthitta,601,GH Adoor
+32,Kerala,564,Pathanamthitta,599,GH Pathanamthitta
+32,Kerala,564,Pathanamthitta,602,THQH Ranni
+32,Kerala,564,Pathanamthitta,603,THQH Thiruvalla
+32,Kerala,565,Thiruvananthapuram,588,DH Nedumangadu
+32,Kerala,565,Thiruvananthapuram,590,DMH Peroorkada
+32,Kerala,565,Thiruvananthapuram,585,GH Neyyattinkara
+32,Kerala,565,Thiruvananthapuram,587,GH Trivandrum
+32,Kerala,565,Thiruvananthapuram,586,TH Fort
+32,Kerala,565,Thiruvananthapuram,1042,TH Parassala
+32,Kerala,565,Thiruvananthapuram,1048,TH Varkala
+32,Kerala,565,Thiruvananthapuram,3455,TH Vithura
+32,Kerala,565,Thiruvananthapuram,589,THQH Attingal
+32,Kerala,565,Thiruvananthapuram,1045,THQH Chirayinkeezhu
+32,Kerala,565,Thiruvananthapuram,2950,THQH MALAYINKEEZHU
+32,Kerala,566,Thrissur,2956,CHC Mala
+32,Kerala,566,Thrissur,2959,CHC Tholur
+32,Kerala,566,Thrissur,2953,DH Wadakkancherry
+32,Kerala,566,Thrissur,2089,GH Thrissur
+32,Kerala,566,Thrissur,2938,MCH Thrissur
+32,Kerala,566,Thrissur,3281,TH  CHELAKKARA
+32,Kerala,566,Thrissur,1021,TH Kunnamkulam
+32,Kerala,566,Thrissur,2962,TH Pudukkad
+32,Kerala,566,Thrissur,1015,THQH Chalakkudy
+32,Kerala,566,Thrissur,1018,THQH Chavakkad
+32,Kerala,566,Thrissur,1012,THQH Kodungallur
+32,Kerala,567,Wayanad,643,CHC Nalloornadu
+32,Kerala,567,Wayanad,641,CHC Panamaram
+32,Kerala,567,Wayanad,639,DH Mananthavady
+32,Kerala,567,Wayanad,642,THQH Sulthanbathery
+32,Kerala,567,Wayanad,640,THQH Vythiri
+37,Ladakh,6,Kargil,62,District Hospital Kargil
+37,Ladakh,9,Leh (Ladakh),63,SNM Hospital Leh
+31,Lakshadweep,553,Lakshadweep,575,Govt. Indira Gandhi Hospital Kavaratti
+31,Lakshadweep,553,Lakshadweep,576,Govt. Rajiv Gandhi Hospital Agatti.
+31,Lakshadweep,553,Lakshadweep,3004,THANAL DIALYSIS CENTER AMINI
+31,Lakshadweep,553,Lakshadweep,3276,Thanal Dialysis Center Androth
+23,Madhya Pradesh,667,Agar Malwa,247,District Hospital Agar Malwa
+23,Madhya Pradesh,639,Alirajpur,248,District Hospital Alirajpur
+23,Madhya Pradesh,390,Anuppur,249,District Hospital Anuppur
+23,Madhya Pradesh,391,Ashoknagar,250,District Hospital Ashok Nagar
+23,Madhya Pradesh,392,Balaghat,251,District Hospital Balaghat
+23,Madhya Pradesh,393,Barwani,252,District Hospital Barwani
+23,Madhya Pradesh,394,Betul,253,District Hospital Betul
+23,Madhya Pradesh,395,Bhind,254,District Hospital Bhind
+23,Madhya Pradesh,396,Bhopal,255,District Hospital Bhopal
+23,Madhya Pradesh,397,Burhanpur,256,District Hospital Burhanpur
+23,Madhya Pradesh,398,Chhatarpur,257,District Hospital Chhatarpur
+23,Madhya Pradesh,398,Chhatarpur,3099,Kaya Care Hospital and Dialysis Center
+23,Madhya Pradesh,399,Chhindwara,2053,District hospital chhindwara
+23,Madhya Pradesh,400,Damoh,259,District Hospital Damoh
+23,Madhya Pradesh,401,Datia,260,District Hospital Datia
+23,Madhya Pradesh,402,Dewas,261,District Hospital Dewas
+23,Madhya Pradesh,403,Dhar,262,District Hospital Dhar
+23,Madhya Pradesh,403,Dhar,2041,civi hospital badnawar
+23,Madhya Pradesh,404,Dindori,264,District Hospital Dindori
+23,Madhya Pradesh,405,East Nimar (Khandwa),274,District Hospital Khandwa
+23,Madhya Pradesh,406,Guna,265,District Hospital Guna
+23,Madhya Pradesh,407,Gwalior,2320,CH Gwalior Hazira
+23,Madhya Pradesh,407,Gwalior,3070,Civil Hospital Dabra
+23,Madhya Pradesh,407,Gwalior,266,District Hospital Gwalior
+23,Madhya Pradesh,408,Harda,267,District Hospital Harda
+23,Madhya Pradesh,409,Hoshangabad,268,District Hospital Hoshangabad
+23,Madhya Pradesh,410,Indore,269,District Hospital Indore
+23,Madhya Pradesh,410,Indore,270,Hukumchand Civil Hospital
+23,Madhya Pradesh,411,Jabalpur,271,District Hospital Jabalpur
+23,Madhya Pradesh,412,Jhabua,272,District Hospital Jhabua
+23,Madhya Pradesh,413,Katni,273,District Hospital Katni
+23,Madhya Pradesh,415,Mandla,3573,Civil Hospital Nainpur Mandla
+23,Madhya Pradesh,415,Mandla,276,District Hospital Mandla
+23,Madhya Pradesh,416,Mandsaur,3283,Civil Hospital Garoth
+23,Madhya Pradesh,416,Mandsaur,277,District Hospital Mandsaur
+23,Madhya Pradesh,417,Morena,278,District Hospital Morena
+23,Madhya Pradesh,418,Narsinghpur,3265,Civil Hospital Gadarwara Narsinghpur
+23,Madhya Pradesh,418,Narsinghpur,279,District Hospital Narsinghpur
+23,Madhya Pradesh,419,Neemuch,2044,CHC Manasa
+23,Madhya Pradesh,419,Neemuch,280,District Hospital Neemuch
+23,Madhya Pradesh,722,Niwari,3097,CHC Niwari
+23,Madhya Pradesh,420,Panna,282,District Hospital Panna
+23,Madhya Pradesh,421,Raisen,3449,CH Bareli Raisen
+23,Madhya Pradesh,421,Raisen,283,District Hospital Raisen
+23,Madhya Pradesh,422,Rajgarh,3613,Civil Hospital Sarangpur
+23,Madhya Pradesh,422,Rajgarh,284,District Hospital Rajgarh
+23,Madhya Pradesh,423,Ratlam,3120,Civil Hospital Jaora
+23,Madhya Pradesh,423,Ratlam,285,G.D.Anklesaria Rotary Dialysis Centre
+23,Madhya Pradesh,424,Rewa,286,District Hospital Rewa
+23,Madhya Pradesh,424,Rewa,3201,Superspeciality hospital rewa
+23,Madhya Pradesh,425,Sagar,3460,Civil Hospital Garhakota
+23,Madhya Pradesh,425,Sagar,2050,Civil Hospital Khurai
+23,Madhya Pradesh,425,Sagar,287,District Hospital Sagar
+23,Madhya Pradesh,426,Satna,3137,Civil Hospital Maihar
+23,Madhya Pradesh,426,Satna,288,District Hospital Satna
+23,Madhya Pradesh,427,Sehore,3117,Civil Hospital Ashta
+23,Madhya Pradesh,427,Sehore,289,District Hospital Sehore
+23,Madhya Pradesh,427,Sehore,2047,civil hospital  bhairunda
+23,Madhya Pradesh,428,Seoni,291,District Hospital Seoni
+23,Madhya Pradesh,429,Shahdol,3507,CHC Dhanpuri
+23,Madhya Pradesh,429,Shahdol,292,District Hospital Shahdol
+23,Madhya Pradesh,430,Shajapur,293,District Hospital Shajapur
+23,Madhya Pradesh,431,Sheopur,294,District Hospital Sheopur
+23,Madhya Pradesh,432,Shivpuri,295,District Hospital Shivpuri
+23,Madhya Pradesh,433,Sidhi,296,District Hospital Sidhi
+23,Madhya Pradesh,638,Singrauli,297,District Hospital Singroli
+23,Madhya Pradesh,434,Tikamgarh,298,District Hospital Tikamgarh
+23,Madhya Pradesh,435,Ujjain,2323,Civil hospital Nagda
+23,Madhya Pradesh,435,Ujjain,299,District Hospital Ujjain
+23,Madhya Pradesh,435,Ujjain,3437,Khachrod Civil Hospital
+23,Madhya Pradesh,436,Umaria,301,District Hospital Umaria
+23,Madhya Pradesh,437,Vidisha,303,Civil Hospital Ganjbasoda
+23,Madhya Pradesh,437,Vidisha,302,District Hospital Vidisha
+23,Madhya Pradesh,414,West Nimar (Khargone),275,District Hospital Khargone
+27,Maharashtra,466,Ahmadnagar,696,DH Ahmednagar
+27,Maharashtra,466,Ahmadnagar,3381,RH Sangamner
+27,Maharashtra,466,Ahmadnagar,3524,SDH Pathardi
+27,Maharashtra,466,Ahmadnagar,3508,Sangamner
+27,Maharashtra,467,Akola,3382,RH Akot
+27,Maharashtra,467,Akola,695,SDH Murtizapur
+27,Maharashtra,468,Amravati,3588,RH Bhatkuli
+27,Maharashtra,468,Amravati,3383,RH Chandur Bazar
+27,Maharashtra,468,Amravati,3414,RH Chandur Railway
+27,Maharashtra,468,Amravati,3416,RH Nandgaon Khandeshwar
+27,Maharashtra,468,Amravati,841,RRH Amravati
+27,Maharashtra,468,Amravati,697,SDH Achalpur
+27,Maharashtra,468,Amravati,3531,SDH Dharani
+27,Maharashtra,468,Amravati,3525,SDH Teosa
+27,Maharashtra,469,Aurangabad,3123,Chatrapati Sambhaji Nagar
+27,Maharashtra,469,Aurangabad,3100,Govt Medical College And Hospital Aurangabad
+27,Maharashtra,469,Aurangabad,3384,SDH Sillod
+27,Maharashtra,470,Beed,698,D H Beed
+27,Maharashtra,470,Beed,3543,GH Lokhandi Sawargaon
+27,Maharashtra,470,Beed,3385,RH dharur
+27,Maharashtra,470,Beed,3589,SDH GEORAI
+27,Maharashtra,470,Beed,3536,SDH Parali
+27,Maharashtra,471,Bhandara,699,DH Bhandara
+27,Maharashtra,471,Bhandara,3386,SDH Tumsar
+27,Maharashtra,472,Buldana,700,DH Buldhana
+27,Maharashtra,472,Buldana,701,GH Khamgaon
+27,Maharashtra,472,Buldana,844,RH Jalgaon Jamod
+27,Maharashtra,472,Buldana,3387,RH Lonar
+27,Maharashtra,472,Buldana,847,RH Warwat Bakal
+27,Maharashtra,472,Buldana,3468,Rural Hospital Chikhali
+27,Maharashtra,472,Buldana,3427,SDH Malkapur
+27,Maharashtra,472,Buldana,702,SDH Shegaon
+27,Maharashtra,473,Chandrapur,703,DH Chandrapur
+27,Maharashtra,473,Chandrapur,3388,RH Brahmapuri
+27,Maharashtra,474,Dhule,3389,RH Thalner
+27,Maharashtra,475,Gadchiroli,704,D H Gadchiroli
+27,Maharashtra,475,Gadchiroli,3390,RH Chamorshi
+27,Maharashtra,476,Gondiya,705,DH  Gondia
+27,Maharashtra,476,Gondiya,3458,RH Deori
+27,Maharashtra,477,Hingoli,724,DH Hingoli
+27,Maharashtra,477,Hingoli,3391,RH Aundha Nagnath
+27,Maharashtra,477,Hingoli,3590,SDH KALAMNURI
+27,Maharashtra,478,Jalgaon,707,D H Jalgaon
+27,Maharashtra,478,Jalgaon,3392,RH Chalisgaon
+27,Maharashtra,478,Jalgaon,3523,RH PAROLA
+27,Maharashtra,478,Jalgaon,889,SDH Chopda
+27,Maharashtra,478,Jalgaon,3522,SDH Jamner
+27,Maharashtra,479,Jalna,706,DH Jalna
+27,Maharashtra,479,Jalna,3393,RH Rajur
+27,Maharashtra,479,Jalna,3533,SDH Ambad
+27,Maharashtra,480,Kolhapur,3428,General Hospital Indira Gandhi Ichalkaranji
+27,Maharashtra,480,Kolhapur,3498,RH Ajra
+27,Maharashtra,480,Kolhapur,3591,RH Kagal
+27,Maharashtra,480,Kolhapur,3394,RH Radhanagari
+27,Maharashtra,480,Kolhapur,726,SDH Gadhinglaj
+27,Maharashtra,480,Kolhapur,727,SDH Kasaba Bawada
+27,Maharashtra,480,Kolhapur,3504,Sub District Hospital gargoti
+27,Maharashtra,481,Latur,895,GH Ugir
+27,Maharashtra,481,Latur,3538,RH Murud
+27,Maharashtra,481,Latur,3395,RH Renapur
+27,Maharashtra,484,Nagpur,3129,GOVERNMENT MEDICAL COLLEGE AND SUPERSPECIALITY HOSPITAL NAGPUR
+27,Maharashtra,484,Nagpur,3022,INDIRA GANDHI GOVERNMENT MEDICAL COLLEGE AND HOSPITAL NAGPUR
+27,Maharashtra,484,Nagpur,3396,RH Katol
+27,Maharashtra,484,Nagpur,3535,RH Umred
+27,Maharashtra,484,Nagpur,3537,SDH Ramtek
+27,Maharashtra,485,Nanded,850,DH Nanded
+27,Maharashtra,485,Nanded,3598,RH Bhokar
+27,Maharashtra,485,Nanded,3596,RH Dharmabad
+27,Maharashtra,485,Nanded,3397,RH Mahur
+27,Maharashtra,485,Nanded,3126,SDH Deglur
+27,Maharashtra,485,Nanded,3124,SDH Hadgaon
+27,Maharashtra,485,Nanded,3125,SDH Mukhed
+27,Maharashtra,485,Nanded,3112,Sub District Hospital Gokunda
+27,Maharashtra,486,Nandurbar,708,DH Nandurbar
+27,Maharashtra,486,Nandurbar,3398,SDH Navapur
+27,Maharashtra,487,Nashik,2284,Dr. Vasantrao Pawar Medical College
+27,Maharashtra,487,Nashik,853,GH Malegaon
+27,Maharashtra,487,Nashik,856,RH Deola
+27,Maharashtra,487,Nashik,3399,RH Sinnar
+27,Maharashtra,487,Nashik,859,RRH Nashik
+27,Maharashtra,487,Nashik,3592,SDH Chandwad
+27,Maharashtra,488,Osmanabad,722,DH Osmanabad
+27,Maharashtra,488,Osmanabad,3457,RH Washi
+27,Maharashtra,488,Osmanabad,3497,Rural Hospital Lohara
+27,Maharashtra,488,Osmanabad,3496,Rural Hospital Murum
+27,Maharashtra,488,Osmanabad,3424,SDH Bhoom
+27,Maharashtra,488,Osmanabad,3423,SDH Tuljapur
+27,Maharashtra,488,Osmanabad,3501,Sub District Hospital Sastur
+27,Maharashtra,665,Palghar,3400,RH Mokhada
+27,Maharashtra,665,Palghar,892,SDH Dahanu
+27,Maharashtra,665,Palghar,3426,SDH Javhar
+27,Maharashtra,489,Parbhani,709,Dialysis Centre District Hospital Parbhani
+27,Maharashtra,489,Parbhani,3527,RH Jintur
+27,Maharashtra,489,Parbhani,3401,RH Palam
+27,Maharashtra,489,Parbhani,3413,RH Purna
+27,Maharashtra,489,Parbhani,3526,SDH Selu
+27,Maharashtra,490,Pune,862,DH Pune
+27,Maharashtra,490,Pune,3576,Manchar
+27,Maharashtra,490,Pune,3402,RH Yawat
+27,Maharashtra,490,Pune,3500,Rural Hospital Supa
+27,Maharashtra,490,Pune,710,SDH Baramati
+27,Maharashtra,490,Pune,711,SDH Daund
+27,Maharashtra,490,Pune,865,SDH Manchar
+27,Maharashtra,490,Pune,3479,Saarathi Multispeciality Hospital
+27,Maharashtra,490,Pune,3480,Saarathi Multispeciality Hospital
+27,Maharashtra,490,Pune,3481,Saarathi Multispeciality Hospital
+27,Maharashtra,490,Pune,3503,Sub District Indapur
+27,Maharashtra,491,Raigarh,712,DH Alibaug
+27,Maharashtra,491,Raigarh,2092,RH Mahad
+27,Maharashtra,491,Raigarh,3459,RH Mhasala
+27,Maharashtra,491,Raigarh,883,SDH Mangao
+27,Maharashtra,491,Raigarh,886,SDH Panvel
+27,Maharashtra,491,Raigarh,3425,SDH Shrivardhan
+27,Maharashtra,492,Ratnagiri,713,District Hospital Ratnagiri
+27,Maharashtra,492,Ratnagiri,3403,RH Sangameshwar
+27,Maharashtra,492,Ratnagiri,3499,Rural Hospital
+27,Maharashtra,492,Ratnagiri,3593,SDH KAMTHE
+27,Maharashtra,493,Sangli,3597,RH Kokrud
+27,Maharashtra,493,Sangli,3404,SDH Kavthe Mahankal
+27,Maharashtra,493,Sangli,3502,Sub District Shirala
+27,Maharashtra,494,Satara,714,D H Satara
+27,Maharashtra,494,Satara,3415,RH Kaldhone
+27,Maharashtra,494,Satara,3417,RH Koregaon
+27,Maharashtra,494,Satara,3412,RH Medha
+27,Maharashtra,494,Satara,3405,RH Vaduj
+27,Maharashtra,494,Satara,715,SDH Karad
+27,Maharashtra,494,Satara,3528,SDH Phaltan
+27,Maharashtra,495,Sindhudurg,716,District Hospital Sindhudurg
+27,Maharashtra,495,Sindhudurg,3594,RH DODAMARG
+27,Maharashtra,495,Sindhudurg,868,RH Devgad
+27,Maharashtra,495,Sindhudurg,871,RH Malvan
+27,Maharashtra,495,Sindhudurg,3530,RH Pendurkatta
+27,Maharashtra,495,Sindhudurg,3406,RH Vaibhavwadi
+27,Maharashtra,495,Sindhudurg,717,SDH Sawantvadi
+27,Maharashtra,495,Sindhudurg,3529,WH Kudal
+27,Maharashtra,495,Sindhudurg,718,sub district hospital Kankavali
+27,Maharashtra,496,Solapur,3407,DH Solapur
+27,Maharashtra,496,Solapur,719,Dialysis Center SDH pandharpur
+27,Maharashtra,497,Thane,720,DH Thane
+27,Maharashtra,497,Thane,877,GH Malvani
+27,Maharashtra,497,Thane,721,GH Ulhasnagar
+27,Maharashtra,497,Thane,880,Pandit Bhimsen joshi hospital
+27,Maharashtra,497,Thane,2989,Pinky jha
+27,Maharashtra,497,Thane,3408,RH Murbad
+27,Maharashtra,497,Thane,874,SDH Bhiwandi
+27,Maharashtra,497,Thane,3280,SDH Shahapur
+27,Maharashtra,498,Wardha,723,Dialysis
+27,Maharashtra,498,Wardha,3409,RH Karanja Ghadage
+27,Maharashtra,499,Washim,725,DH Washim
+27,Maharashtra,499,Washim,3410,RH Mangrulpir
+27,Maharashtra,499,Washim,3595,SDH Karanja
+27,Maharashtra,500,Yavatmal,3411,RH Wani
+27,Maharashtra,500,Yavatmal,3532,SDH Pandharkawada
+27,Maharashtra,500,Yavatmal,3534,SDH Umarkhed
+14,Manipur,252,Bishnupur,582,District Hospital Bishnupur
+14,Manipur,253,Chandel,580,"District Hospital, Chandel"
+14,Manipur,255,Imphal East,1330,JNIMS Hospital
+14,Manipur,256,Imphal West,577,RIMS
+14,Manipur,713,JIRIBAM,3165,CHC Jiribam
+14,Manipur,711,KAKCHING,3163,CHC Kakching
+14,Manipur,717,KAMJONG,3164,CHC Kamjong
+14,Manipur,712,KANGPOKPI,3159,CHC Kangpokpi
+14,Manipur,714,NONEY,3160,PHC Noney
+14,Manipur,715,PHERZAWL,3161,CHC Parbung
+14,Manipur,257,Senapati,581,District Hospital Senapati
+14,Manipur,716,TENGNOUPAL,3162,SDH Moreh
+14,Manipur,258,Tamenglong,583,"District Hospital, Tamenglong"
+14,Manipur,259,Thoubal,578,thoubal
+14,Manipur,260,Ukhrul,584,"District Hospital, Ukhrul"
+14,Manipur,254,churachandpur,579,Haemodialysis
+17,Meghalaya,740,EASTERN WEST KHASI HILLS,3196,Civil hospital
+17,Meghalaya,273,East Garo Hills,3194,Civil hospital
+17,Meghalaya,657,East Jaintia Hills,3195,Civil hospital
+17,Meghalaya,274,East Khasi Hills,3187,Civil hospital Shillong
+17,Meghalaya,656,North Garo Hills,3257,Resubelpara DH
+17,Meghalaya,276,Ri Bhoi,3188,Civil hospital
+17,Meghalaya,277,South Garo Hills,3191,Civil hospital
+17,Meghalaya,663,South West Garo Hills,3193,Civil hospital
+17,Meghalaya,658,South West Khasi Hills,3190,Civil hospital
+17,Meghalaya,278,West Garo Hills,574,Tura Civil Hospital
+17,Meghalaya,275,West Jaintia Hills,573,Jowai Civil Hospital
+17,Meghalaya,279,West Khasi Hills,3189,Civil hospital
+15,Mizoram,261,Aizawl,64,Civil Hospital Aizawl
+15,Mizoram,261,Aizawl,3691,Zoram Medical College and Hospital
+15,Mizoram,262,Champhai,1627,Hemodialysis Unit
+15,Mizoram,726,Hnahthial,3150,Lunglei DH
+15,Mizoram,728,KHAWZAWL,3151,Champhai DH
+15,Mizoram,263,Kolasib,1630,Haemodialysis Unit
+15,Mizoram,264,Lawngtlai,3154,Lunglei Lawngtlai
+15,Mizoram,265,Lunglei,1624,Hemodialysis Unit
+15,Mizoram,266,Mamit,3156,Mamit District Hospital
+15,Mizoram,267,Saiha,3153,Lunglei
+15,Mizoram,727,Saitual,3152,Civil Hospital Aizawl
+15,Mizoram,268,Serchhip,3155,Serchhip district hospital
+13,Nagaland,244,Dimapur,69,Dimapur Civil Hospital
+13,Nagaland,614,Kiphire,3235,Tuesang
+13,Nagaland,245,Kohima,67,NHAK
+13,Nagaland,615,Longleng,3234,Mokokchung
+13,Nagaland,246,Mokokchung,68,IMDH
+13,Nagaland,247,Mon,3483,Mon District Hospital
+13,Nagaland,736,Noklak,3238,Tuesang
+13,Nagaland,613,Peren,3237,Dimapur
+13,Nagaland,248,Phek,3456,District Hospital Phek
+13,Nagaland,249,Tuensang,3115,District Hospital Tuensang
+13,Nagaland,250,Wokha,3236,kohima
+13,Nagaland,251,Zunheboto,3484,Hezukhu Memorial District Hospital
+21,Odisha,344,Anugul,3431,Athamallik
+21,Odisha,344,Anugul,70,DHH ANGUL
+21,Odisha,344,Anugul,3218,Pallahara
+21,Odisha,344,Anugul,3219,Talcher
+21,Odisha,345,Balangir,3689,CHC Loisingha
+21,Odisha,345,Balangir,76,DHH BALANGIR
+21,Odisha,345,Balangir,3348,SDH PATNAGARH DIALYSIS UNIT
+21,Odisha,345,Balangir,3349,SDH TITLAGARH DIALYSIS UNIT
+21,Odisha,346,Baleshwar,92,DHH BALASORE
+21,Odisha,346,Baleshwar,3220,Soro
+21,Odisha,347,Bargarh,79,DHH BARGARH
+21,Odisha,347,Bargarh,3247,Padampur SDH
+21,Odisha,349,Baudh,73,Boudh
+21,Odisha,348,Bhadrak,95,Bhadrak
+21,Odisha,350,Cuttack,3518,Athagarh
+21,Odisha,350,Cuttack,72,CHC NARSINGHPUR
+21,Odisha,350,Cuttack,3512,Idealhemodialysis House
+21,Odisha,350,Cuttack,100,SCB Medical College
+21,Odisha,350,Cuttack,3511,SHANTI MEMORIAL HOSPITAL PVTLTD
+21,Odisha,350,Cuttack,3221,Tigiria
+21,Odisha,351,Deogarh,2038,Deogarh
+21,Odisha,352,Dhenkanal,71,DHH DHENKANAL
+21,Odisha,352,Dhenkanal,3222,Hindol
+21,Odisha,352,Dhenkanal,3223,Kamakhya Nagar
+21,Odisha,353,Gajapati,84,DHH PARALAKHEMUNDI
+21,Odisha,354,Ganjam,3429,Aska
+21,Odisha,354,Ganjam,3420,Chatrapur
+21,Odisha,354,Ganjam,3252,Hinjlikatu
+21,Odisha,354,Ganjam,98,MKCG Medical College
+21,Odisha,354,Ganjam,97,SDH BHANJANAGAR
+21,Odisha,355,Jagatsinghapur,89,DHH JAGATSINGHPUR
+21,Odisha,356,Jajapur,91,DHH JAJPUR
+21,Odisha,356,Jajapur,3690,Danagadi
+21,Odisha,357,Jharsuguda,77,DHH JHARSUGUDA
+21,Odisha,358,Kalahandi,82,DHH BHAWANIPATNA
+21,Odisha,358,Kalahandi,3224,Dharamgarh
+21,Odisha,359,Kandhamal,3228,Baliguda
+21,Odisha,359,Kandhamal,74,DHH PHULBANI
+21,Odisha,360,Kendrapara,90,DHH KENDRAPADA
+21,Odisha,360,Kendrapara,3430,Pattamundai
+21,Odisha,361,Kendujhar,3226,Anandapur
+21,Odisha,361,Kendujhar,2035,Badbil
+21,Odisha,361,Kendujhar,3227,Champua
+21,Odisha,361,Kendujhar,94,DHH KEONJHAR
+21,Odisha,362,Khordha,87,Capital Hospital
+21,Odisha,362,Khordha,3225,DHH Khordha
+21,Odisha,363,Koraput,2077,JEYPORE
+21,Odisha,363,Koraput,80,SLNMCH
+21,Odisha,364,Malkangiri,3354,Chitrakonda
+21,Odisha,364,Malkangiri,85,DHH MALKANAGIRI
+21,Odisha,364,Malkangiri,3355,Mathili
+21,Odisha,365,Mayurbhanj,93,DHH BARIPADA
+21,Odisha,365,Mayurbhanj,3248,Karanjia
+21,Odisha,365,Mayurbhanj,3229,Rairangpur
+21,Odisha,365,Mayurbhanj,3230,Udala
+21,Odisha,366,Nabarangapur,81,DHH NABARNGPUR
+21,Odisha,366,Nabarangapur,3250,Umerkote
+21,Odisha,367,Nayagarh,75,DHH NAYAGARH
+21,Odisha,368,Nuapada,86,DHH NUAPADA
+21,Odisha,368,Nuapada,3244,Khariar
+21,Odisha,369,Puri,88,DHH PURI
+21,Odisha,370,Rayagada,83,DHH RAYAGADA
+21,Odisha,370,Rayagada,3231,Gunupur
+21,Odisha,371,Sambalpur,99,DHH Sambalpur
+21,Odisha,371,Sambalpur,3251,Kuchinda
+21,Odisha,371,Sambalpur,3357,Rairakhol
+21,Odisha,371,Sambalpur,2032,VSS MCH
+21,Odisha,372,Sonapur,3232,Dunguripali
+21,Odisha,372,Sonapur,2029,Sonepur
+21,Odisha,373,Sundargarh,3233,Bonaigarh
+21,Odisha,373,Sundargarh,78,DHH SUNDARGARH
+21,Odisha,373,Sundargarh,96,Rgh rourkela
+34,Puducherry,598,Karaikal,102,Government General Hospital
+34,Puducherry,600,Puducherry,101,Indira Gandhi Government General hospital and Post Graduate Institute
+3,Punjab,27,Amritsar,103,CH Amritsar
+3,Punjab,605,Barnala,104,DH Barnala
+3,Punjab,605,Barnala,3103,SDH Tapa
+3,Punjab,28,Bathinda,105,DH Bathinda
+3,Punjab,28,Bathinda,3339,Hans renal care center CHC Goniana
+3,Punjab,29,Faridkot,3134,HANS RENAL CARE CENTER DISTRICT HOSPITAL FARIDKOT
+3,Punjab,29,Faridkot,106,SDH Kotkapura
+3,Punjab,30,Fatehgarh Sahib,109,DH Fatehgarh Sahib
+3,Punjab,651,Fazilka,107,DH Fazilka
+3,Punjab,651,Fazilka,108,SDH Abohar
+3,Punjab,31,Firozpur,110,DH Ferozpur
+3,Punjab,32,Gurdaspur,111,Civil Hospital Gurdaspur
+3,Punjab,32,Gurdaspur,112,SDH Batala
+3,Punjab,33,Hoshiarpur,113,DH Hoshiarpur
+3,Punjab,33,Hoshiarpur,3510,Hans Renal Care Center Beh Chuhar
+3,Punjab,33,Hoshiarpur,114,SDH Dasuya
+3,Punjab,34,Jalandhar,115,HRCC DH Jalandhar
+3,Punjab,34,Jalandhar,3255,Sub Divisional Hospital
+3,Punjab,35,Kapurthala,116,DH Kapurthala
+3,Punjab,35,Kapurthala,117,SDH Bhulath
+3,Punjab,35,Kapurthala,118,SDH Phagwara
+3,Punjab,36,Ludhiana,119,DH Ludhiana
+3,Punjab,36,Ludhiana,120,SDH Jagraon
+3,Punjab,36,Ludhiana,3131,UCHC JWADDI
+3,Punjab,737,MALERKOTLA,3147,HANS FOUNDATION RENAL CARE CENTRE
+3,Punjab,37,Mansa,121,DH Mansa
+3,Punjab,38,Moga,122,DH Moga
+3,Punjab,39,Muktsar,123,DH Mukatsar  Hans renal care centor
+3,Punjab,39,Muktsar,3285,PMNDP
+3,Punjab,39,Muktsar,124,SDH Gidderbaha
+3,Punjab,662,Pathankot,128,DH Pathankot
+3,Punjab,41,Patiala,129,HRCC MKH Patiala
+3,Punjab,41,Patiala,131,SDH Nabha
+3,Punjab,41,Patiala,130,SDH Rajpura
+3,Punjab,41,Patiala,3102,SDH Samana
+3,Punjab,42,Rupnagar,132,DH Ropar
+3,Punjab,608,Sahibzada Ajit Singh Nagar,125,DH Mohali
+3,Punjab,43,Sangrur,133,DH Sangrur
+3,Punjab,43,Sangrur,3509,HRCC PGIMER Sangrur
+3,Punjab,40,Shahid Bhagat Singh Nagar (Nawanshahr),127,CHC Banga
+3,Punjab,40,Shahid Bhagat Singh Nagar (Nawanshahr),126,DH Nawansahar
+3,Punjab,609,Tarn Taran,134,CH Taran Taran
+3,Punjab,609,Tarn Taran,135,SDH Patti
+8,Rajasthan,86,Ajmer,137,"Govt. Amarkaur hospital, Beawar(Ajmer)"
+8,Rajasthan,86,Ajmer,136,Satellite hospital Ajmer
+8,Rajasthan,87,Alwar,138,"Rajeev Gandhi DH, Alwar"
+8,Rajasthan,88,Banswara,139,M.G. Hoispital banswara
+8,Rajasthan,89,Baran,140,eskag
+8,Rajasthan,90,Barmer,164,District Hospital
+8,Rajasthan,91,Bharatpur,142,"R.B.M. Hospital, Bharatpur"
+8,Rajasthan,92,Bhilwara,1633,"Mahatma Gandhi District Hospital, Bhilwara"
+8,Rajasthan,93,Bikaner,144,S.D.M.  hospital
+8,Rajasthan,94,Bundi,145,Pandit Brij Sundar Sharma Hospital (Bundi)
+8,Rajasthan,95,Chittaurgarh,146,Govt hospital Chittorgarh
+8,Rajasthan,96,Churu,147,"D.B. Hospital, Churu"
+8,Rajasthan,97,Dausa,148,RAHI CARE DIALYSIS
+8,Rajasthan,98,Dholpur,149,Eskag Sanjeevani pvt Ltd
+8,Rajasthan,99,Dungarpur,150,SHIRI HARIDEV JOSHI GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3549,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3558,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3557,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3556,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3555,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3554,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3553,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3552,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3551,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3550,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3548,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3547,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3546,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3545,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3544,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3542,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3541,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3540,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,3539,AASTHA KIDNEY AND GENERAL HOSPITAL
+8,Rajasthan,100,Ganganagar,151,rahi care pvt ltd
+8,Rajasthan,101,Hanumangarh,152,"Govt. District Hospital, Hanumangarh"
+8,Rajasthan,102,Jaipur,153,Kanwatia hospital jaipur
+8,Rajasthan,102,Jaipur,3286,National Institute of Medical Sciences Jaipur
+8,Rajasthan,102,Jaipur,3333,SMS Medical College Jaipur
+8,Rajasthan,102,Jaipur,3421,Sir Padampat Institute of neonatology and Pediatric Health
+8,Rajasthan,103,Jaisalmer,154,Govt. Hospital
+8,Rajasthan,104,Jalore,155,Rahi care pvt Ltd
+8,Rajasthan,105,Jhalawar,1636,"SRG Hospital & Medical College, Jhalawar"
+8,Rajasthan,106,Jhunjhunu,156,"B.D.K. Govt. District Hospital, Jhunjhunu"
+8,Rajasthan,107,Jodhpur,157,Govt distric hospital jodhpur
+8,Rajasthan,108,Karauli,158,Karauli Unit
+8,Rajasthan,109,Kota,159,"Govt. District Hospital, Rampura, Kota"
+8,Rajasthan,110,Nagaur,160,"Govt. District Hospital, Nagaur"
+8,Rajasthan,111,Pali,161,"Govt. District Hospital, Pali"
+8,Rajasthan,629,Pratapgarh,162,hemodialysis
+8,Rajasthan,112,Rajsamand,2281,Ananta Institute of Medical Sciences & Research Center
+8,Rajasthan,112,Rajsamand,163,RK GOVT HOSPITAL RAJSAMAND
+8,Rajasthan,114,Sikar,165,dialysis
+8,Rajasthan,115,Sirohi,166,Govt. District Hospital Sirohi
+8,Rajasthan,116,Tonk,167,Tonk
+8,Rajasthan,117,Udaipur,1642,Sri sunder singh bhandari  district hospital
+11,Sikkim,225,Gangtok,3080,GMD DIALYSIS CARE
+11,Sikkim,225,Gangtok,3025,Reno Care Dialysis And Diagnostic Centre
+11,Sikkim,225,Gangtok,235,STNM HOSPITAL SOCHAKGANG
+11,Sikkim,228,Gyalshing,237,DISTRICT HOSPITAL GYALSHING
+11,Sikkim,226,Mangan,3073,District Hospital Mangan
+11,Sikkim,227,Namchi,3647,CHC JORETHANG
+11,Sikkim,227,Namchi,236,DISTRICT HOSPITAL NAMCHI
+33,Tamil Nadu,610,Ariyalur,487,Govt. Medical College Hospital. Ariyalur
+33,Tamil Nadu,610,Ariyalur,3335,Jayankondam GH
+33,Tamil Nadu,730,Chengalpattu,461,Govt. Chengalpattu Medical College Hospital
+33,Tamil Nadu,730,Chengalpattu,3069,Saidapet Government Hospital
+33,Tamil Nadu,730,Chengalpattu,919,Tambaram Government District Hospital
+33,Tamil Nadu,568,Chennai,3036,Elango Nagar
+33,Tamil Nadu,568,Chennai,2326,"Government Peripheral Hospital, Periyar Nagar"
+33,Tamil Nadu,568,Chennai,3334,Govt Medl College Hl Omandurar B Block
+33,Tamil Nadu,568,Chennai,459,Govt Stanley Medical College and Hospital
+33,Tamil Nadu,568,Chennai,460,Govt. Kilpauk Medical College Hospital
+33,Tamil Nadu,568,Chennai,2227,INJAMBAKKAM UCHC
+33,Tamil Nadu,568,Chennai,1951,"Institute of Child Health and Govt. Hospital for Children, Chennai"
+33,Tamil Nadu,568,Chennai,1942,Institute of Non Communicable Diseases and Govt. Royapettah Hospital
+33,Tamil Nadu,568,Chennai,3361,Kalaignar Centenary Super Speciality Hospital
+33,Tamil Nadu,568,Chennai,2236,LAKSHMIPURAM UPHC
+33,Tamil Nadu,568,Chennai,3336,National Centre of Ageing
+33,Tamil Nadu,568,Chennai,2230,PERUNGUDI UCHC
+33,Tamil Nadu,568,Chennai,2242,Padi UCHC
+33,Tamil Nadu,568,Chennai,2233,Porur UCHC
+33,Tamil Nadu,568,Chennai,458,RGGGH
+33,Tamil Nadu,568,Chennai,3376,Semmanchery UPHC
+33,Tamil Nadu,568,Chennai,3037,Sri Lalithambigai Medical College and Hospital
+33,Tamil Nadu,568,Chennai,2239,THIRUVOTTIYUR UCHC
+33,Tamil Nadu,568,Chennai,1948,TNGMSSH
+33,Tamil Nadu,568,Chennai,2245,VALLUVARKOTTAM DIAGNOSTIC LAB
+33,Tamil Nadu,569,Coimbatore,464,Govt. Coimbatore Medical College Hospital
+33,Tamil Nadu,569,Coimbatore,490,Kollarpatti Government District Hospital
+33,Tamil Nadu,569,Coimbatore,1945,Mettupalayam Government District Hospital
+33,Tamil Nadu,569,Coimbatore,491,Pollachi Government District Headquarters Hospital.
+33,Tamil Nadu,570,Cuddalore,492,Chidambaram Government District Hospital
+33,Tamil Nadu,570,Cuddalore,493,Cuddalore
+33,Tamil Nadu,570,Cuddalore,489,"Govt. Rajah Muthiah Medl College & Hospital, Chidambaram"
+33,Tamil Nadu,570,Cuddalore,3610,Kattumannarkoil GH
+33,Tamil Nadu,570,Cuddalore,494,Panruti Government District Hospital
+33,Tamil Nadu,570,Cuddalore,495,Virudhachalam Government Hospital
+33,Tamil Nadu,571,Dharmapuri,471,Government Dharmapuri  Medical College Hospital
+33,Tamil Nadu,571,Dharmapuri,496,Harur Government District Hospital
+33,Tamil Nadu,571,Dharmapuri,3157,PAPPIREDDIPATTI GH
+33,Tamil Nadu,571,Dharmapuri,497,Palacode Government District Hospital
+33,Tamil Nadu,571,Dharmapuri,498,Pennagaram
+33,Tamil Nadu,572,Dindigul,480,Govt Medical College and Hospital Dindigul
+33,Tamil Nadu,572,Dindigul,499,Kodaikanal Government District Hospital
+33,Tamil Nadu,572,Dindigul,500,PALANI Government District Hospital
+33,Tamil Nadu,573,Erode,502,Gobichettipalayam Government District Hospital
+33,Tamil Nadu,573,Erode,478,"Govt. Erode Medical College Hospital, Erode"
+33,Tamil Nadu,573,Erode,501,HEMODIALYSIS CENTRE  Erode Government District Headquarters Hospital.
+33,Tamil Nadu,573,Erode,503,Sathyamangalam Government District Hospital
+33,Tamil Nadu,729,Kallakurichi,488,"Govt. Medical College & Hospital, Kallakurichi"
+33,Tamil Nadu,574,Kancheepuram,2329,"Government Hospital, Sriperumbudur"
+33,Tamil Nadu,574,Kancheepuram,504,Kanchipuram Government District Headquarters Hospital.
+33,Tamil Nadu,574,Kancheepuram,2338,Meenakshi Medical College Hospital And Research Institute
+33,Tamil Nadu,575,Kanniyakumari,469,Govt. Kanniyakumari Medical College Hospital
+33,Tamil Nadu,575,Kanniyakumari,922,Kuzhithurai Government District Hospital
+33,Tamil Nadu,575,Kanniyakumari,925,Padmanabapuram Government District Headquarters Hospital.
+33,Tamil Nadu,576,Karur,476,Government Medical College Hospital Karur
+33,Tamil Nadu,576,Karur,505,Kulithalai Government District Hospital
+33,Tamil Nadu,576,Karur,506,Pallapatti Government District Hospital
+33,Tamil Nadu,577,Krishnagiri,485,Government Krishnagiri Medical College hospital
+33,Tamil Nadu,577,Krishnagiri,507,Hosur Government District Hospital
+33,Tamil Nadu,577,Krishnagiri,3288,Uthangarai GH
+33,Tamil Nadu,578,Madurai,511,GDHQH USILAMPATTI
+33,Tamil Nadu,578,Madurai,463,Govt Rajaji hospital
+33,Tamil Nadu,578,Madurai,508,Melur Government District Hospital
+33,Tamil Nadu,578,Madurai,510,TVadipatti Government District Hospital
+33,Tamil Nadu,578,Madurai,509,Tirumangalam Government District Hospital
+33,Tamil Nadu,735,Mayiladuthurai,512,Mayiladuthurai Government District Hospital
+33,Tamil Nadu,735,Mayiladuthurai,1111,Sirkazhi GH
+33,Tamil Nadu,579,Nagapattinam,484,Govt. Nagapattinam Medical College and Hospital
+33,Tamil Nadu,579,Nagapattinam,513,Vedaranyam Government District Hospital
+33,Tamil Nadu,580,Namakkal,481,Govt. Namakkal Medical College  and Hospital
+33,Tamil Nadu,580,Namakkal,514,Komarapalayam Government District Hospital
+33,Tamil Nadu,580,Namakkal,515,Rasipuram Government District Hospital
+33,Tamil Nadu,580,Namakkal,516,Tiruchengode Government District Hospital
+33,Tamil Nadu,580,Namakkal,517,Velur Government District Hospital
+33,Tamil Nadu,581,Perambalur,518,GOVT HEAD QUARTERS HOSPITAL PERAMBALUR
+33,Tamil Nadu,582,Pudukkottai,519,Aranthangi Government District Headquarters Hospital.
+33,Tamil Nadu,582,Pudukkottai,477,Govt Medical College  Hospital Pudukkottai
+33,Tamil Nadu,582,Pudukkottai,520,Iluppur Government District Hospital
+33,Tamil Nadu,582,Pudukkottai,521,Thirumayam Government District Hospital
+33,Tamil Nadu,583,Ramanathapuram,482,Govt Ramanathapuram Medical College and Hospital
+33,Tamil Nadu,583,Ramanathapuram,522,Paramakudi Government District Hospital
+33,Tamil Nadu,731,Ranipet,1966,Arakkonam
+33,Tamil Nadu,731,Ranipet,1969,Arcot GH
+33,Tamil Nadu,731,Ranipet,1975,Walajapet
+33,Tamil Nadu,584,Salem,523,Attur Government District Hospital
+33,Tamil Nadu,584,Salem,524,Edappadi Government District Hospital
+33,Tamil Nadu,584,Salem,3256,Government Hospital Sankari
+33,Tamil Nadu,584,Salem,3136,Govt Hospital Omalur
+33,Tamil Nadu,584,Salem,466,"Govt. Mohan Kumaramangalam Medical College Hospital, Salem"
+33,Tamil Nadu,584,Salem,525,Mettur Government District Headquarters Hospital.
+33,Tamil Nadu,585,Sivaganga,526,Devakottai Government District Hospital
+33,Tamil Nadu,585,Sivaganga,474,Govt. Sivagangai  Medical College  Hospital
+33,Tamil Nadu,585,Sivaganga,527,Karaikudi Government District Headquarters Hospital.
+33,Tamil Nadu,585,Sivaganga,3611,Singampunari GH
+33,Tamil Nadu,733,Tenkasi,931,Alangulam Government District Hospital
+33,Tamil Nadu,733,Tenkasi,934,Kadayanallur
+33,Tamil Nadu,733,Tenkasi,937,Sankarankovil
+33,Tamil Nadu,733,Tenkasi,542,Tenkasi Government District Headquarters Hospital
+33,Tamil Nadu,586,Thanjavur,462,Govt. Thanjavur Medical College Hospital
+33,Tamil Nadu,586,Thanjavur,528,Kumbakonam Government District Headquarters Hospital.
+33,Tamil Nadu,586,Thanjavur,529,Pattukkottai Government Sub  District  Hospital.
+33,Tamil Nadu,587,The Nilgiris,1117,Coonoor GH
+33,Tamil Nadu,587,The Nilgiris,1954,"Govt. Medical College & Hospital, The Nilgiris"
+33,Tamil Nadu,587,The Nilgiris,3685,Gudalur DH
+33,Tamil Nadu,588,Theni,3609,BODINAICKANNUR GH
+33,Tamil Nadu,588,Theni,530,Cumbum Government District Hospital
+33,Tamil Nadu,588,Theni,470,Govt. Theni Medical College Hospital
+33,Tamil Nadu,588,Theni,531,PERIYALUKAM
+33,Tamil Nadu,589,Thiruvallur,532,Avadi Government District Hospital
+33,Tamil Nadu,589,Thiruvallur,533,GOVERNMENT HOSPITAL  PONNERI
+33,Tamil Nadu,589,Thiruvallur,486,"Govt. Medical College & Hospital, Thiruvallur"
+33,Tamil Nadu,589,Thiruvallur,1114,Gummidipoondi GH
+33,Tamil Nadu,589,Thiruvallur,928,Madhavaram Government District Hospital
+33,Tamil Nadu,589,Thiruvallur,3686,POONAMALLEE GH
+33,Tamil Nadu,589,Thiruvallur,534,Tiruttani Government District Hospital
+33,Tamil Nadu,590,Thiruvarur,473,Govt. Thiruvarur Medical College  Hospital
+33,Tamil Nadu,590,Thiruvarur,537,Mannargudi Government District Headquarters Hospital.
+33,Tamil Nadu,590,Thiruvarur,538,Thiruthuraipoondi Government District Hospital
+33,Tamil Nadu,594,Thoothukkudi,467,Govt. Thoothukudi Medical College Hospital
+33,Tamil Nadu,594,Thoothukkudi,1108,Kayalpattinam GH
+33,Tamil Nadu,594,Thoothukkudi,539,Kovilpatti
+33,Tamil Nadu,594,Thoothukkudi,540,Tiruchendur Government District Hospital
+33,Tamil Nadu,591,Tiruchirappalli,1957,MGM GOVT HOSPITAL
+33,Tamil Nadu,591,Tiruchirappalli,940,Manapparai Government District Headquarters Hospital.
+33,Tamil Nadu,591,Tiruchirappalli,943,Srirangam Government District Hospital
+33,Tamil Nadu,591,Tiruchirappalli,946,Thuraiyur Government District Hospital
+33,Tamil Nadu,592,Tirunelveli,465,Govt.Tirunelveli Medical College Hospital
+33,Tamil Nadu,592,Tirunelveli,541,Koodankulam Government District Hospital
+33,Tamil Nadu,732,Tirupathur,1963,Ambur Government District Hospital
+33,Tamil Nadu,732,Tirupathur,1960,Tirupattur Government District Hospital
+33,Tamil Nadu,732,Tirupathur,1972,Vaniyambadi
+33,Tamil Nadu,634,Tiruppur,479,Govt. Medical College and Hospital Tiruppur
+33,Tamil Nadu,634,Tiruppur,3612,Palladam GH
+33,Tamil Nadu,634,Tiruppur,543,Udumalpet Government District Hospital
+33,Tamil Nadu,593,Tiruvannamalai,535,Arani
+33,Tamil Nadu,593,Tiruvannamalai,536,Cheyyar Government District Headquarters Hospital.
+33,Tamil Nadu,593,Tiruvannamalai,3494,GOVERNMENT HOSPITAL VANDAVASI
+33,Tamil Nadu,593,Tiruvannamalai,475,Govt.  Thiruvannamalai  Medical College  Hospital
+33,Tamil Nadu,595,Vellore,468,Govt. Vellore Medical College Hospital
+33,Tamil Nadu,595,Vellore,544,Gudiyatham Government Hospital
+33,Tamil Nadu,596,Viluppuram,472,"Govt. Villupuram Medical College & Hospital, Villupuram"
+33,Tamil Nadu,596,Viluppuram,545,Tindivanam Government District Hospital
+33,Tamil Nadu,596,Viluppuram,546,Villupuram Government District Hospital
+33,Tamil Nadu,597,Virudhunagar,547,Aruppukottai Government District Hospital
+33,Tamil Nadu,597,Virudhunagar,483,Govt Virudhunagar Medical College and Hospital
+33,Tamil Nadu,597,Virudhunagar,548,Rajapalayam Government Hospital
+33,Tamil Nadu,597,Virudhunagar,3687,SATHUR GH
+33,Tamil Nadu,597,Virudhunagar,549,Sivakasi Government District Hospital
+33,Tamil Nadu,597,Virudhunagar,550,Srivilliputhur Government  Hospital
+33,Tamil Nadu,597,Virudhunagar,3356,senthil hospital
+36,Telangana,501,Adilabad,556,District Hospital Utnoor
+36,Telangana,690,Bhadradri Kothagudem,2149,Area Hospital Badrachalam
+36,Telangana,690,Bhadradri Kothagudem,2152,District Hospital  Kothagudem
+36,Telangana,507,Hyderabad,566,CHC Barkas (NOT EMPANELLED UNDER ARS)
+36,Telangana,507,Hyderabad,2104,District Hospital Kingkoti
+36,Telangana,507,Hyderabad,564,Mn Area Hospital Malakpet
+36,Telangana,681,Jagitial,2107,District Hospital Jagityal
+36,Telangana,689,Jangoan,2200,District Hospital Janagom
+36,Telangana,695,Jogulamba Gadwal,2161,District Hospital Gadwal
+36,Telangana,685,Kamareddy,570,Area Hospital Banswada
+36,Telangana,685,Kamareddy,569,District Hospital Kamareddy
+36,Telangana,508,Karimnagar,2146,Area Hospital Huzurabad
+36,Telangana,508,Karimnagar,552,District Hospital Karimnagar
+36,Telangana,509,Khammam,2155,Community Health Centre Sattupalli
+36,Telangana,509,Khammam,2128,District Hospital Khammam
+36,Telangana,688,Mahabubabad,2197,District Hospital Mahaboobabad
+36,Telangana,684,Mancherial,2158,"District Hospital, Mancheriyal"
+36,Telangana,513,Medak,559,District  Hospital Medak
+36,Telangana,700,Medchal Malkajgiri,3122,Ghatkesar
+36,Telangana,720,Mulugu,2206,CHC Eturunagaram
+36,Telangana,694,Nagarkurnool,557,District Hospital Nagar Kurnool
+36,Telangana,514,Nalgonda,2137,Area Hospital  Miryalaguda
+36,Telangana,721,Narayanpet,2110,District Hospital Narayanpet
+36,Telangana,680,Nirmal,554,District Hosptial Nirmal
+36,Telangana,516,Nizamabad,571,Area Hospital Bodhan
+36,Telangana,682,Peddapalli,2143,Area Hospital Godavarikani
+36,Telangana,683,Rajanna Sircilla,3121,District Hospital Sircilla
+36,Telangana,518,Rangareddy,561,Area Hospital Vanasthalipuram
+36,Telangana,518,Rangareddy,562,CHC Maheshwaram
+36,Telangana,691,Sangareddy,563,"Area Hospital, Narayankhed"
+36,Telangana,691,Sangareddy,2113,District Hospital Sangareedy
+36,Telangana,691,Sangareddy,2335,Zaheerabad
+36,Telangana,692,Siddipet,2134,Area Hospital Gajwel
+36,Telangana,696,Suryapet,2140,Area Hospital Huzur Nagar
+36,Telangana,698,Vikarabad,2131,CHC Vikarabad
+36,Telangana,698,Vikarabad,2116,District Hospital Tandoor
+36,Telangana,693,Wanaparthy,2164,District Hospital Wanaparthi
+36,Telangana,522,Warangal,2203,Area Hospital Narsampet
+36,Telangana,697,Yadadri Bhuvanagiri,572,CHC Alair
+16,Tripura,269,Dhalai,232,DHALAI  DISTRICT HOSPITAL
+16,Tripura,654,Gomati,230,GOMATI DISTRICT HOSPITAL
+16,Tripura,652,Khowai,2248,Khowai District Hospital
+16,Tripura,270,North,233,NORTH TRIPURA DISTRICT HOSPITAL
+16,Tripura,653,Sepahijala,3166,Melaghar SDH
+16,Tripura,271,South,231,SOUTH TRIPURA DISTRICT HOSPITAL
+16,Tripura,655,Unakoti,234,UNAKOTI DISTRICT HOSPITAL
+16,Tripura,272,West,3128,AGARTALA GOVERNMENT MEDICAL COLLEGE AND GBP HOSPITAL
+16,Tripura,272,West,228,AGMC  AND GBP Hospital
+16,Tripura,272,West,229,INDIRA GANDHI MEMORIAL HOSPITAL
+9,Uttar Pradesh,118,Agra,687,DISTRICT HOSPITAL MALE Agra
+9,Uttar Pradesh,119,Aligarh,1405,"PDDU JOINT HOSPITAL, ALIGARH"
+9,Uttar Pradesh,121,Ambedkar Nagar,665,Ambedkar Nagar Combined Hospital
+9,Uttar Pradesh,640,Amethi,1396,ametji
+9,Uttar Pradesh,154,Amroha,1909,DH Amroha
+9,Uttar Pradesh,122,Auraiya,3139,District combined hospital
+9,Uttar Pradesh,123,Azamgarh,674,"DISTRICT HOSPITAL (MALE), AZAMGARH"
+9,Uttar Pradesh,124,Baghpat,659,DH
+9,Uttar Pradesh,125,Bahraich,3138,Medical college
+9,Uttar Pradesh,126,Ballia,694,DISTRICT HOSPITAL BALLIA
+9,Uttar Pradesh,127,Balrampur,1390,DH
+9,Uttar Pradesh,128,Banda,685,DISTRICT HOSPITAL BANDA
+9,Uttar Pradesh,129,Barabanki,2266,District Male hospital
+9,Uttar Pradesh,130,Bareilly,682,Maharana Pratap Combined District Hospital
+9,Uttar Pradesh,131,Basti,688,OPEC KAILLY HOSPITAL BASTI
+9,Uttar Pradesh,132,Bijnor,1375,Pt Deen Dayal Upadhayay Combined District
+9,Uttar Pradesh,133,Budaun,3140,District hospital
+9,Uttar Pradesh,134,Bulandshahr,1378,District Hospital
+9,Uttar Pradesh,135,Chandauli,2263,District Combined Hospital
+9,Uttar Pradesh,136,Chitrakoot,3051,District Combined Hospital Chitrakoot
+9,Uttar Pradesh,137,Deoria,663,District Hospital Deoria
+9,Uttar Pradesh,138,Etah,683,District Hospital Etah
+9,Uttar Pradesh,139,Etawah,691,DISTRICT HOSPITAL ETAWAH
+9,Uttar Pradesh,140,Faizabad,681,"DISTRICT HOSPITAL, FAIZABAD"
+9,Uttar Pradesh,141,Farrukhabad,666,District Hospital Farrukhabad
+9,Uttar Pradesh,142,Fatehpur,2269,District Hospital male
+9,Uttar Pradesh,143,Firozabad,668,S.N.M district hospital
+9,Uttar Pradesh,144,Gautam Buddha Nagar,1381,District Hospital
+9,Uttar Pradesh,145,Ghaziabad,661,District combined hospital
+9,Uttar Pradesh,146,Ghazipur,1936,District Hospital Male
+9,Uttar Pradesh,146,Ghazipur,3463,Ns Medico India Foundation
+9,Uttar Pradesh,146,Ghazipur,3464,Ns Medico India Foundation
+9,Uttar Pradesh,147,Gonda,690,DISTRICT HOSPITAL
+9,Uttar Pradesh,148,Gorakhpur,680,NETA JI SUBHASH CHANDRA BOSE DISTRICT HOSPITAL
+9,Uttar Pradesh,149,Hamirpur,693,DISTRICT HOSPITAL MALE HAMIRPUR
+9,Uttar Pradesh,661,Hapur,1912,C HC
+9,Uttar Pradesh,150,Hardoi,667,DIstrict Hospital Hardoi
+9,Uttar Pradesh,163,Hathras,2974,Bagla Joint DInstrict Hospital
+9,Uttar Pradesh,151,Jalaun,692,DISTRICT HOSPITAL ORAI
+9,Uttar Pradesh,152,Jaunpur,1408,DISTRICT HOSPITAL JAUNPUR
+9,Uttar Pradesh,152,Jaunpur,3254,Salvation hospital
+9,Uttar Pradesh,153,Jhansi,678,"DISTRICT HOSPITAL, JHANSI"
+9,Uttar Pradesh,155,Kannauj,2257,DCH
+9,Uttar Pradesh,155,Kannauj,3577,Sanjeevani hospital
+9,Uttar Pradesh,156,Kanpur Dehat,1918,DCH
+9,Uttar Pradesh,157,Kanpur Nagar,1411,"UHM DISTRICT HOSPITAL, KANPUR"
+9,Uttar Pradesh,633,Kasganj,2971,District Combined Hospital
+9,Uttar Pradesh,158,Kaushambi,1387,District Hospital
+9,Uttar Pradesh,159,Kheri,1939,DH Male
+9,Uttar Pradesh,160,Kushinagar,671,District combined hospital
+9,Uttar Pradesh,161,Lalitpur,1924,DH Male
+9,Uttar Pradesh,162,Lucknow,676,BALRAMPURHOSPITAL Lucknow
+9,Uttar Pradesh,164,Maharajganj,1921,DCH
+9,Uttar Pradesh,165,Mahoba,2332,DH
+9,Uttar Pradesh,166,Mainpuri,1933,DCH
+9,Uttar Pradesh,167,Mathura,1399,Maharishi dayanand saraswati District hospital
+9,Uttar Pradesh,168,Mau,664,District Hospital Mau
+9,Uttar Pradesh,169,Meerut,675,P L SHARMA HOSPITAL MEERUT
+9,Uttar Pradesh,170,Mirzapur,679,DISTRICT HOSPITAL MIRZAPUR
+9,Uttar Pradesh,171,Moradabad,684,DISTRICT HOSPITAL MALE MORADABAD
+9,Uttar Pradesh,172,Muzaffarnagar,669,Swami kalyan dev district hospital
+9,Uttar Pradesh,173,Pilibhit,662,District hospital Pilibhit
+9,Uttar Pradesh,174,Pratapgarh,689,DISTRICT HOSPITAL PRATAPGARH
+9,Uttar Pradesh,120,Prayagraj,1414,Motilal nehru hospital
+9,Uttar Pradesh,120,Prayagraj,1417,T B SAPRU HOSPITAL Prayagraj
+9,Uttar Pradesh,175,Rae Bareli,670,Rana beni madhav singh  district hospital
+9,Uttar Pradesh,176,Rampur,1372,Hakim Ajmal Memorial District Hospital Rampur
+9,Uttar Pradesh,177,Saharanpur,677,S B D DISTRICT HOSPITAL SAHARANPUR
+9,Uttar Pradesh,177,Saharanpur,3278,v v hospital
+9,Uttar Pradesh,659,Sambhal,3052,CHC Chandausi
+9,Uttar Pradesh,659,Sambhal,3340,HASEENA BEGUM MULTIPSECIALITY HOSPITAL
+9,Uttar Pradesh,178,Sant Kabir Nagar,1927,DCH
+9,Uttar Pradesh,179,Sant Ravidas Nagar (Bhadohi),2260,Combined Hospital
+9,Uttar Pradesh,180,Shahjahanpur,3583,Cantonment Board Dispensary Shahjahanpur
+9,Uttar Pradesh,180,Shahjahanpur,3141,Medical college
+9,Uttar Pradesh,660,Shamli,660,DCH
+9,Uttar Pradesh,181,Shrawasti,1393,District Hospital
+9,Uttar Pradesh,182,Siddharth nagar,673,District hospital
+9,Uttar Pradesh,183,Sitapur,1930,DCH
+9,Uttar Pradesh,184,Sonbhadra,686,DISTRICT HOSPITAL SONEBHADRA
+9,Uttar Pradesh,185,Sultanpur,672,District hospital
+9,Uttar Pradesh,186,Unnao,1384,DH
+9,Uttar Pradesh,187,Varanasi,1402,P D D U HOSPITAL VARANASI
+5,Uttarakhand,45,Almora,174,Base Hospital
+5,Uttarakhand,46,Bageshwar,1984,S.L. Shah District Hospital Bageshwar
+5,Uttarakhand,47,Chamoli,1987,Hans Renal Care Centre SDH Karanprayag
+5,Uttarakhand,48,Champawat,2002,The Hans Foundation
+5,Uttarakhand,49,Dehradun,2314,All India Institute of Medical Sciences Rishikesh
+5,Uttarakhand,49,Dehradun,169,District Hospital Coronation
+5,Uttarakhand,49,Dehradun,2311,Himalayan Institute of Medical Sciences
+5,Uttarakhand,49,Dehradun,3465,PANACEA HOSPITAL
+5,Uttarakhand,49,Dehradun,3466,PANACEA HOSPITAL
+5,Uttarakhand,49,Dehradun,3467,PANACEA HOSPITAL
+5,Uttarakhand,49,Dehradun,2272,Shri Guru Ram Rai Institute of Medical & Health Sciences & Shri Mahant Indiresh Hospital
+5,Uttarakhand,50,Haridwar,1981,JNSM COMBINED HOSPITAL
+5,Uttarakhand,50,Haridwar,171,Mela Hospital
+5,Uttarakhand,51,Nainital,170,Base Hospital Haldwani
+5,Uttarakhand,51,Nainital,1996,G B Pant hospital
+5,Uttarakhand,51,Nainital,2317,Government Medical College
+5,Uttarakhand,52,Pauri Garhwal,172,Base Hospital Kotdwar
+5,Uttarakhand,52,Pauri Garhwal,1999,Hans Renal Care Centre District Hospital Pauri
+5,Uttarakhand,52,Pauri Garhwal,176,"Medical College, Srinagar"
+5,Uttarakhand,53,Pithoragarh,175,B D Pandey District Hospital
+5,Uttarakhand,54,Rudraprayag,177,District Hospital
+5,Uttarakhand,55,Tehri Garhwal,1990,THF
+5,Uttarakhand,56,Udham Singh Nagar,173,District Hospital Rudrapur
+5,Uttarakhand,56,Udham Singh Nagar,1978,SDH Khatima
+5,Uttarakhand,57,Uttarkashi,1993,THE HANS FOUNDATION
+19,West Bengal,664,Alipurduar,178,Alipurduar DH
+19,West Bengal,664,Alipurduar,3453,Falakata SSH
+19,West Bengal,305,Bankura,222,BSMCH
+19,West Bengal,305,Bankura,3441,Barjora SSH
+19,West Bengal,305,Bankura,182,Bishnupur DH
+19,West Bengal,307,Birbhum,180,Bolpur SDH
+19,West Bengal,307,Birbhum,214,Rampurhat GMCH
+19,West Bengal,307,Birbhum,181,Suri DH
+19,West Bengal,308,Cooch Behar,183,Coochbehar GMCH
+19,West Bengal,308,Cooch Behar,3454,Dinhata SDH
+19,West Bengal,310,Dakhshin Dinajpur,184,Balurghat DH
+19,West Bengal,310,Dakhshin Dinajpur,185,Gangarampur  SDH
+19,West Bengal,309,Darjiling,186,Darjeeling  DH
+19,West Bengal,309,Darjiling,221,North Bengal MCH
+19,West Bengal,309,Darjiling,187,Siliguri  DH
+19,West Bengal,312,Hooghly,190,HOOGHLY DH
+19,West Bengal,312,Hooghly,189,PCSGMCH
+19,West Bengal,312,Hooghly,3277,Sreerampore SSH
+19,West Bengal,313,Howrah,191,Howrah  DH
+19,West Bengal,313,Howrah,192,SCCGMCH DIALYSIS ULUBERIA
+19,West Bengal,313,Howrah,3439,TL jaiswal Hospital
+19,West Bengal,314,Jalpaiguri,193,Jalpaiguri GMCH
+19,West Bengal,314,Jalpaiguri,195,Mal SSH
+19,West Bengal,703,Jhargram,196,Jhargram GMCH
+19,West Bengal,703,Jhargram,3287,Nayagram SSH
+19,West Bengal,315,KOLKATA,197,CNMCH
+19,West Bengal,315,KOLKATA,2251,IDBG Hospital
+19,West Bengal,315,KOLKATA,199,Kolkata MCH
+19,West Bengal,315,KOLKATA,200,Mayor's Health Clinic
+19,West Bengal,315,KOLKATA,225,NRS
+19,West Bengal,315,KOLKATA,226,RG Kar
+19,West Bengal,315,KOLKATA,227,SN Pandit Hospital
+19,West Bengal,315,KOLKATA,224,SSKM
+19,West Bengal,315,KOLKATA,3273,School of Tropical Medicine
+19,West Bengal,702,Kalimpong,3200,Kalimpong District Hospital
+19,West Bengal,316,Maldah,3476,Chanchol SSH
+19,West Bengal,316,Maldah,201,Malda  MCH
+19,West Bengal,316,Maldah,3284,S Pathology X Ray Clinic
+19,West Bengal,319,Murshidabad,3353,Domkal SDH
+19,West Bengal,319,Murshidabad,3295,Jangipur SSH
+19,West Bengal,319,Murshidabad,3571,Kandi SDH
+19,West Bengal,319,Murshidabad,202,Murshidabad  MCH
+19,West Bengal,320,Nadia,203,COM JNM Kalyani
+19,West Bengal,320,Nadia,204,Nadia  DH
+19,West Bengal,320,Nadia,3693,Tehatta SDH
+19,West Bengal,303,North 24 Parganas,206,Barasat GMCH
+19,West Bengal,303,North 24 Parganas,179,Basirhat DH
+19,West Bengal,303,North 24 Parganas,3274,Bongaon SSH
+19,West Bengal,303,North 24 Parganas,207,CoM & Sagar Dutta Hospital
+19,West Bengal,303,North 24 Parganas,208,Dr. B.N. Bose SDH
+19,West Bengal,303,North 24 Parganas,3113,NDDM  Hospital
+19,West Bengal,303,North 24 Parganas,3272,Salt Lake SDH
+19,West Bengal,704,Paschim Bardhaman,209,Asansol DH
+19,West Bengal,704,Paschim Bardhaman,2254,Durgapur SDH
+19,West Bengal,318,Paschim Medinipur,3294,Ghatal SSH
+19,West Bengal,318,Paschim Medinipur,3279,Kharagpur SDH
+19,West Bengal,318,Paschim Medinipur,223,Mednipur MCH
+19,West Bengal,306,Purba Bardhaman,210,Burdwan MCH
+19,West Bengal,306,Purba Bardhaman,3275,Kalna SSH
+19,West Bengal,306,Purba Bardhaman,211,Katwa SDH
+19,West Bengal,317,Purba Medinipur,205,Contai SDH
+19,West Bengal,317,Purba Medinipur,3359,Nandigram SSH
+19,West Bengal,317,Purba Medinipur,212,Tamrolipto GMCH
+19,West Bengal,321,Purulia,213,Purulia GMCH
+19,West Bengal,321,Purulia,3477,Raghunathpur SSH
+19,West Bengal,304,South 24 Parganas,215,Baruipur SDH
+19,West Bengal,304,South 24 Parganas,3495,Canning SDH
+19,West Bengal,304,South 24 Parganas,188,Diamond Harbour GMCH
+19,West Bengal,304,South 24 Parganas,216,Gardenreach SDH
+19,West Bengal,304,South 24 Parganas,3338,Kakdwip SSH
+19,West Bengal,304,South 24 Parganas,217,MR Bangur SSH
+19,West Bengal,304,South 24 Parganas,218,Vidyasagar SGH
+19,West Bengal,311,Uttar Dinajpur,3358,Islampur SDH
+19,West Bengal,311,Uttar Dinajpur,220,Raigung GMCH
