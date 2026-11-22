@@ -18,6 +18,22 @@ Not reviewed by a clinician.
 """
 
 MUST = {
+    "emergency_obstetric": [
+        {"keys": ["operation_theatre"],
+         "why": "A C-section cannot be done outside an operating theatre. Staff and blood can be brought in; a theatre cannot.",
+         "src": "https://www.unfpa.org/resources/setting-standards-emergency-obstetric-and-newborn-care"},
+    ],
+    "cardiac_surgery": [
+        {"keys": ["cardiac_OT", "heart_lung_machine"],
+         "why": "Heart surgery needs a theatre equipped for it, with a heart-lung machine ready even when the surgeon plans not to use one.",
+         "src": "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/08/20240828153687657.pdf"},
+        {"keys": ["cardiac_ICU", "ventilator"],
+         "why": "After heart surgery every patient needs intensive care with a breathing machine ready.",
+         "src": "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/08/20240828153687657.pdf"},
+        {"keys": ["cardiac_surgeon"],
+         "why": "Only a heart surgeon can do the operation and re-open the chest if bleeding starts; a visiting surgeon counts.",
+         "src": "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/08/20240828153687657.pdf"},
+    ],
     "burn_care": [
         {"keys": ["operation_theatre"],
          "why": "Deep burns need surgery under anaesthesia; the national burn guideline tells hospitals without a theatre to refer the patient on.",
@@ -46,10 +62,18 @@ MUST = {
 # passed the medical test, failed the data test (share of strong-evidence records that mention it)
 DROPPED = {
     "icu": {"oxygen": 0.14},
+    "nicu": {"warmer_or_incubator": 0.17},
 }
+
+# share of strong-evidence records that mention each must-have in use (the data test, threshold 0.33)
+SHARE = {"emergency_obstetric": [0.66], "cardiac_surgery": [0.76, 0.59, 0.36], "burn_care": [0.58], "trauma_emergency": [0.48, 0.86], "cath_lab": [0.89], "icu": [0.42]}
 
 # proposed, then refuted by the second pass
 REFUTED = {
+    "dialysis": "RO water plant: peritoneal and bedside dialysis need none. Nephrologist: many public and chain units run with trained doctors and a visiting specialist",
+    "emergency_obstetric": "anaesthesia and blood bank: commonly a visiting anaesthetist and blood from a linked bank",
+    "nicu": "ventilator and specialist: Level II newborn units legitimately run without them and refer",
+    "mri": "radiologist: scans are commonly reported off-site by tele-radiology",
     "burn_care": "skin graft or plastic surgeon: general surgeons graft skin in an ordinary theatre",
     "trauma_emergency": "blood bank: many hospitals operate with blood fetched from a nearby licensed bank",
     "icu": "ventilator: a Level I ICU (ISCCM 2020) may run on non-invasive support and transfer",
